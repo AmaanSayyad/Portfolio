@@ -43,45 +43,45 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
 
   return (
     <motion.div
+      animate={isVisible ? 'visible' : 'hidden'}
       className={cn(
         'flex flex-wrap items-center justify-center gap-x-2 gap-y-1',
         isName ? 'my-8 sm:my-12 md:my-16' : 'mb-6 sm:mb-8 md:mb-10',
         !isVisible && 'opacity-20'
       )}
-      variants={containerVariants}
       initial="hidden"
-      animate={isVisible ? 'visible' : 'hidden'}
+      variants={containerVariants}
     >
       {parts.map((part, j) => {
         if (part.type === 'text') {
           // Render text as complete words/phrases, not split
           return (
             <motion.span
+              key={`about-${String(index)}-${String(j)}`}
               className={cn(
                 'inline-block',
                 progress < sentenceStart ? 'text-white/20' : 'text-white',
-                part.className || 'font-beatriceMedium'
+                part.className ?? 'font-beatriceMedium'
               )}
-              key={`about-${String(index)}-${String(j)}`}
               variants={containerVariants}
             >
               {part.content}
             </motion.span>
           );
         }
-        const hoverRotate: number[] = [0, -10, 10, -10, 0];
+        const rotateAnimation: number[] = [0, -10, 10, -10, 0];
         
         return (
           <motion.span
+            key={`about-${String(index)}-${String(j)}`}
             className={cn(
               'inline-flex items-center justify-center',
               progress < sentenceStart ? 'opacity-20' : 'opacity-100',
               part.className
             )}
-            key={`about-${String(index)}-${String(j)}`}
             variants={containerVariants}
             whileHover={{
-              rotate: hoverRotate,
+              rotate: rotateAnimation,
               scale: 1.2,
               transition: { duration: 0.5 },
             }}
@@ -115,6 +115,7 @@ export const About = () => {
         <div className='relative w-full max-w-6xl select-text text-center'>
           {/* Subtle background gradient */}
           <motion.div
+            className='absolute inset-0 -z-10 rounded-3xl opacity-20 blur-3xl'
             animate={{
               background: [
                 'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.3), transparent 50%)',
@@ -123,7 +124,6 @@ export const About = () => {
                 'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.3), transparent 50%)',
               ],
             }}
-            className='absolute inset-0 -z-10 rounded-3xl opacity-20 blur-3xl'
             transition={{
               duration: 8,
               ease: 'linear',
