@@ -85,11 +85,11 @@ export const WorkExperience = () => {
       <div className='mx-auto max-w-5xl px-4 sm:px-6'>
         <motion.div
           className='mb-20 text-center font-elgocAlt text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.9] text-white'
-          style={{ opacity }}
           initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          style={{ opacity }}
+          transition={{ duration: 0.8, stiffness: 100, type: 'spring' }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
         >
           Experience
         </motion.div>
@@ -98,14 +98,19 @@ export const WorkExperience = () => {
           {/* Timeline line */}
           <div className='absolute left-6 top-0 h-full w-0.5 bg-white/10 md:left-1/2' />
 
-          {experiences.map((exp, index) => (
+          {experiences.map((exp, index) => {
+            const uniqueKey = `${exp.company}-${String(exp.period)}`;
+            const xOffset = index % 2 === 0 ? -30 : 30;
+            const delay = index * 0.08;
+            
+            return (
             <motion.div
-              key={`${exp.company}-${exp.period}`}
+              key={uniqueKey}
               className='relative mb-16 flex items-start gap-6 md:mb-24'
-              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: xOffset }}
+              transition={{ delay, duration: 0.5 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              whileInView={{ opacity: 1, x: 0 }}
             >
               {/* Timeline dot */}
               <div className='relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-white/20 bg-black md:absolute md:left-1/2 md:-translate-x-1/2'>
@@ -147,7 +152,8 @@ export const WorkExperience = () => {
                 </div>
               </motion.div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
