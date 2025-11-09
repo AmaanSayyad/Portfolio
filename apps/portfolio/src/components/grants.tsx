@@ -80,11 +80,11 @@ export const Grants = () => {
       <div className='mx-auto max-w-5xl px-4 sm:px-6'>
         <motion.div
           className='mb-16 text-center font-elgocAlt text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.9] text-white'
-          style={{ opacity }}
           initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          style={{ opacity }}
+          transition={{ duration: 0.8, stiffness: 100, type: 'spring' }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
         >
           Grants
         </motion.div>
@@ -98,24 +98,22 @@ export const Grants = () => {
           transition={{ duration: 0.5 }}
         >
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
-            {grants.map((grant, index) => (
+            {grants.map((grant, index) => {
+              const delay = index * 0.08;
+              
+              return (
               <motion.div
                 key={`${grant.protocol}-${grant.project}`}
                 className='group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-500 hover:border-white/15 hover:bg-white/[0.08] hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
-                initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ 
-                  delay: index * 0.08, 
-                  duration: 0.6,
-                  type: 'spring',
-                  stiffness: 100
-                }}
+                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                transition={{ delay, duration: 0.6, stiffness: 100, type: 'spring' }}
+                viewport={{ margin: '-50px', once: true }}
                 whileHover={{ 
                   scale: 1.05,
+                  transition: { duration: 0.3, stiffness: 300, type: 'spring' },
                   y: -6,
-                  transition: { duration: 0.3, type: 'spring', stiffness: 300 }
                 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
               >
                 <motion.div
                   className='absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'
@@ -142,42 +140,42 @@ export const Grants = () => {
                   <p className='text-sm leading-relaxed text-white/50'>{grant.description}</p>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
 
         {/* Publications Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          whileInView={{ opacity: 1, y: 0 }}
         >
           <h3 className='mb-8 text-center font-beatriceMedium text-xl font-semibold text-white/80'>
             Publications
           </h3>
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
-            {publications.map((pub, index) => (
+            {publications.map((pub, index) => {
+              const uniqueKey = `${pub.title}-${String(pub.publisher)}`;
+              const delay = index * 0.08;
+              
+              return (
               <motion.a
-                key={`${pub.title}-${index}`}
-                href={pub.link}
-                target='_blank'
-                rel='noopener noreferrer'
+                key={uniqueKey}
                 className='group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.03] p-5 backdrop-blur-md transition-all duration-500 hover:border-white/15 hover:bg-white/[0.08] hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
-                initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ 
-                  delay: index * 0.08, 
-                  duration: 0.6,
-                  type: 'spring',
-                  stiffness: 100
-                }}
+                href={pub.link}
+                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                rel='noopener noreferrer'
+                target='_blank'
+                transition={{ delay, duration: 0.6, stiffness: 100, type: 'spring' }}
+                viewport={{ margin: '-50px', once: true }}
                 whileHover={{ 
                   scale: 1.05,
+                  transition: { duration: 0.3, stiffness: 300, type: 'spring' },
                   y: -6,
-                  transition: { duration: 0.3, type: 'spring', stiffness: 300 }
                 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
               >
                 <motion.div
                   className='absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'
@@ -201,7 +199,8 @@ export const Grants = () => {
                   </div>
                 </div>
               </motion.a>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
       </div>

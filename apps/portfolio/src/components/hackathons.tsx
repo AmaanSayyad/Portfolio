@@ -34,11 +34,11 @@ export const Hackathons = () => {
       <div className='mx-auto max-w-6xl px-4 sm:px-6'>
         <motion.div
           className='mb-12 text-center font-elgocAlt text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.9] text-white'
-          style={{ opacity }}
           initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          style={{ opacity }}
+          transition={{ duration: 0.8, stiffness: 100, type: 'spring' }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
         >
           Hackathons
         </motion.div>
@@ -50,24 +50,23 @@ export const Hackathons = () => {
         </motion.div>
 
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-          {hackathons.map((hackathon, index) => (
+          {hackathons.map((hackathon, index) => {
+            const uniqueKey = `${hackathon.name}-${String(hackathon.track)}`;
+            const delay = index * 0.04;
+            
+            return (
             <motion.div
-              key={`${hackathon.name}-${index}`}
+              key={uniqueKey}
               className='group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.03] p-5 backdrop-blur-md transition-all duration-500 hover:border-white/15 hover:bg-white/[0.08] hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ 
-                delay: index * 0.04, 
-                duration: 0.5,
-                type: 'spring',
-                stiffness: 100
-              }}
+              initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              transition={{ delay, duration: 0.5, stiffness: 100, type: 'spring' }}
+              viewport={{ margin: '-50px', once: true }}
               whileHover={{ 
                 scale: 1.05,
+                transition: { duration: 0.3, stiffness: 300, type: 'spring' },
                 y: -6,
-                transition: { duration: 0.3, type: 'spring', stiffness: 300 }
               }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
             >
               {/* Subtle gradient overlay */}
               <motion.div
@@ -91,7 +90,8 @@ export const Hackathons = () => {
                 <p className='text-sm font-medium text-white/50'>{hackathon.prize}</p>
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
