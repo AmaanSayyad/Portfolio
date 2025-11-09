@@ -95,12 +95,12 @@ export const Speaking = () => {
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
               transition={{ delay, duration: 0.5, stiffness: 100, type: 'spring' }}
               viewport={{ margin: '-50px', once: true }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
               whileHover={{
                 scale: 1.05,
-                y: -6,
                 transition: { duration: 0.3, stiffness: 300, type: 'spring' },
+                y: -6,
               }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
             >
               <motion.div
                 className='absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'

@@ -43,14 +43,14 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
 
   return (
     <motion.div
-      animate={isVisible ? 'visible' : 'hidden'}
       className={cn(
         'flex flex-wrap items-center justify-center gap-x-2 gap-y-1',
         isName ? 'my-8 sm:my-12 md:my-16' : 'mb-6 sm:mb-8 md:mb-10',
         !isVisible && 'opacity-20'
       )}
-      initial="hidden"
       variants={containerVariants}
+      initial="hidden"
+      animate={isVisible ? 'visible' : 'hidden'}
     >
       {parts.map((part, j) => {
         if (part.type === 'text') {
@@ -61,7 +61,7 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
               className={cn(
                 'inline-block',
                 progress < sentenceStart ? 'text-white/20' : 'text-white',
-                part.className ?? 'font-beatriceMedium'
+                part.className || 'font-beatriceMedium'
               )}
               variants={containerVariants}
             >
@@ -69,8 +69,6 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
             </motion.span>
           );
         }
-        const rotateAnimation: number[] = [0, -10, 10, -10, 0];
-        
         return (
           <motion.span
             key={`about-${String(index)}-${String(j)}`}
@@ -81,8 +79,8 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
             )}
             variants={containerVariants}
             whileHover={{
-              rotate: rotateAnimation,
               scale: 1.2,
+              rotate: [0, -10, 10, -10, 0],
               transition: { duration: 0.5 },
             }}
           >
@@ -126,21 +124,21 @@ export const About = () => {
             }}
             transition={{
               duration: 8,
-              ease: 'linear',
               repeat: Infinity,
+              ease: 'linear',
             }}
           />
           
           <motion.div
-            animate={{ opacity: 1, scale: 1 }}
             className='relative flex flex-col items-center justify-center gap-2 sm:gap-3 font-beatriceMedium text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed'
             initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: easeInOutCubic }}
           >
             {data.about.map((sentence, i) => (
               <Sentence
-                index={i}
                 key={`sentence-${String(i)}`}
+                index={i}
                 parts={sentence}
                 progress={v}
               />
