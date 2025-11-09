@@ -1,17 +1,26 @@
 {
-  "name": "Amaan Sayyad",
-  "short_name": "AS",
+  "name": "Amaan Sayyad - DevRel | Blockchain Developer",
+  "short_name": "Amaan Sayyad",
+  "description": "Co-Founder & CEO at Bharat DAO. Blockchain Developer, DevRel, and Entrepreneur with 4+ years in Web3.",
   "icons": [
     {
       "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#000",
-  "background_color": "#000",
+  "theme_color": "#0c0c0e",
+  "background_color": "#0c0c0e",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en-US"
 }

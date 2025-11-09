@@ -2,34 +2,138 @@ import type { AboutSentence, Data } from "~/types/data";
 
 const aboutSentence1: AboutSentence = [
 	{ type: "text", content: "Hello! I am" },
-	{ type: "text", content: "Amaan Sayyad", className: "text-blue-400" },
-	{
-		type: "text",
-		content: ", a blockchain developer and devrel..",
-	},
 ];
 
 const aboutSentence2: AboutSentence = [
-	{ type: "text", content: "I love to" },
-	{ type: "emoji", content: "⛵" },
-	{
-		type: "text",
-		content: "ship awesome web3 projects.",
-	},
+	{ type: "text", content: "Amaan Sayyad", className: "font-elgocAlt text-[5rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400" },
 ];
 
 const aboutSentence3: AboutSentence = [
-	{ type: "text", content: "In my free time, I win web3 hackathons" },
-	{ type: "emoji", content: "🏆" },
+	{ type: "text", content: "a" },
+	{ type: "text", content: " Devrel", className: "font-beatriceMedium font-semibold text-white/90" },
+	{ type: "text", content: "," },
+	{ type: "text", content: " Blockchain Developer", className: "font-beatriceMedium font-semibold text-white/90" },
+	{ type: "text", content: " &" },
+	{ type: "text", content: " Entrepreneur", className: "font-beatriceMedium font-semibold text-white/90" },
+];
+
+const aboutSentence4: AboutSentence = [
+	{ type: "text", content: "I've built" },
+	{ type: "text", content: " 25+ Web3 projects", className: "font-elgocAlt text-3xl sm:text-4xl md:text-5xl text-white font-bold" },
+	{ type: "text", content: " across" },
+	{ type: "text", content: " 30+ ecosystems", className: "font-semibold text-white/80" },
+	{ type: "emoji", content: "🚀", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
+];
+
+const aboutSentence5: AboutSentence = [
+	{ type: "text", content: "Won" },
+	{ type: "text", content: " 35 hackathons", className: "font-bold text-white" },
+	{ type: "text", content: " out of" },
+	{ type: "text", content: " 70+ participated", className: "font-semibold text-white/70" },
+	{ type: "emoji", content: "🏆", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
+];
+
+const aboutSentence6: AboutSentence = [
+	{ type: "text", content: "Co-founded" },
+	{ type: "text", content: " 2 startups", className: "font-bold text-white" },
+	{ type: "text", content: " and built" },
+	{ type: "text", content: " 4 communities", className: "font-semibold text-white/80" },
+	{ type: "text", content: " from 0 to 100x", className: "font-semibold text-white/70" },
 ];
 
 const projects: Data["projects"]["projects"] = [
 	{
+		title: "APT-Casino",
+		description:
+			"A fully on-chain casino for the Aptos Ecosystem providing safe, secure, transparent gaming. Backed by Aptos and Movement Labs. Grants: $5,000 (Aptos), 10,000 MOVE (Movement Labs), $6,500 (Top Blockchain Startup Award). Won 15 hackathons. Live on ICP, Aptos, and EVM chains.",
+		image: "/images/1.png",
+		coverImage: "/images/1-cover.png",
+		backgroundColor: "#1E1E2E",
+		color: "#00D9FF",
+		githubLink: "https://github.com/AmaanSayyad/Aptos-Casino",
+		liveLink: "https://aptos-casino-sand.vercel.app/",
+		videoDemo: "https://drive.google.com/file/d/1i-LBGqOFhsJh1ml5Xj4QIRbwRk8byD_V/view",
+	},
+	{
+		title: "DunkVerse",
+		description:
+			"Won 10 Hackathons ($15,000 total). Top-performing dapp with 2,100+ Likes on HackQuest. A revolutionary Web3 gaming platform combining DeFi, AI, and GameFi for safe, transparent gaming experiences.",
+		image: "/images/2.jpeg",
+		coverImage: "/images/2-cover.png",
+		backgroundColor: "#0A0A0F",
+		color: "#FF6B6B",
+		githubLink: "https://github.com/AmaanSayyad/DunkVerse",
+		videoDemo: "https://youtu.be/3uZv3TCel-w",
+	},
+	{
+		title: "HyperInsure",
+		description:
+			"The first on-chain insurance protocol protecting blockchain users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin security. Winner of Stacks Hacker House 2025.",
+		image: "/images/3.png",
+		coverImage: "/images/3-cover.png",
+		backgroundColor: "#1A1A2E",
+		color: "#FFD700",
+		githubLink: "https://github.com/amaansayyad/hyperinsure",
+	},
+	{
+		title: "Gemetra",
+		description:
+			"Global Remittance Infrastructure for VAT Claims & Payroll. A comprehensive solution for cross-border financial operations with blockchain transparency and security.",
+		image: "/images/4.png",
+		coverImage: "/images/4-cover.png",
+		backgroundColor: "#2D1B3D",
+		color: "#9D4EDD",
+		githubLink: "https://github.com/amaansayyad/gemetra",
+		liveLink: "https://gemetra.vercel.app/",
+	},
+	{
+		title: "StarkNet Arcade",
+		description:
+			"Top-performing gaming dapp in the StarkNet Ecosystem. Arcadino brings innovative on-chain gaming experiences with cutting-edge blockchain technology.",
+		image: "/images/5.png",
+		coverImage: "/images/5-cover.png",
+		backgroundColor: "#0F0F23",
+		color: "#00FF88",
+		githubLink: "https://github.com/AmaanSayyad/Starknet-Arcade",
+	},
+	{
+		title: "MultiAgent Army",
+		description:
+			"Top-performing dapp in the ICP Ecosystem. A revolutionary multi-agent system leveraging Internet Computer Protocol for decentralized AI applications.",
+		image: "/images/6.png",
+		coverImage: "/images/6-cover.png",
+		backgroundColor: "#1A1A2E",
+		color: "#29B6F6",
+		githubLink: "https://github.com/AmaanSayyad/MultiAgent-Army",
+		videoDemo: "https://youtu.be/qBid3G7o3jk",
+	},
+	{
+		title: "Feed Our World",
+		description:
+			"Empowering communities and reducing global food waste through an on-demand, on-chain blockchain-based food distribution application. Grant: $25,000 from CELO Ecosystem. Aligned with UN Sustainable Goals.",
+		image: "/images/7.png",
+		coverImage: "/images/7-cover.png",
+		backgroundColor: "#2D5016",
+		color: "#4CAF50",
+		githubLink: "https://github.com/Feed-Our-World-FOW",
+		videoDemo: "https://youtu.be/yfG9RmuASfQ",
+	},
+	{
+		title: "Bharat DAO",
+		description:
+			"India's fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+		image: "/images/8.jpeg",
+		coverImage: "/images/8-cover.png",
+		backgroundColor: "#FF6B35",
+		color: "#004E89",
+		githubLink: "https://github.com/AmaanSayyad",
+	},
+	{
 		title: "JustRoles",
 		description:
 			"Just Roles is a project that provides on-chain verifiable roles based on the Lens Protocol followers. Communities can set different roles for different thresholds and utilize the Phala Lens Oracle to obtain verifiable data from the API. ",
-		image: "/images/1.png",
-		coverImage: "/images/1-cover.png",
+		image: "/images/9.png",
+		coverImage: "/images/9-cover.png",
 		backgroundColor: "#D5D5D5",
 		color: "#2A2A2A",
 		githubLink: "https://github.com/Envoy-VC/just-roles",
@@ -159,7 +263,7 @@ const projects: Data["projects"]["projects"] = [
 
 export const data: Data = {
 	header: "Amaan Sayyad",
-	about: [aboutSentence1, aboutSentence2, aboutSentence3],
+	about: [aboutSentence1, aboutSentence2, aboutSentence3, aboutSentence4, aboutSentence5, aboutSentence6],
 	interests: {
 		title: (
 			<>
@@ -168,15 +272,15 @@ export const data: Data = {
 				developer?
 			</>
 		),
-		description: `I started my journey as a web3 developer in 2020. I've been building decentralized applications, exploring various protocols, participating in web3 hackathons, meeting other developers, and going to IRL events.
+		description: `4+ Years in Web3 Space | Built 25+ Web3 projects across DeFi, SocialFi, GameFi & GambleFi | Won 35/70 hackathons | Grantee from 4 protocols | Worked with 8 Web3 Companies | Built 4 Communities (0→100x) | 12x Speaker | 2x Startup Founder | 3 Research Papers & 2 Copyrights.
 
-I'm currently working on a Casino on Aptos Network which offers safe, secure and 100% fair on-chain game outcomes.`,
+Ecosystems: Aptos, Movement Labs, Mantle, Polygon, EigenLayer, Xenea, Xion, Avalanche, BNB, Flow, Monad, Chainlink, Celo, Near, Oraichain, Stellar, Coinbase, WorldCoin, Scroll, Chiliz, Nibiru, Citrea, Educhain, Ripple, Manta, Optimism, The Graph, Inco, Starknet, Pyth, Stacks, 0g, Push, Algorand.`,
 		interests: [
-			"Build decentralized applications",
-			"Explore various protocols",
-			"Participate in hackathons",
-			"Meet other developers",
-			"Go to IRL events",
+			"Build 25+ Web3 projects",
+			"Win 35 hackathons",
+			"Co-found 2 startups",
+			"Build 4 communities",
+			"Speak at 12+ events",
 		],
 	},
 	articles: {
@@ -190,14 +294,16 @@ I'm currently working on a Casino on Aptos Network which offers safe, secure and
 		projects,
 	},
 	resume: {
-		description: `Long story short, I'm currently looking for a new opportunity to work on exciting projects. I am open to both full-time DevRel and Blockchain Developer roles.
+		description: `A blockchain developer, serial builder and budding entrepreneur with 4+ years in Web3.
 
-You'd like to work with someone who's passionate, experienced, polyvalent, constantly learning, and quickly adjust with new technologies and tools.
+Currently Co-Founder & CEO at Bharat DAO - India's fastest-growing Web3 Developer community (10,000+ developers in 45 days).
 
-So here's a little recap of everything you've seen in A4:`,
-		website: "https://envoy1084.xyz",
+Previously Co-Founder & CEO at APT-Casino - Fully on-chain casino backed by Aptos and Movement Labs.
+
+Open to exciting opportunities in DevRel, Blockchain Development, and Entrepreneurship roles.`,
+		website: "https://amaan-sayyad-portfolio.vercel.app",
 		name: "Amaan Sayyad",
-		position: "Devrel/ Blockchain Developer",
+		position: "DevRel | Blockchain Developer",
 		email: "amaansayyad2001@gmail.com",
 		downloadLink: "/resume.pdf",
 	},
@@ -208,15 +314,15 @@ So here's a little recap of everything you've seen in A4:`,
 				link: "mailto:amaansayyad2001@gmail.com",
 			},
 			{
-				title: "Twitter",
+				title: "Twitter / X",
 				link: "https://x.com/amaanbiz",
 			},
 			{
-				title: "Linkedin",
+				title: "LinkedIn",
 				link: "https://www.linkedin.com/in/amaan-sayyad-/",
 			},
 			{
-				title: "Github",
+				title: "GitHub",
 				link: "https://github.com/AmaanSayyad",
 			},
 		],
