@@ -1,8 +1,0 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/1e7e2_next_dist_compiled_react-dom_cjs_react-dom-client_development_923604.js", {
-
-"[project]/node_modules/.pnpm/next@15.0.0-rc.0_@babel+core@7.24.6_babel-plugin-react-compiler@0.0.0-experimental-938cd9a-20_zxfnurgznfuaehdc3o4fb7jsvi/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js [app-client] (ecmascript)": (() => {{
-
-throw new Error("An error occurred while generating the chunk item [project]/node_modules/.pnpm/next@15.0.0-rc.0_@babel+core@7.24.6_babel-plugin-react-compiler@0.0.0-experimental-938cd9a-20_zxfnurgznfuaehdc3o4fb7jsvi/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js [app-client] (ecmascript)\n\nCaused by:\n- Next.js package not found\n\nDebug info:\n- An error occurred while generating the chunk item [project]/node_modules/.pnpm/next@15.0.0-rc.0_@babel+core@7.24.6_babel-plugin-react-compiler@0.0.0-experimental-938cd9a-20_zxfnurgznfuaehdc3o4fb7jsvi/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js [app-client] (ecmascript)\n- Execution of EcmascriptChunkItemContent::module_factory failed\n- Execution of EcmascriptChunkItemContent::new failed\n- Execution of EcmascriptModuleContent::new failed\n- Execution of <EsmAssetReference as CodeGenerateable>::code_generation failed\n- Execution of esm_resolve failed\n- Execution of apply_esm_specific_options failed\n- Execution of resolve_options failed\n- Execution of FileSystemPath::join failed\n- Execution of get_next_package failed\n- Next.js package not found");
-
-}}),
-}]);
