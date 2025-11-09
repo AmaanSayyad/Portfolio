@@ -90,17 +90,17 @@ export const Speaking = () => {
             
             return (
             <motion.div
-              key={uniqueKey}
               className='group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-500 hover:border-white/15 hover:bg-white/[0.08] hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              key={uniqueKey}
               transition={{ delay, duration: 0.5, stiffness: 100, type: 'spring' }}
               viewport={{ margin: '-50px', once: true }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.3, stiffness: 300, type: 'spring' },
                 y: -6,
               }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
             >
               <motion.div
                 className='absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'
