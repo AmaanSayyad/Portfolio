@@ -7,9 +7,9 @@ import { cn } from '~/lib/utils';
 
 import { motion, useScroll, useTransform, type Variants, cubicBezier } from 'framer-motion';
 
-const easeInOutCubic = cubicBezier(0.4, 0, 0.2, 1);
-
 import type { AboutSentence } from '~/types/data';
+
+const easeInOutCubic = cubicBezier(0.4, 0, 0.2, 1);
 
 interface SentenceProps {
   parts: AboutSentence;
@@ -20,7 +20,6 @@ interface SentenceProps {
 const Sentence = ({ index, parts, progress }: SentenceProps) => {
   const totalSentences = data.about.length;
   const sentenceStart = index / totalSentences;
-  const sentenceEnd = (index + 1) / totalSentences;
   
   const isName = index === 1;
   const isVisible = progress >= sentenceStart - 0.05;
