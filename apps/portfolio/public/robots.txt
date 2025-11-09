@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://amaan-sayyad-portfolio.vercel.app/sitemap.xml
-
