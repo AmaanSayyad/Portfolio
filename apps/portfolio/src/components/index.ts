@@ -4,6 +4,7 @@ export * from './city';
 export * from './grain-effect';
 export * from './text-copy';
 export * from './about';
+export * from './about-achievements';
 export * from './blogs';
 export * from './interests';
 export * from './projects';

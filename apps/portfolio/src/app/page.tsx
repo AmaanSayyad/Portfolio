@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {
-  About,
-  Achievements,
+  AboutAchievements,
   Blogs,
   City,
   Contact,
@@ -24,8 +23,7 @@ const Home = () => {
     <>
       <Header />
       <City />
-      <About />
-      <Achievements />
+      <AboutAchievements />
       <Interests />
       <WorkExperience />
       <Projects />
