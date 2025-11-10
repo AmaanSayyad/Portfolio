@@ -6,7 +6,6 @@ import { Button } from './ui/button';
 
 import { motion } from 'framer-motion';
 import { BinaryIcon, ArrowUp, Github, Twitter, Linkedin, Mail } from 'lucide-react';
-import Link from 'next/link';
 
 const socialLinks = [
   { icon: Twitter, href: 'https://x.com/amaanbiz', label: 'Twitter' },
