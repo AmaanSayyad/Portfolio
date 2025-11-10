@@ -90,7 +90,7 @@ export const Skills = () => {
                 </motion.span>
                 <span className='mb-3 text-center text-sm font-semibold text-white relative z-10'>{skill.name}</span>
                 <div className='flex gap-1 relative z-10'>
-                  {Array.from<number>({ length: 5 }, (_, i) => i).map((i) => {
+                  {Array.from({ length: 5 }, (_, i) => i).map((i: number) => {
                     const levelKey = `level-${String(i)}-${skill.name}`;
                     const delay = index * 0.04 + i * 0.05;
                     
