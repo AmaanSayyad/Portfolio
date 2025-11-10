@@ -292,13 +292,7 @@ export const data: Data = {
 		projects,
 	},
 	resume: {
-		description: `A blockchain developer, serial builder and budding entrepreneur with 4+ years in Web3.
-
-Currently Co-Founder & CEO at Bharat DAO - India&apos;s fastest-growing Web3 Developer community (10,000+ developers in 45 days).
-
-Previously Co-Founder & CEO at APT-Casino - Fully on-chain casino backed by Aptos and Movement Labs.
-
-Open to exciting opportunities in DevRel, Blockchain Development, and Entrepreneurship roles.`,
+		description: ``,
 		website: "https://amaan-sayyad-portfolio.vercel.app",
 		name: "Amaan Sayyad",
 		position: "DevRel | Blockchain Developer",
