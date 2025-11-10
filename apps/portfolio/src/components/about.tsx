@@ -58,29 +58,30 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
           return (
             <motion.span
               key={`about-${String(index)}-${String(j)}`}
+              variants={containerVariants}
               className={cn(
                 'inline-block',
                 progress < sentenceStart ? 'text-white/20' : 'text-white',
                 part.className || 'font-beatriceMedium'
               )}
-              variants={containerVariants}
             >
               {part.content}
             </motion.span>
           );
         }
+        const rotateValues: number[] = [0, -10, 10, -10, 0];
         return (
           <motion.span
             key={`about-${String(index)}-${String(j)}`}
+            variants={containerVariants}
             className={cn(
               'inline-flex items-center justify-center',
               progress < sentenceStart ? 'opacity-20' : 'opacity-100',
               part.className
             )}
-            variants={containerVariants}
             whileHover={{
+              rotate: rotateValues,
               scale: 1.2,
-              rotate: [0, -10, 10, -10, 0],
               transition: { duration: 0.5 },
             }}
           >
@@ -113,7 +114,6 @@ export const About = () => {
         <div className='relative w-full max-w-6xl select-text text-center'>
           {/* Subtle background gradient */}
           <motion.div
-            className='absolute inset-0 -z-10 rounded-3xl opacity-20 blur-3xl'
             animate={{
               background: [
                 'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.3), transparent 50%)',
@@ -122,23 +122,24 @@ export const About = () => {
                 'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.3), transparent 50%)',
               ],
             }}
+            className='absolute inset-0 -z-10 rounded-3xl opacity-20 blur-3xl'
             transition={{
               duration: 8,
-              repeat: Infinity,
               ease: 'linear',
+              repeat: Infinity,
             }}
           />
           
           <motion.div
+            animate={{ opacity: 1, scale: 1 }}
             className='relative flex flex-col items-center justify-center gap-2 sm:gap-3 font-beatriceMedium text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed'
             initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: easeInOutCubic }}
           >
             {data.about.map((sentence, i) => (
               <Sentence
-                key={`sentence-${String(i)}`}
                 index={i}
+                key={`sentence-${String(i)}`}
                 parts={sentence}
                 progress={v}
               />
