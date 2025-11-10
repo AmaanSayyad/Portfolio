@@ -14,7 +14,7 @@ export interface Data {
 	interests: {
 		title: ReactNode;
 		description: string;
-		interests: [string, string, string, string, string];
+		interests: string[];
 	};
 	articles: {
 		title: string;

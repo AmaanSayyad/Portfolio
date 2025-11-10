@@ -19,16 +19,16 @@ const links = [
     href: '#about',
   },
   {
-    label: 'Achievements',
-    href: '#achievements',
-  },
-  {
     label: 'Interests',
     href: '#interests',
   },
   {
     label: 'Experience',
     href: '#experience',
+  },
+  {
+    label: 'Volunteer',
+    href: '#volunteer',
   },
   {
     label: 'Projects',

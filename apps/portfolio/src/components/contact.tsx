@@ -68,7 +68,7 @@ export const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       >
-        Let&apos;s Connect
+        Lets Connect
       </motion.div>
 
       <motion.p
@@ -81,7 +81,7 @@ export const Contact = () => {
       >
         Open to exciting opportunities in DevRel, Blockchain Development, and Entrepreneurship.
         <br />
-        Let&apos;s build something amazing together!
+        Lets build something amazing together!
       </motion.p>
 
       <motion.div

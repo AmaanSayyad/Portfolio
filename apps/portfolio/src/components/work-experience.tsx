@@ -10,7 +10,7 @@ const experiences = [
     role: 'Co-Founder & CEO',
     period: 'Jun 2025 - Aug 2025',
     location: 'Remote',
-    description: "Built India&apos;s fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+    description: "Built Indias fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
     highlight: '10,000+ developers in 45 days',
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     company: 'Convex Foundation',
     role: 'DevRel',
     period: 'Apr 2024 - Jun 2024',
-    location: 'London (Remote)',
+    location: 'London, UK (Remote)',
     description: 'Onboarded 20+ protocols, developer docs write-up & feedback, designed growth strategy, tokenomics and governance. Led Development Team and Developer Advocate Program.',
     highlight: '7000% community growth',
   },

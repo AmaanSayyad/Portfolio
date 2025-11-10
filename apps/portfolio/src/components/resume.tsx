@@ -104,7 +104,7 @@ export const Resume = () => {
                 </button>
               </div>
               <p className='mb-4 text-sm text-white/70'>
-                To download my resume, please send me an email with your request. I&apos;ll review and provide access accordingly.
+                To download my resume, please send me an email with your request. I will review and provide access accordingly.
               </p>
               
               {/* Email Display */}

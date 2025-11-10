@@ -1,7 +1,7 @@
 import type { AboutSentence, Data } from "~/types/data";
 
 const aboutSentence2: AboutSentence = [
-	{ type: "text", content: "Amaan Sayyad", className: "font-elgocAlt text-[5rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400" },
+	{ type: "text", content: "Amaan Sayyad", className: "font-elgocAlt text-[5rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-600" },
 ];
 
 const aboutSentence3: AboutSentence = [
@@ -19,7 +19,7 @@ const aboutSentence5: AboutSentence = [
 ];
 
 const aboutSentence6: AboutSentence = [
-	{ type: "text", content: "Worked with 8 Web3 companies and Co-founded 2 startups and built 4 communities from 0 to 100x" , className: "font-semibold text-white/70"},
+	{ type: "text", content: "Worked with 8 Web3 companies, Co-founded 2 startups and built 4 communities from 0 to 100x" , className: "font-semibold text-white/70"},
 ];
 
 const projects: Data["projects"]["projects"] = [
@@ -102,7 +102,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "Bharat DAO",
 		description:
-			"India&apos;s fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+			"Indias fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
 		image: "/images/8.jpeg",
 		coverImage: "/images/8-cover.png",
 		backgroundColor: "#FF6B35",
@@ -213,7 +213,7 @@ const projects: Data["projects"]["projects"] = [
 	},
 	{
 		title: "Blaze ID",
-		description: `Blaze ID is a self-sovereign identity (SSI) wallet solution built on Lit Protocol&apos;s programmable key wallets. It supports a variety of Decentralized Identifiers (DIDs) including key, web, ethr and Polygon ID`,
+		description: `Blaze ID is a self-sovereign identity (SSI) wallet solution built on Lit Protocols programmable key wallets. It supports a variety of Decentralized Identifiers (DIDs) including key, web, ethr and Polygon ID`,
 		image: "/images/10.jpeg",
 		coverImage: "/images/10-cover.png",
 		githubLink: "https://github.com/Envoy-VC/blaze-id",
@@ -255,11 +255,16 @@ export const data: Data = {
 		),
 		description: ``,
 		interests: [
-			"Build 25+ Web3 projects",
-			"Win 35 hackathons",
-			"Co-found 2 startups",
-			"Build 4 communities",
-			"Speak at 12+ events",
+			"Build decentralized applications",
+			"Explore various protocols",
+			"Participate in hackathons",
+			"Meet other developers",
+			"Go to IRL events",
+			"Launch New Communities",
+			"Launch New Tokens",
+			"Mentor aspiring developers",
+			"Build developer tools",
+			"Create educational content",
 		],
 	},
 	articles: {

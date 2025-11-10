@@ -13,9 +13,9 @@ import {
   Projects,
   Resume,
   ScrollToTop,
-  Skills,
   Speaking,
-  WorkExperience,
+  ExperienceSkills,
+  VolunteerExperience,
 } from '~/components';
 
 const Home = () => {
@@ -25,10 +25,10 @@ const Home = () => {
       <City />
       <AboutAchievements />
       <Interests />
-      <WorkExperience />
+      <ExperienceSkills />
+      <VolunteerExperience />
       <Projects />
       <Hackathons />
-      <Skills />
       <Grants />
       <Speaking />
       <Blogs />

@@ -8,12 +8,622 @@
     · reactCompiler
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 1122ms
+ [32m[1m✓[22m[39m Ready in 1090ms
  [37m[1m○[22m[39m Compiling / ...
 [BABEL] Note: The code generator has deoptimised the styling of /Users/amaan/Downloads/Github2/Portfolio/node_modules/.pnpm/next@15.0.0-rc.0_@babel+core@7.24.6_babel-plugin-react-compiler@0.0.0-experimental-938cd9a-20_zxfnurgznfuaehdc3o4fb7jsvi/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js as it exceeds the max of 500KB.
 
 warn - The class `ease-[cubic-bezier(0.76,0,0.24,1)]` is ambiguous and matches multiple utilities.
 warn - If this is content and not a class, replace it with `ease-&lsqb;cubic-bezier(0.76,0,0.24,1)&rsqb;` to silence this warning.
- [32m[1m✓[22m[39m Compiled / in 3.5s
- GET / [32m200[39m in 3657ms
+ [32m[1m✓[22m[39m Compiled / in 3.3s
+ GET / [32m200[39m in 3484ms
+ GET / [32m200[39m in 65ms
+ GET / [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled / in 23ms
+ GET / [32m200[39m in 140ms
+ GET / [32m200[39m in 132ms
+ [32m[1m✓[22m[39m Compiled / in 10ms
+ GET / [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled / in 12ms
+ GET / [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled in 87ms
+ GET / [32m200[39m in 56ms
+ [32m[1m✓[22m[39m Compiled in 75ms
+ GET / [32m200[39m in 103ms
+ [32m[1m✓[22m[39m Compiled in 72ms
+ GET / [32m200[39m in 97ms
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 70ms
+ GET / [32m200[39m in 102ms
+ GET / [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled in 37ms
+ [32m[1m✓[22m[39m Compiled / in 31ms
+ GET / [32m200[39m in 63ms
+ GET / [32m200[39m in 156ms
+ [32m[1m✓[22m[39m Compiled / in 11ms
+ GET / [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled / in 21ms
+ GET / [32m200[39m in 113ms
+ GET / [32m200[39m in 114ms
+ GET / [32m200[39m in 98ms
+ [32m[1m✓[22m[39m Compiled in 90ms
+ [32m[1m✓[22m[39m Compiled in 61ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ [32m[1m✓[22m[39m Compiled / in 44ms
+ GET / [32m200[39m in 174ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET / [32m200[39m in 132ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ GET / [32m200[39m in 152ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ GET / [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled in 72ms
+ GET / [32m200[39m in 154ms
+ [32m[1m✓[22m[39m Compiled in 34ms
+ GET / [32m200[39m in 95ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ GET / [32m200[39m in 101ms
+ [32m[1m✓[22m[39m Compiled in 50ms
+ GET / [32m200[39m in 146ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ [32m[1m✓[22m[39m Compiled / in 14ms
+ GET / [32m200[39m in 64ms
+ GET / [32m200[39m in 152ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ GET / [32m200[39m in 146ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET / [32m200[39m in 116ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ GET / [32m200[39m in 89ms
+ [32m[1m✓[22m[39m Compiled in 35ms
+ GET / [32m200[39m in 102ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled / in 24ms
+ GET / [32m200[39m in 116ms
+ GET / [32m200[39m in 109ms
+ [32m[1m✓[22m[39m Compiled in 54ms
+ GET / [32m200[39m in 163ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ GET / [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ GET / [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled in 27ms
+ GET / [32m200[39m in 85ms
+ [32m[1m✓[22m[39m Compiled in 36ms
+ GET / [32m200[39m in 113ms
+ [32m[1m✓[22m[39m Compiled in 30ms
+ GET / [32m200[39m in 94ms
+ [32m[1m✓[22m[39m Compiled in 38ms
+ GET / [32m200[39m in 112ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ GET / [32m200[39m in 117ms
+ [32m[1m✓[22m[39m Compiled in 41ms
+ GET / [32m200[39m in 176ms
+ [32m[1m✓[22m[39m Compiled in 27ms
+ GET / [32m200[39m in 102ms
+ [32m[1m✓[22m[39m Compiled in 26ms
+ GET / [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled in 61ms
+ GET / [32m200[39m in 113ms
+ [32m[1m✓[22m[39m Compiled in 35ms
+ [32m[1m✓[22m[39m Compiled / in 39ms
+ GET / [32m200[39m in 220ms
+ GET / [32m200[39m in 228ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ GET / [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ GET / [32m200[39m in 123ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ GET / [32m200[39m in 115ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ GET / [32m200[39m in 114ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ GET / [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ GET / [32m200[39m in 143ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ GET / [32m200[39m in 126ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET / [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ GET / [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled in 34ms
+ GET / [32m200[39m in 159ms
+ [32m[1m✓[22m[39m Compiled in 40ms
+ GET / [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/lib/data.tsx (248:58) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: aboutSentence4 is not defined
+    at <unknown> (./apps/portfolio/src/lib/data.tsx:248:58)
+    at [project]/apps/portfolio/src/lib/data.tsx [app-ssr] (ecmascript) (/Users/amaan/Downloads/Github2/Portfolio/apps/portfolio/.next/server/chunks/ssr/[project]_apps_portfolio_597586._.js:340:3)
+    at instantiateModule (./[turbopack]/build/runtime.ts:192:19)
+    at getOrInstantiateModuleFromParent (./[turbopack]/build/runtime.ts:252:10)
+    at esmImport (./[turbopack]/shared/runtime-utils.ts:215:18)
+    at <unknown> (./apps/portfolio/src/components/navbar.tsx:0:0)
+    at [project]/apps/portfolio/src/components/navbar.tsx [app-ssr] (ecmascript) (/Users/amaan/Downloads/Github2/Portfolio/apps/portfolio/.next/server/chunks/ssr/[project]_apps_portfolio_597586._.js:753:3)
+    at instantiateModule (./[turbopack]/build/runtime.ts:192:19)
+    at getOrInstantiateModuleFromParent (./[turbopack]/build/runtime.ts:252:10)
+    at commonJsRequire (./[turbopack]/shared/runtime-utils.ts:240:18)
+digest: "2728912328"
+[0m [90m 246 |[39m [36mexport[39m [36mconst[39m data[33m:[39m [33mData[39m [33m=[39m {[0m
+[0m [90m 247 |[39m 	header[33m:[39m [32m"Amaan Sayyad"[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 248 |[39m 	about[33m:[39m [aboutSentence1[33m,[39m aboutSentence2[33m,[39m aboutSentence3[33m,[39m aboutSentence4[33m,[39m aboutSentence5[33m,[39m aboutSentence6][33m,[39m[0m
+[0m [90m     |[39m 	                                                        [31m[1m^[22m[39m[0m
+[0m [90m 249 |[39m 	interests[33m:[39m {[0m
+[0m [90m 250 |[39m 		title[33m:[39m ([0m
+[0m [90m 251 |[39m 			[33m<[39m[33m>[39m[0m
+ GET / [31m500[39m in 72ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./apps/portfolio/src/lib/data.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 30ms
+ GET / [32m200[39m in 118ms
+ [32m[1m✓[22m[39m Compiled in 41ms
+ GET / [32m200[39m in 161ms
+ [32m[1m✓[22m[39m Compiled in 79ms
+ GET / [32m200[39m in 127ms
+ [32m[1m✓[22m[39m Compiled / in 18ms
+ GET / [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ [32m[1m✓[22m[39m Compiled / in 128ms
+ GET / [32m200[39m in 415ms
+ GET / [32m200[39m in 328ms
+ [32m[1m✓[22m[39m Compiled / in 31ms
+ GET / [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ GET / [32m200[39m in 186ms
+ [32m[1m✓[22m[39m Compiled in 69ms
+ GET / [32m200[39m in 160ms
+ [32m[1m✓[22m[39m Compiled in 77ms
+ GET / [32m200[39m in 183ms
+ [32m[1m✓[22m[39m Compiled in 95ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (164:29) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: v is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:164:29)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:159:27)
+digest: "3670131115"
+[0m [90m 162 |[39m                   key[33m=[39m{[32m`sentence-${String(i)}`[39m}[0m
+[0m [90m 163 |[39m                   parts[33m=[39m{sentence}[0m
+[0m[31m[1m>[22m[39m[90m 164 |[39m                   progress[33m=[39m{v}[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 165 |[39m                 [33m/[39m[33m>[39m[0m
+[0m [90m 166 |[39m               ))}[0m
+[0m [90m 167 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mdiv[33m>[39m[0m
+ GET / [31m500[39m in 161ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 75ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (159:29) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: v is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:159:29)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:154:27)
+digest: "1765332449"
+[0m [90m 157 |[39m                   key[33m=[39m{[32m`sentence-${String(i)}`[39m}[0m
+[0m [90m 158 |[39m                   parts[33m=[39m{sentence}[0m
+[0m[31m[1m>[22m[39m[90m 159 |[39m                   progress[33m=[39m{v}[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 160 |[39m                 [33m/[39m[33m>[39m[0m
+[0m [90m 161 |[39m               ))}[0m
+[0m [90m 162 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mdiv[33m>[39m[0m
+ GET / [31m500[39m in 157ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 64ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (159:29) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: v is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:159:29)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:154:27)
+digest: "3527651936"
+[0m [90m 157 |[39m                   key[33m=[39m{[32m`sentence-${String(i)}`[39m}[0m
+[0m [90m 158 |[39m                   parts[33m=[39m{sentence}[0m
+[0m[31m[1m>[22m[39m[90m 159 |[39m                   progress[33m=[39m{v}[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 160 |[39m                 [33m/[39m[33m>[39m[0m
+[0m [90m 161 |[39m               ))}[0m
+[0m [90m 162 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mdiv[33m>[39m[0m
+ GET / [31m500[39m in 154ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 56ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (158:29) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: v is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:158:29)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:153:27)
+digest: "3527651936"
+[0m [90m 156 |[39m                   key[33m=[39m{[32m`sentence-${String(i)}`[39m}[0m
+[0m [90m 157 |[39m                   parts[33m=[39m{sentence}[0m
+[0m[31m[1m>[22m[39m[90m 158 |[39m                   progress[33m=[39m{v}[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 159 |[39m                 [33m/[39m[33m>[39m[0m
+[0m [90m 160 |[39m               ))}[0m
+[0m [90m 161 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mdiv[33m>[39m[0m
+ GET / [31m500[39m in 151ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 57ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (157:29) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: v is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:157:29)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:152:27)
+digest: "3527651936"
+[0m [90m 155 |[39m                   key[33m=[39m{[32m`sentence-${String(i)}`[39m}[0m
+[0m [90m 156 |[39m                   parts[33m=[39m{sentence}[0m
+[0m[31m[1m>[22m[39m[90m 157 |[39m                   progress[33m=[39m{v}[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 158 |[39m                 [33m/[39m[33m>[39m[0m
+[0m [90m 159 |[39m               ))}[0m
+[0m [90m 160 |[39m             [33m<[39m[33m/[39m[33mmotion[39m[33m.[39mdiv[33m>[39m[0m
+ GET / [31m500[39m in 148ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 40ms
+ GET / [32m200[39m in 172ms
+ [32m[1m✓[22m[39m Compiled in 56ms
+ GET / [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ GET / [32m200[39m in 258ms
  [32m[1m✓[22m[39m Compiled in 88ms
+ GET / [32m200[39m in 127ms
+ [32m[1m✓[22m[39m Compiled / in 32ms
+ GET / [32m200[39m in 262ms
+ GET / [32m200[39m in 261ms
+ [32m[1m✓[22m[39m Compiled in 86ms
+ [32m[1m✓[22m[39m Compiled in 138ms
+ [32m[1m✓[22m[39m Compiled / in 46ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/about-achievements.tsx (193:34) @ <unknown>
+ [31m[1m⨯[22m[39m ReferenceError: window is not defined
+    at <unknown> (./apps/portfolio/src/components/about-achievements.tsx:193:34)
+    at Array.map (<anonymous>)
+    at AboutAchievements (./apps/portfolio/src/components/about-achievements.tsx:188:25)
+digest: "3681571475"
+[0m [90m 191 |[39m             className[33m=[39m[32m'absolute h-1 w-1 rounded-full bg-white/10'[39m[0m
+[0m [90m 192 |[39m             initial[33m=[39m{{[0m
+[0m[31m[1m>[22m[39m[90m 193 |[39m               x[33m:[39m [33mMath[39m[33m.[39mrandom() [33m*[39m window[33m.[39minnerWidth[33m,[39m[0m
+[0m [90m     |[39m                                  [31m[1m^[22m[39m[0m
+[0m [90m 194 |[39m               y[33m:[39m [33mMath[39m[33m.[39mrandom() [33m*[39m window[33m.[39minnerHeight[33m,[39m[0m
+[0m [90m 195 |[39m               opacity[33m:[39m [35m0[39m[33m,[39m[0m
+[0m [90m 196 |[39m             }}[0m
+ GET / [32m200[39m in 221ms
+ GET / [31m500[39m in 220ms
+ [32m[1m✓[22m[39m Compiled in 136ms
+ GET / [32m200[39m in 192ms
+ [32m[1m✓[22m[39m Compiled in 122ms
+ GET / [32m200[39m in 188ms
+ [32m[1m✓[22m[39m Compiled in 126ms
+ GET / [32m200[39m in 156ms
+ [32m[1m✓[22m[39m Compiled in 220ms
+ GET / [32m200[39m in 236ms
+ [32m[1m✓[22m[39m Compiled / in 12ms
+ GET / [32m200[39m in 200ms
+ GET / [32m200[39m in 106ms
+ [32m[1m✓[22m[39m Compiled in 66ms
+ GET / [32m200[39m in 197ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ GET / [32m200[39m in 387ms
+ [32m[1m✓[22m[39m Compiled / in 12ms
+ GET / [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ GET / [32m200[39m in 201ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET / [32m200[39m in 206ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET / [32m200[39m in 201ms
+ [32m[1m✓[22m[39m Compiled in 50ms
+ GET / [32m200[39m in 213ms
+ [32m[1m✓[22m[39m Compiled in 34ms
+ [32m[1m✓[22m[39m Compiled / in 76ms
+ GET / [32m200[39m in 149ms
+ GET / [32m200[39m in 295ms
+ [32m[1m✓[22m[39m Compiled / in 15ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/app/page.tsx (27:8) @ Home
+ [31m[1m⨯[22m[39m ReferenceError: WorkExperience is not defined
+    at Home (./apps/portfolio/src/app/page.tsx:27:8)
+    at stringify (<anonymous>)
+digest: "4175625813"
+[0m [90m 25 |[39m       [33m<[39m[33mAboutAchievements[39m [33m/[39m[33m>[39m[0m
+[0m [90m 26 |[39m       [33m<[39m[33mInterests[39m [33m/[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 27 |[39m       [33m<[39m[33mWorkExperience[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 28 |[39m       [33m<[39m[33mProjects[39m [33m/[39m[33m>[39m[0m
+[0m [90m 29 |[39m       [33m<[39m[33mHackathons[39m [33m/[39m[33m>[39m[0m
+[0m [90m 30 |[39m       [33m<[39m[33mSkills[39m [33m/[39m[33m>[39m[0m
+ GET / [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled / in 34ms
+ GET / [32m200[39m in 220ms
+ [32m[1m✓[22m[39m Compiled / in 25ms
+ GET / [32m200[39m in 48ms
+ GET / [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 55ms
+ GET / [32m200[39m in 324ms
+ [32m[1m✓[22m[39m Compiled in 89ms
+ GET / [32m200[39m in 235ms
+ [32m[1m✓[22m[39m Compiled in 80ms
+ GET / [32m200[39m in 246ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ GET / [32m200[39m in 166ms
+ [32m[1m✓[22m[39m Compiled in 54ms
+ GET / [32m200[39m in 217ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 502ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 583ms
+ GET / [32m200[39m in 264ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 202ms
+ [32m[1m✓[22m[39m Compiled in 68ms
+ [32m[1m✓[22m[39m Compiled / in 26ms
+ GET / [32m200[39m in 208ms
+ GET / [32m200[39m in 200ms
+ [32m[1m✓[22m[39m Compiled in 109ms
+ GET / [32m200[39m in 394ms
+ [32m[1m✓[22m[39m Compiled in 60ms
+ GET / [32m200[39m in 265ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 264ms
+ [32m[1m✓[22m[39m Compiled in 64ms
+ GET / [32m200[39m in 202ms
+ [32m[1m✓[22m[39m Compiled in 73ms
+ GET / [32m200[39m in 675ms
+ [32m[1m✓[22m[39m Compiled in 72ms
+ GET / [32m200[39m in 199ms
+ [32m[1m✓[22m[39m Compiled in 82ms
+ GET / [32m200[39m in 211ms
+ GET / [32m200[39m in 153ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ GET / [32m200[39m in 77ms
+ [32m[1m✓[22m[39m Compiled in 697ms
+ [31m[1m⨯[22m[39m apps/portfolio/src/components/experience-skills.tsx (240:18) @ ExperienceSkills
+ [31m[1m⨯[22m[39m ReferenceError: skillsScrollRef is not defined
+    at ExperienceSkills (./apps/portfolio/src/components/experience-skills.tsx:240:18)
+digest: "1939762572"
+[0m [90m 238 |[39m           [0m
+[0m [90m 239 |[39m           [33m<[39m[33mdiv[39m [0m
+[0m[31m[1m>[22m[39m[90m 240 |[39m             ref[33m=[39m{skillsScrollRef}[0m
+[0m [90m     |[39m                  [31m[1m^[22m[39m[0m
+[0m [90m 241 |[39m             className[33m=[39m[32m'relative w-full max-w-2xl max-h-[60vh] overflow-y-auto pr-4 scroll-smooth focus:outline-none'[39m[0m
+[0m [90m 242 |[39m             tabIndex[33m=[39m{[35m0[39m}[0m
+[0m [90m 243 |[39m             style[33m=[39m{{ scrollBehavior[33m:[39m [32m'smooth'[39m }}[0m
+ GET / [31m500[39m in 298ms
+ GET / [32m200[39m in 204ms
+ [32m[1m✓[22m[39m Compiled in 75ms
+ GET / [32m200[39m in 286ms
+ [32m[1m✓[22m[39m Compiled in 71ms
+ GET / [32m200[39m in 327ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ GET / [32m200[39m in 204ms
+ [32m[1m✓[22m[39m Compiled in 61ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 34ms
+ GET /.well-known/appspecific/com.chrome.devtools.json [33m404[39m in 244ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET / [32m200[39m in 215ms
+ [32m[1m✓[22m[39m Compiled in 37ms
+ GET / [32m200[39m in 248ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET / [32m200[39m in 272ms
+ [32m[1m✓[22m[39m Compiled in 35ms
+ GET / [32m200[39m in 251ms
+ [32m[1m✓[22m[39m Compiled in 34ms
+ GET / [32m200[39m in 223ms
+ [32m[1m✓[22m[39m Compiled in 83ms
+ GET / [32m200[39m in 266ms
+ [32m[1m✓[22m[39m Compiled in 56ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 66ms
+ [32m[1m✓[22m[39m Compiled in 41ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ GET / [32m200[39m in 262ms
+ [32m[1m✓[22m[39m Compiled in 30ms
+ GET / [32m200[39m in 206ms
+ [32m[1m✓[22m[39m Compiled in 37ms
+ GET / [32m200[39m in 185ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 70ms
+ [32m[1m✓[22m[39m Compiled in 64ms
+ [32m[1m✓[22m[39m Compiled in 62ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET / [32m200[39m in 154ms
+ [32m[1m✓[22m[39m Compiled in 42ms
+ GET / [32m200[39m in 334ms
+ [32m[1m✓[22m[39m Compiled in 53ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ [32m[1m✓[22m[39m Compiled in 62ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 276ms
+ [32m[1m✓[22m[39m Compiled in 177ms
+ GET / [32m200[39m in 217ms
+ [32m[1m✓[22m[39m Compiled in 60ms
+ GET / [32m200[39m in 278ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 235ms
+ [32m[1m✓[22m[39m Compiled in 64ms
+ GET / [32m200[39m in 177ms
+ [32m[1m✓[22m[39m Compiled in 50ms
+ GET / [32m200[39m in 144ms
+ [32m[1m✓[22m[39m Compiled in 78ms
+ GET / [32m200[39m in 368ms
+ [32m[1m✓[22m[39m Compiled in 75ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled / in 47ms
+ GET / [32m200[39m in 323ms
+ [32m[1m✓[22m[39m Compiled in 108ms
+ GET / [32m200[39m in 232ms
+ [32m[1m✓[22m[39m Compiled in 72ms
+ GET / [32m200[39m in 240ms
+ [32m[1m✓[22m[39m Compiled in 82ms
+ GET / [32m200[39m in 186ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 220ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ GET / [32m200[39m in 174ms
+ [32m[1m✓[22m[39m Compiled in 73ms
+ GET / [32m200[39m in 303ms
+ [32m[1m✓[22m[39m Compiled in 69ms
+ GET / [32m200[39m in 222ms
+ [32m[1m✓[22m[39m Compiled in 66ms
+ GET / [32m200[39m in 269ms
+ [32m[1m✓[22m[39m Compiled in 90ms
+ GET / [32m200[39m in 259ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET / [32m200[39m in 255ms
+ [32m[1m✓[22m[39m Compiled in 62ms
+ GET / [32m200[39m in 212ms
+ [32m[1m✓[22m[39m Compiled in 27ms
+ [32m[1m✓[22m[39m Compiled / in 143ms
+ GET / [32m200[39m in 186ms
+ GET / [32m200[39m in 49ms
+ [32m[1m✓[22m[39m Compiled in 59ms
+ GET / [32m200[39m in 193ms
+ [32m[1m✓[22m[39m Compiled in 59ms
+ GET / [32m200[39m in 217ms
+ [32m[1m✓[22m[39m Compiled in 113ms
+ GET / [32m200[39m in 281ms
+ [32m[1m✓[22m[39m Compiled in 123ms
+ GET / [32m200[39m in 310ms
+ [32m[1m✓[22m[39m Compiled in 90ms
+ GET / [32m200[39m in 297ms
+ [32m[1m✓[22m[39m Compiled in 82ms
+ GET / [32m200[39m in 256ms
+ [32m[1m✓[22m[39m Compiled in 78ms
+ GET / [32m200[39m in 247ms
+ GET / [32m200[39m in 51ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ [32m[1m✓[22m[39m Compiled in 103ms
+ GET / [32m200[39m in 473ms
+ [32m[1m✓[22m[39m Compiled / in 89ms
+ GET / [32m200[39m in 177ms
+ GET / [32m200[39m in 310ms
+ [32m[1m✓[22m[39m Compiled in 112ms
+ GET / [32m200[39m in 237ms
+ [32m[1m✓[22m[39m Compiled in 104ms
+ GET / [32m200[39m in 437ms
+ [32m[1m✓[22m[39m Compiled in 58ms
+ [32m[1m✓[22m[39m Compiled in 41ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled in 75ms
+ GET / [32m200[39m in 245ms
+ [32m[1m✓[22m[39m Compiled in 256ms
+ GET / [32m200[39m in 214ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ [32m[1m✓[22m[39m Compiled in 40ms
+ [32m[1m✓[22m[39m Compiled in 35ms
+ GET / [32m200[39m in 242ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ GET / [32m200[39m in 234ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ GET / [32m200[39m in 379ms
+ [32m[1m✓[22m[39m Compiled in 360ms
+ [32m[1m✓[22m[39m Compiled / in 106ms
+ GET / [32m200[39m in 383ms
+ [32m[1m✓[22m[39m Compiled in 118ms
+ GET / [32m200[39m in 260ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ [32m[1m✓[22m[39m Compiled / in 184ms
+ GET / [32m200[39m in 457ms
+ GET / [32m200[39m in 371ms
+ [32m[1m✓[22m[39m Compiled / in 25ms
+ GET / [32m200[39m in 76ms
+ [32m[1m✓[22m[39m Compiled / in 40ms
+ GET / [32m200[39m in 73ms
+ [32m[1m✓[22m[39m Compiled / in 22ms
+ GET / [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled in 54ms
+ GET / [32m200[39m in 313ms
+ [32m[1m✓[22m[39m Compiled in 110ms
+ [32m[1m✓[22m[39m Compiled in 242ms
+ [32m[1m✓[22m[39m Compiled / in 127ms
+ GET / [32m200[39m in 385ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 338ms
+ GET /polygon.png [33m404[39m in 495ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /polygon.png received text/html; charset=utf-8
+ GET / [32m200[39m in 199ms
+ GET / [32m200[39m in 188ms
+ [32m[1m✓[22m[39m Compiled in 85ms
+ GET / [32m200[39m in 341ms
+ GET /ethereum.png [33m404[39m in 296ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 45ms
+ GET / [32m200[39m in 276ms
+ GET /ethereum.png [33m404[39m in 133ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 73ms
+ GET / [32m200[39m in 249ms
+ GET /ethereum.png [33m404[39m in 78ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 73ms
+ GET / [32m200[39m in 164ms
+ GET /ethereum.png [33m404[39m in 76ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 98ms
+ GET / [32m200[39m in 278ms
+ GET /ethereum.png [33m404[39m in 225ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 97ms
+ GET / [32m200[39m in 267ms
+ GET /ethereum.png [33m404[39m in 95ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 48ms
+ GET / [32m200[39m in 229ms
+ GET /ethereum.png [33m404[39m in 121ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 87ms
+ GET / [32m200[39m in 261ms
+ GET /ethereum.png [33m404[39m in 175ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET / [32m200[39m in 236ms
+ GET /ethereum.png [33m404[39m in 77ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 62ms
+ GET / [32m200[39m in 270ms
+ GET /ethereum.png [33m404[39m in 75ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 138ms
+ GET / [32m200[39m in 273ms
+ GET /ethereum.png [33m404[39m in 219ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 50ms
+ GET / [32m200[39m in 426ms
+ GET /ethereum.png [33m404[39m in 170ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 108ms
+ GET / [32m200[39m in 325ms
+ GET /ethereum.png [33m404[39m in 209ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 83ms
+ [32m[1m✓[22m[39m Compiled / in 58ms
+ GET / [32m200[39m in 341ms
+ GET / [32m200[39m in 349ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 23ms
+ GET /ethereum.png [33m404[39m in 129ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 73ms
+ GET / [32m200[39m in 227ms
+ GET /ethereum.png [33m404[39m in 168ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 95ms
+ GET / [32m200[39m in 296ms
+ GET /ethereum.png [33m404[39m in 246ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 135ms
+ GET / [32m200[39m in 341ms
+ GET /ethereum.png [33m404[39m in 131ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ [32m[1m✓[22m[39m Compiled in 54ms
+ GET / [32m200[39m in 326ms
+ GET /ethereum.png [33m404[39m in 330ms
+ [31m[1m⨯[22m[39m The requested resource isn't a valid image for /ethereum.png received text/html; charset=utf-8
+ GET / [32m200[39m in 175ms

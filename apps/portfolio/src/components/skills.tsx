@@ -22,7 +22,7 @@ const skills = {
     'Avalanche', 'BNB', 'Flow', 'Monad', 'Chainlink', 'Celo', 'Near', 'Oraichain',
     'Stellar', 'Coinbase', 'WorldCoin', 'Scroll', 'Chiliz', 'Nibiru', 'Citrea',
     'Educhain', 'Ripple', 'Manta', 'Optimism', 'The Graph', 'Inco', 'Starknet',
-    'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP', 'Bitcoin',
+    'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP',
   ],
 };
 
@@ -161,7 +161,7 @@ export const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <h3 className='mb-6 font-beatriceMedium text-xl font-semibold text-white/80'>
-            Ecosystems (30+)
+            Ecosystems Worked with/ Built on (30+)
           </h3>
           <div className='flex flex-wrap gap-2.5'>
             {skills.ecosystems.map((ecosystem, index) => {

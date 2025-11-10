@@ -14,7 +14,7 @@ const easeInOutCubic = cubicBezier(0.4, 0, 0.2, 1);
 const stats = [
   { label: 'Years in Web3', value: '4+', emoji: '🚀' },
   { label: 'Web3 Projects', value: '25+', emoji: '💻' },
-  { label: 'Hackathons Won', value: '35', emoji: '🏆' },
+  { label: 'Hackathons Won', value: '40', emoji: '🏆' },
   { label: 'Ecosystems', value: '30+', emoji: '🌐' },
   { label: 'Startups', value: '2', emoji: '🚀' },
   { label: 'Communities', value: '4', emoji: '👥' },
@@ -114,16 +114,6 @@ export const AboutAchievements = () => {
           className='relative flex h-full min-h-screen w-full flex-col items-start justify-center border-b border-white/10 bg-gradient-to-r from-white/[0.02] to-transparent px-8 py-16 sm:px-12 md:w-1/2 md:border-b-0 md:border-r md:px-16 md:py-0'
           style={{ opacity: leftOpacity, x: leftX }}
         >
-          <motion.div
-            className='mb-8 font-elgocAlt text-[3rem] sm:text-[4rem] md:text-[5rem] leading-[0.9] text-white'
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            About
-          </motion.div>
-          
           <div className='relative w-full max-w-2xl'>
             {/* Animated background gradient */}
             <motion.div
