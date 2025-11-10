@@ -2,14 +2,18 @@
 > portfolio@0.1.0 dev /Users/amaan/Downloads/Github2/Portfolio/apps/portfolio
 > next dev --turbo
 
-  ▲ Next.js 15.0.0-rc.0 (turbo)
+  [1m[38;2;173;127;168m▲ Next.js 15.0.0-rc.0[39m[22m (turbo)
   - Local:        http://localhost:3000
   - Experiments (use with caution):
     · reactCompiler
 
- ✓ Starting...
- ✓ Ready in 1343ms
- ○ Compiling / ...
+ [32m[1m✓[22m[39m Starting...
+ [32m[1m✓[22m[39m Ready in 1122ms
+ [37m[1m○[22m[39m Compiling / ...
 [BABEL] Note: The code generator has deoptimised the styling of /Users/amaan/Downloads/Github2/Portfolio/node_modules/.pnpm/next@15.0.0-rc.0_@babel+core@7.24.6_babel-plugin-react-compiler@0.0.0-experimental-938cd9a-20_zxfnurgznfuaehdc3o4fb7jsvi/node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js as it exceeds the max of 500KB.
 
 warn - The class `ease-[cubic-bezier(0.76,0,0.24,1)]` is ambiguous and matches multiple utilities.
+warn - If this is content and not a class, replace it with `ease-&lsqb;cubic-bezier(0.76,0,0.24,1)&rsqb;` to silence this warning.
+ [32m[1m✓[22m[39m Compiled / in 3.5s
+ GET / [32m200[39m in 3657ms
+ [32m[1m✓[22m[39m Compiled in 88ms
