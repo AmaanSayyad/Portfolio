@@ -4,8 +4,6 @@ import Link from 'next/link';
 
 import React, { useRef } from 'react';
 
-import { data } from '~/lib/data';
-
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   Mail, 
@@ -70,7 +68,7 @@ export const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       >
-        Let's Connect
+        Let&apos;s Connect
       </motion.div>
 
       <motion.p
@@ -83,7 +81,7 @@ export const Contact = () => {
       >
         Open to exciting opportunities in DevRel, Blockchain Development, and Entrepreneurship.
         <br />
-        Let's build something amazing together!
+        Let&apos;s build something amazing together!
       </motion.p>
 
       <motion.div
