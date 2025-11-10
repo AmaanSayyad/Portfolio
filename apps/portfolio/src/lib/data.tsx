@@ -1,44 +1,25 @@
 import type { AboutSentence, Data } from "~/types/data";
 
-const aboutSentence1: AboutSentence = [
-	{ type: "text", content: "Hello! I am" },
-];
-
 const aboutSentence2: AboutSentence = [
 	{ type: "text", content: "Amaan Sayyad", className: "font-elgocAlt text-[5rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] leading-[0.9] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400" },
 ];
 
 const aboutSentence3: AboutSentence = [
-	{ type: "text", content: "a" },
-	{ type: "text", content: " Devrel", className: "font-beatriceMedium font-semibold text-white/90" },
-	{ type: "text", content: "," },
-	{ type: "text", content: " Blockchain Developer", className: "font-beatriceMedium font-semibold text-white/90" },
-	{ type: "text", content: " &" },
-	{ type: "text", content: " Entrepreneur", className: "font-beatriceMedium font-semibold text-white/90" },
+	{ type: "text", content: " Devrel, Blockchain Developer & Entrepreneur", className: "font-semibold text-white/70" },
 ];
 
 const aboutSentence4: AboutSentence = [
-	{ type: "text", content: "I&apos;ve built" },
-	{ type: "text", content: " 25+ Web3 projects", className: "font-elgocAlt text-3xl sm:text-4xl md:text-5xl text-white font-bold" },
-	{ type: "text", content: " across" },
-	{ type: "text", content: " 30+ ecosystems", className: "font-semibold text-white/80" },
+	{ type: "text", content: " Built 25+ Web3 projects across 30+ ecosystems", className: "font-semibold text-white/70" },
 	{ type: "emoji", content: "🚀", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
 ];
 
 const aboutSentence5: AboutSentence = [
-	{ type: "text", content: "Won" },
-	{ type: "text", content: " 35 hackathons", className: "font-bold text-white" },
-	{ type: "text", content: " out of" },
-	{ type: "text", content: " 70+ participated", className: "font-semibold text-white/70" },
+	{ type: "text", content: " Won 40 hackathons out of 70+ participated" , className: "font-semibold text-white/70"},
 	{ type: "emoji", content: "🏆", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
 ];
 
 const aboutSentence6: AboutSentence = [
-	{ type: "text", content: "Co-founded" },
-	{ type: "text", content: " 2 startups", className: "font-bold text-white" },
-	{ type: "text", content: " and built" },
-	{ type: "text", content: " 4 communities", className: "font-semibold text-white/80" },
-	{ type: "text", content: " from 0 to 100x", className: "font-semibold text-white/70" },
+	{ type: "text", content: "Worked with 8 Web3 companies and Co-founded 2 startups and built 4 communities from 0 to 100x" , className: "font-semibold text-white/70"},
 ];
 
 const projects: Data["projects"]["projects"] = [
@@ -263,7 +244,7 @@ const projects: Data["projects"]["projects"] = [
 
 export const data: Data = {
 	header: "Amaan Sayyad",
-	about: [aboutSentence1, aboutSentence2, aboutSentence3, aboutSentence4, aboutSentence5, aboutSentence6],
+	about: [aboutSentence2, aboutSentence3, aboutSentence4, aboutSentence5, aboutSentence6],
 	interests: {
 		title: (
 			<>
