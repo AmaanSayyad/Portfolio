@@ -272,9 +272,7 @@ export const data: Data = {
 				developer?
 			</>
 		),
-		description: `4+ Years in Web3 Space | Built 25+ Web3 projects across DeFi, SocialFi, GameFi & GambleFi | Won 35/70 hackathons | Grantee from 4 protocols | Worked with 8 Web3 Companies | Built 4 Communities (0→100x) | 12x Speaker | 2x Startup Founder | 3 Research Papers & 2 Copyrights.
-
-Ecosystems: Aptos, Movement Labs, Mantle, Polygon, EigenLayer, Xenea, Xion, Avalanche, BNB, Flow, Monad, Chainlink, Celo, Near, Oraichain, Stellar, Coinbase, WorldCoin, Scroll, Chiliz, Nibiru, Citrea, Educhain, Ripple, Manta, Optimism, The Graph, Inco, Starknet, Pyth, Stacks, 0g, Push, Algorand.`,
+		description: ``,
 		interests: [
 			"Build 25+ Web3 projects",
 			"Win 35 hackathons",
