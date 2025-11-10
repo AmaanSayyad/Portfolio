@@ -62,7 +62,7 @@ const Sentence = ({ index, parts, progress }: SentenceProps) => {
               className={cn(
                 'inline-block',
                 progress < sentenceStart ? 'text-white/20' : 'text-white',
-                part.className || 'font-beatriceMedium'
+                part.className ?? 'font-beatriceMedium'
               )}
             >
               {part.content}

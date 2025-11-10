@@ -18,7 +18,7 @@ const aboutSentence3: AboutSentence = [
 ];
 
 const aboutSentence4: AboutSentence = [
-	{ type: "text", content: "I've built" },
+	{ type: "text", content: "I&apos;ve built" },
 	{ type: "text", content: " 25+ Web3 projects", className: "font-elgocAlt text-3xl sm:text-4xl md:text-5xl text-white font-bold" },
 	{ type: "text", content: " across" },
 	{ type: "text", content: " 30+ ecosystems", className: "font-semibold text-white/80" },
@@ -121,7 +121,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "Bharat DAO",
 		description:
-			"India's fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+			"India&apos;s fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
 		image: "/images/8.jpeg",
 		coverImage: "/images/8-cover.png",
 		backgroundColor: "#FF6B35",
@@ -232,7 +232,7 @@ const projects: Data["projects"]["projects"] = [
 	},
 	{
 		title: "Blaze ID",
-		description: `Blaze ID is a self-sovereign identity (SSI) wallet solution built on Lit Protocol's programmable key wallets. It supports a variety of Decentralized Identifiers (DIDs) including key, web, ethr and Polygon ID`,
+		description: `Blaze ID is a self-sovereign identity (SSI) wallet solution built on Lit Protocol&apos;s programmable key wallets. It supports a variety of Decentralized Identifiers (DIDs) including key, web, ethr and Polygon ID`,
 		image: "/images/10.jpeg",
 		coverImage: "/images/10-cover.png",
 		githubLink: "https://github.com/Envoy-VC/blaze-id",
@@ -296,7 +296,7 @@ Ecosystems: Aptos, Movement Labs, Mantle, Polygon, EigenLayer, Xenea, Xion, Aval
 	resume: {
 		description: `A blockchain developer, serial builder and budding entrepreneur with 4+ years in Web3.
 
-Currently Co-Founder & CEO at Bharat DAO - India's fastest-growing Web3 Developer community (10,000+ developers in 45 days).
+Currently Co-Founder & CEO at Bharat DAO - India&apos;s fastest-growing Web3 Developer community (10,000+ developers in 45 days).
 
 Previously Co-Founder & CEO at APT-Casino - Fully on-chain casino backed by Aptos and Movement Labs.
 
