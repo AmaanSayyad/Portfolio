@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://amaan-sayyad-portfolio.vercel.app'),
   title: 'Amaan Sayyad | DevRel | Blockchain Developer | Entrepreneur',
   description:
-    'Co-Founder & CEO at Bharat DAO. 4+ years in Web3. Built 25+ Web3 projects. Won 40 hackathons. Worked with 8 Web3 companies. 12+ speaking engagements. Open to opportunities in DevRel, Blockchain Development, and Entrepreneurship.',
+    'Co-Founder & CEO at Bharat DAO. 4+ years in Web3. Built 25+ Web3 projects. Won 40+ hackathons. Worked with 8 Web3 companies. 12+ speaking engagements. Open to opportunities in DevRel, Blockchain Development, and Entrepreneurship.',
   applicationName: 'Amaan Sayyad',
   keywords: [
     'Amaan Sayyad',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Amaan Sayyad | DevRel | Blockchain Developer',
     description:
-      'Built 25+ Web3 projects. Won 40 hackathons. 4+ years in Web3.',
+      'Built 25+ Web3 projects. Won 40+ hackathons. 4+ years in Web3.',
     creator: '@amaanbiz',
     site: '@amaanbiz',
     images: [
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Amaan Sayyad | DevRel | Blockchain Developer | Entrepreneur',
     description:
-      'Co-Founder & CEO at Bharat DAO. 4+ years in Web3. Built 25+ Web3 projects. Won 40 hackathons. Worked with 8 Web3 companies. Open to opportunities.',
+      'Co-Founder & CEO at Bharat DAO. 4+ years in Web3. Built 25+ Web3 projects. Won 40+ hackathons. Worked with 8 Web3 companies. Open to opportunities.',
     type: 'website',
     locale: 'en_US',
     url: 'https://amaan-sayyad-portfolio.vercel.app',

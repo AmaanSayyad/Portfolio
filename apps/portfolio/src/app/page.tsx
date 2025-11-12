@@ -6,16 +6,14 @@ import {
   City,
   Contact,
   Footer,
-  Grants,
+  GrantsSpeaking,
   Hackathons,
   Header,
   Interests,
   Projects,
   Resume,
   ScrollToTop,
-  Speaking,
   ExperienceSkills,
-  VolunteerExperience,
 } from '~/components';
 
 const Home = () => {
@@ -26,11 +24,9 @@ const Home = () => {
       <AboutAchievements />
       <Interests />
       <ExperienceSkills />
-      <VolunteerExperience />
       <Projects />
       <Hackathons />
-      <Grants />
-      <Speaking />
+      <GrantsSpeaking />
       <Blogs />
       <Resume />
       <Contact />

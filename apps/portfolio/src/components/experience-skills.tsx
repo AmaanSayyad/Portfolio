@@ -31,6 +31,23 @@ const getLinkIcon = (label: string) => {
   return Globe;
 };
 
+// Map company names to their logo file paths for work experience
+const getExperienceLogo = (company: string): string | null => {
+  const logoMap: Record<string, string> = {
+    'Bharat DAO': '/bharat_dao.jpg',
+    'APT-Casino': '/APT-Casino.png',
+    'Convex Foundation': '/convex.png',
+    'Polygon': '/polygon.jpg',
+    'buildspace': '/buildspace.jpg',
+    'Phyllo': '/phyllo.png',
+    '5ireChain': '/5irechain.jpg',
+    'Affine Group': '/affine_group.jpeg',
+    'SoCool': '/socool.jpeg',
+  };
+  
+  return logoMap[company] ?? null;
+};
+
 const experiences = [
   {
     company: 'Bharat DAO',
@@ -154,14 +171,14 @@ const getLanguageLogo = (language: string): string | null => {
 const getEcosystemLogo = (ecosystem: string): string | null => {
   const logoMap: Record<string, string> = {
     'Aptos': '/aptos.png',
-    'Movement Labs': '/movement_labs.png',
+    'Movement Labs': '/movement_labs.jpeg',
     'Mantle': '/mantle.png',
-    'Polygon': '/polygon.png',
+    'Polygon': '/polygon.jpg',
     'EigenLayer': '/eigenlayer.png',
     'Xenea': '/xenea.avif',
     'Xion': '/xion.png',
-    'Avalanche': '/avalanche.png',
-    'BNB': '/bnb.png',
+    'Avalanche': '/avalanche.jpg',
+    'BNB': '/bnbchain.png',
     'Flow': '/flow.png',
     'Monad': '/monad.png',
     'Chainlink': '/chainlink.png',
@@ -179,11 +196,11 @@ const getEcosystemLogo = (ecosystem: string): string | null => {
     'Ripple': '/ripple.png',
     'Manta': '/manta.png',
     'Optimism': '/optimism.png',
-    'The Graph': '/the_graph.png',
+    'The Graph': '/the_graph.jpeg',
     'Inco': '/inco.png',
     'Starknet': '/starknet.png',
     'Pyth': '/pyth.png',
-    'Stacks': '/stacks.jpg',
+    'Stacks': '/stacks.png',
     '0g': '/0g.png',
     'Push': '/push.png',
     'Algorand': '/algorand.png',
@@ -317,14 +334,31 @@ export const ExperienceSkills = () => {
                         className='absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'
                       />
                       <div className='relative z-10'>
-                        <div className='mb-3 flex flex-wrap items-baseline gap-2'>
-                          <span className='font-beatriceMedium text-base font-semibold text-white'>
-                            {exp.role}
-                          </span>
-                          <span className='text-white/30'>@</span>
-                          <span className='font-beatriceMedium text-base font-semibold text-white/90'>
-                            {exp.company}
-                          </span>
+                        <div className='mb-3 flex items-center gap-3'>
+                          {getExperienceLogo(exp.company) ? (
+                            <motion.div
+                              className='relative h-10 w-10 shrink-0'
+                              whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                              transition={{ duration: 0.4 }}
+                            >
+                              <Image
+                                alt={`${exp.company} logo`}
+                                className='object-contain'
+                                height={40}
+                                src={getExperienceLogo(exp.company)!}
+                                width={40}
+                              />
+                            </motion.div>
+                          ) : null}
+                          <div className='flex flex-wrap items-baseline gap-2'>
+                            <span className='font-beatriceMedium text-base font-semibold text-white'>
+                              {exp.role}
+                            </span>
+                            <span className='text-white/30'>@</span>
+                            <span className='font-beatriceMedium text-base font-semibold text-white/90'>
+                              {exp.company}
+                            </span>
+                          </div>
                         </div>
                         <div className='mb-3 flex items-center justify-between gap-4'>
                           <span className='text-xs font-medium text-white/40 tracking-wide'>

@@ -10,6 +10,7 @@ import {
   Twitter, 
   Linkedin, 
   Github,
+  MessageCircle,
   ExternalLink,
 } from 'lucide-react';
 
@@ -39,6 +40,13 @@ const socialLinks = [
     title: 'GitHub',
     link: 'https://github.com/AmaanSayyad',
     icon: Github,
+    color: 'text-white/80 hover:text-white',
+    bg: 'bg-white/[0.08] hover:bg-white/[0.12]',
+  },
+  {
+    title: 'Telegram',
+    link: 'https://t.me/amaan029',
+    icon: MessageCircle,
     color: 'text-white/80 hover:text-white',
     bg: 'bg-white/[0.08] hover:bg-white/[0.12]',
   },

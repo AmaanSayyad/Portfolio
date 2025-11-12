@@ -19,4 +19,5 @@ export * from './volunteer-experience';
 export * from './work-experience';
 export * from './grants';
 export * from './speaking';
+export * from './grants-speaking';
 export * from './scroll-to-top';

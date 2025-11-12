@@ -15,10 +15,6 @@ import { useScreen, useToggle } from 'usehooks-ts';
 
 const links = [
   {
-    label: 'About',
-    href: '#about',
-  },
-  {
     label: 'Interests',
     href: '#interests',
   },
@@ -41,14 +37,6 @@ const links = [
   {
     label: 'Skills',
     href: '#skills',
-  },
-  {
-    label: 'Grants',
-    href: '#grants',
-  },
-  {
-    label: 'Speaking',
-    href: '#speaking',
   },
   {
     label: 'Articles',

@@ -14,17 +14,10 @@ const grants = [
   },
   {
     protocol: 'Movement Labs',
-    amount: '10,000 MOVE',
+    amount: '10,000 MOVE Tokens',
     project: 'APT-Casino',
     description: 'Grant for Move-based on-chain gaming platform',
     icon: '🚀',
-  },
-  {
-    protocol: 'CELO Ecosystem',
-    amount: '$25,000',
-    project: 'Feed Our World',
-    description: 'Grant for blockchain-based food distribution application',
-    icon: '🌱',
   },
   {
     protocol: 'Top Blockchain Startup',

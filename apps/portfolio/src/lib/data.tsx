@@ -91,7 +91,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "Feed Our World",
 		description:
-			"Empowering communities and reducing global food waste through an on-demand, on-chain blockchain-based food distribution application. Grant: $25,000 from CELO Ecosystem. Aligned with UN Sustainable Goals.",
+			"Empowering communities and reducing global food waste through an on-demand, on-chain blockchain-based food distribution application. Won $25,000 from CELO Ecosystem. Aligned with UN Sustainable Goals.",
 		image: "/images/7.png",
 		coverImage: "/images/7-cover.png",
 		backgroundColor: "#2D5016",
