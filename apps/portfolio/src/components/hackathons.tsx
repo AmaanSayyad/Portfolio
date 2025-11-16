@@ -31,6 +31,7 @@ const getTrackLogo = (track: string): string | null => {
     'Coinstore': '/coinstore.jpg',
     'Telos': '/telos.png',
     'Lens': '/lens.svg',
+    'Amazon': '/aws.png',
   };
   
   return logoMap[track] ?? null;
@@ -78,7 +79,7 @@ const hackathons = [
   
   // 2022
   { name: 'BUIDL for Web3 Hackathon 2022', prize: 'Best NFT App Second Runner-up', amount: '$1,500', track: 'Polygon', links: [], date: new Date('2022-12-01') },
-  { name: 'Amazon Smbhav Hackathon Season 2 - Build for India', prize: 'Special Mention Category Prize Winner', amount: '$500', track: 'General', links: [], date: new Date('2022-05-01') },
+  { name: 'Amazon Smbhav Hack Season 2', prize: 'Special Mention Category Prize Winner', amount: '$500', track: 'Amazon', links: [], date: new Date('2022-05-01') },
   { name: 'Tantragyan 2k22', prize: 'Second Consolation Prize Winner', amount: '$50', track: 'General', links: [], date: new Date('2022-04-01') },
 ].sort((a, b) => b.date.getTime() - a.date.getTime());
 
