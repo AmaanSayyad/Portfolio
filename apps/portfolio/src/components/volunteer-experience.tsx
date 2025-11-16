@@ -20,7 +20,22 @@ const getLinkIcon = (label: string) => {
   return Globe;
 };
 
-const volunteerExperiences = [
+interface VolunteerLink {
+  label: string;
+  url: string;
+}
+
+interface VolunteerExperience {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  highlight: string;
+  links?: VolunteerLink[];
+}
+
+const volunteerExperiences: VolunteerExperience[] = [
   {
     company: 'Postman',
     role: 'Postman Student Expert',
