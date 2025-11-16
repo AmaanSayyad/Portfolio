@@ -4,14 +4,13 @@ import {
   AboutAchievements,
   Blogs,
   City,
-  Contact,
   Footer,
   GrantsSpeaking,
   Hackathons,
   Header,
   Interests,
   Projects,
-  Resume,
+  ResumeContact,
   ScrollToTop,
   ExperienceSkills,
 } from '~/components';
@@ -28,8 +27,7 @@ const Home = () => {
       <Hackathons />
       <GrantsSpeaking />
       <Blogs />
-      <Resume />
-      <Contact />
+      <ResumeContact />
       <Footer />
       <ScrollToTop />
     </>

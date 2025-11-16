@@ -10,6 +10,7 @@ export * from './interests';
 export * from './projects';
 export * from './resume';
 export * from './contact';
+export * from './resume-contact';
 export * from './footer';
 export * from './achievements';
 export * from './experience-skills';

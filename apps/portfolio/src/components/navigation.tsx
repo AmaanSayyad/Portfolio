@@ -48,7 +48,7 @@ const links = [
   },
   {
     label: 'Contact',
-    href: '#contact',
+    href: '#resume',
   },
 ];
 
