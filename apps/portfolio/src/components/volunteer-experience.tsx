@@ -196,7 +196,8 @@ export const VolunteerExperience = () => {
           <div 
             ref={volunteerScrollRef}
             className='relative max-h-[70vh] overflow-y-auto pr-4 scroll-smooth focus:outline-none'
-            tabIndex={0}
+            role='region'
+            aria-label='Volunteer Experience'
             style={{ scrollBehavior: 'smooth' }}
           >
             <div className='space-y-8 pb-4'>

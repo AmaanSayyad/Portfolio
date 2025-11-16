@@ -309,7 +309,8 @@ export const ExperienceSkills = () => {
           <div 
             ref={experienceScrollRef}
             className='relative w-full max-w-2xl max-h-[70vh] overflow-y-auto pr-4 scroll-smooth focus:outline-none'
-            tabIndex={0}
+            role='region'
+            aria-label='Work Experience'
             style={{ scrollBehavior: 'smooth' }}
           >
             <div className='relative'>
@@ -350,21 +351,24 @@ export const ExperienceSkills = () => {
                       />
                       <div className='relative z-10'>
                         <div className='mb-3 flex items-center gap-3'>
-                          {getExperienceLogo(exp.company) ? (
-                            <motion.div
-                              className='relative h-10 w-10 shrink-0'
-                              whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
-                              transition={{ duration: 0.4 }}
-                            >
-                              <Image
-                                alt={`${exp.company} logo`}
-                                className='object-contain'
-                                height={40}
-                                src={getExperienceLogo(exp.company)!}
-                                width={40}
-                              />
-                            </motion.div>
-                          ) : null}
+                          {(() => {
+                            const logoPath = getExperienceLogo(exp.company);
+                            return logoPath ? (
+                              <motion.div
+                                className='relative h-10 w-10 shrink-0'
+                                whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                                transition={{ duration: 0.4 }}
+                              >
+                                <Image
+                                  alt={`${exp.company} logo`}
+                                  className='object-contain'
+                                  height={40}
+                                  src={logoPath}
+                                  width={40}
+                                />
+                              </motion.div>
+                            ) : null;
+                          })()}
                           <div className='flex flex-wrap items-baseline gap-2'>
                             <span className='font-beatriceMedium text-base font-semibold text-white'>
                               {exp.role}

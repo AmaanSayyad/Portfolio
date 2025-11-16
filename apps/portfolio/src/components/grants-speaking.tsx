@@ -4,9 +4,7 @@ import React, { useRef, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import { motion, useScroll, useTransform, cubicBezier } from 'framer-motion';
-
-const easeInOutCubic = cubicBezier(0.4, 0, 0.2, 1);
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 // Map protocol names to their logo file paths
 const getGrantLogo = (protocol: string): string | null => {
@@ -365,29 +363,32 @@ export const GrantsSpeaking = () => {
                   />
                   <div className='relative z-10'>
                     <div className='mb-4 flex items-center gap-3'>
-                      {getGrantLogo(grant.protocol) ? (
-                        <motion.div
-                          className='relative h-12 w-12 shrink-0'
-                          whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
-                          transition={{ duration: 0.4 }}
-                        >
-                          <Image
-                            alt={`${grant.protocol} logo`}
-                            className='object-contain'
-                            height={48}
-                            src={getGrantLogo(grant.protocol)!}
-                            width={48}
-                          />
-                        </motion.div>
-                      ) : (
-                        <motion.span 
-                          className='text-3xl'
-                          whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
-                          transition={{ duration: 0.4 }}
-                        >
-                          {grant.icon}
-                        </motion.span>
-                      )}
+                      {(() => {
+                        const logoPath = getGrantLogo(grant.protocol);
+                        return logoPath ? (
+                          <motion.div
+                            className='relative h-12 w-12 shrink-0'
+                            whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                            transition={{ duration: 0.4 }}
+                          >
+                            <Image
+                              alt={`${grant.protocol} logo`}
+                              className='object-contain'
+                              height={48}
+                              src={logoPath}
+                              width={48}
+                            />
+                          </motion.div>
+                        ) : (
+                          <motion.span 
+                            className='text-3xl'
+                            whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                            transition={{ duration: 0.4 }}
+                          >
+                            {grant.icon}
+                          </motion.span>
+                        );
+                      })()}
                       <div>
                         <div className='font-beatriceMedium text-lg font-semibold text-white'>
                           {grant.protocol}
@@ -544,7 +545,8 @@ export const GrantsSpeaking = () => {
           <div 
             ref={volunteerScrollRef}
             className='relative w-full max-w-2xl max-h-[100vh] overflow-y-auto pr-4 scroll-smooth focus:outline-none'
-            tabIndex={0}
+            role='region'
+            aria-label='Volunteer Experience'
             style={{ scrollBehavior: 'smooth' }}
           >
             <div className='space-y-4 pb-4'>
@@ -571,21 +573,24 @@ export const GrantsSpeaking = () => {
                     />
                     <div className='relative z-10'>
                       <div className='mb-3 flex items-center gap-3'>
-                        {getVolunteerLogo(exp.company) ? (
-                          <motion.div
-                            className='relative h-10 w-10 shrink-0'
-                            whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
-                            transition={{ duration: 0.4 }}
-                          >
-                            <Image
-                              alt={`${exp.company} logo`}
-                              className='object-contain'
-                              height={40}
-                              src={getVolunteerLogo(exp.company)!}
-                              width={40}
-                            />
-                          </motion.div>
-                        ) : null}
+                        {(() => {
+                          const logoPath = getVolunteerLogo(exp.company);
+                          return logoPath ? (
+                            <motion.div
+                              className='relative h-10 w-10 shrink-0'
+                              whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+                              transition={{ duration: 0.4 }}
+                            >
+                              <Image
+                                alt={`${exp.company} logo`}
+                                className='object-contain'
+                                height={40}
+                                src={logoPath}
+                                width={40}
+                              />
+                            </motion.div>
+                          ) : null;
+                        })()}
                         <div className='flex flex-wrap items-baseline gap-2'>
                           <span className='font-beatriceMedium text-lg font-semibold text-white'>
                             {exp.role}
