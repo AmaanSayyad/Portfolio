@@ -38,7 +38,7 @@ const getTrackLogo = (track: string): string | null => {
 
 const hackathons = [
   // 2025
-  { name: 'ETHIndia 2025', prize: 'Track Winner', amount: '$1,500', track: 'General', links: [], date: new Date('2025-12-01') },
+  { name: 'ETHGlobal India 2025', prize: 'Track Winner', amount: '$1,500', track: 'General', links: [], date: new Date('2025-12-01') },
   { name: 'Starknet Hacker House 2025', prize: 'Third Runner Up', amount: '$1,000', track: 'Starknet', links: [], date: new Date('2025-11-01') },
   { name: 'Stacks Hacker House 2025', prize: 'Winner', amount: '$550', track: 'Stacks', links: [], date: new Date('2025-10-01') },
   { name: 'Aptos Hackathon 2025', prize: 'Third Runner Up', amount: '$300', track: 'Aptos', links: [], date: new Date('2025-09-01') },
@@ -46,7 +46,7 @@ const hackathons = [
   { name: 'Flow Asia Hackathon 2025', prize: 'Nominee DemoDay', amount: '$200', track: 'Flow', links: [], date: new Date('2025-07-01') },
   
   // 2024
-  { name: 'ETHIndia 2024', prize: 'Second Prize Polkadot Track', amount: '$500', track: 'Polkadot', links: [], date: new Date('2024-12-01') },
+  { name: 'ETHGlobal India 2024', prize: 'Second Prize Polkadot Track', amount: '$500', track: 'Polkadot', links: [], date: new Date('2024-12-01') },
   { name: 'ETHToronto & ETHWomen 2024', prize: 'Connect the World with Chainlink', amount: '$1,000', track: 'Chainlink', links: [], date: new Date('2024-11-01') },
   { name: 'Dcomm Valhalla Hackathon', prize: 'Loki Track Winner', amount: '$1,000', track: 'Dcomm', links: [], date: new Date('2024-11-01') },
   { name: 'Decentralized AI Buildathon', prize: 'Winner', amount: '$1,750', track: 'AI', links: [], date: new Date('2024-10-01') },
@@ -78,6 +78,8 @@ const hackathons = [
   
   // 2022
   { name: 'BUIDL for Web3 Hackathon 2022', prize: 'Best NFT App Second Runner-up', amount: '$1,500', track: 'Polygon', links: [], date: new Date('2022-12-01') },
+  { name: 'Amazon Smbhav Hackathon Season 2 - Build for India', prize: 'Special Mention Category Prize Winner', amount: '$500', track: 'General', links: [], date: new Date('2022-05-01') },
+  { name: 'Tantragyan 2k22', prize: 'Second Consolation Prize Winner', amount: '$50', track: 'General', links: [], date: new Date('2022-04-01') },
 ].sort((a, b) => b.date.getTime() - a.date.getTime());
 
 // Calculate stats
