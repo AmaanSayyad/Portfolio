@@ -5,13 +5,14 @@ import React from 'react';
 import { Button } from './ui/button';
 
 import { motion } from 'framer-motion';
-import { BinaryIcon, ArrowUp, Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { BinaryIcon, ArrowUp, Github, Twitter, Linkedin, Mail, MessageCircle } from 'lucide-react';
 
 const socialLinks = [
   { icon: Twitter, href: 'https://x.com/amaanbiz', label: 'Twitter' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/amaan-sayyad-/', label: 'LinkedIn' },
   { icon: Github, href: 'https://github.com/AmaanSayyad', label: 'GitHub' },
   { icon: Mail, href: 'mailto:amaansayyad2001@gmail.com', label: 'Email' },
+  { icon: MessageCircle, href: 'https://t.me/amaan029', label: 'Telegram' },
 ];
 
 export const Footer = () => {

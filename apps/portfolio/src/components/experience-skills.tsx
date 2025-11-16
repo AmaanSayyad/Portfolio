@@ -48,7 +48,22 @@ const getExperienceLogo = (company: string): string | null => {
   return logoMap[company] ?? null;
 };
 
-const experiences = [
+interface ExperienceLink {
+  label: string;
+  url: string;
+}
+
+interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  highlight: string;
+  links?: ExperienceLink[];
+}
+
+const experiences: Experience[] = [
   {
     company: 'Bharat DAO',
     role: 'Co-Founder & CEO',
