@@ -21,7 +21,7 @@ const speakingEngagements = [
     date: '2023',
   },
   {
-    event: 'ETHIndia Community Meetup',
+    event: 'ETHGlobal India Community Meetup',
     role: 'Workshop Host',
     topic: 'Smart Contract Development Best Practices',
     location: 'Mumbai, India',

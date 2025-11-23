@@ -57,14 +57,14 @@ export const Interests = () => {
           };
           
           return (
-            <ChatBubble
+        <ChatBubble
               key={`interest-${String(index)}`}
               className={config.className}
               rotation={config.rotation}
-              scrollProgress={scrollProgress}
+          scrollProgress={scrollProgress}
               text={interest}
               transform={config.transform}
-            />
+        />
           );
         })}
       </div>

@@ -136,14 +136,14 @@ export const About = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.8, ease: easeInOutCubic }}
           >
-            {data.about.map((sentence, i) => (
-              <Sentence
+          {data.about.map((sentence, i) => (
+            <Sentence
                 index={i}
-                key={`sentence-${String(i)}`}
-                parts={sentence}
-                progress={v}
-              />
-            ))}
+              key={`sentence-${String(i)}`}
+              parts={sentence}
+              progress={v}
+            />
+          ))}
           </motion.div>
         </div>
       </div>
