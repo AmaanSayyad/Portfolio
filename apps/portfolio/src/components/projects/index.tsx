@@ -43,7 +43,7 @@ export const Projects = () => {
               transform: translateX,
             }}
           >
-            {projects.toReversed().map((project, i) => {
+            {projects.map((project, i) => {
               return (
                 <div key={project.title}>
                   <ProjectItem
