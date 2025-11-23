@@ -10,7 +10,7 @@ import { cn } from '~/lib/utils';
 
 import { type Variants, cubicBezier, motion } from 'framer-motion';
 
-import { Github, Globe, YoutubeIcon } from 'lucide-react';
+import { FileText, Github, Globe, Twitter, YoutubeIcon } from 'lucide-react';
 
 const easeSine = cubicBezier(0.12, 0, 0.39, 0);
 
@@ -20,8 +20,7 @@ export const ProjectDetails = () => {
 
   const activeItem = useMemo(() => {
     if (active === null) return null;
-    const index = data.projects.projects.length - active - 1;
-    return getItem(index);
+    return getItem(active);
   }, [active, getItem]);
 
   // arrow keys to navigate between projects arrow left and right
@@ -176,18 +175,33 @@ export const ProjectDetails = () => {
         </div>
         <div className='flex flex-row items-center justify-center gap-4 sm:justify-start'>
           {activeItem?.liveLink ? (
-            <Link href={activeItem.liveLink}>
+            <Link href={activeItem.liveLink} target='_blank' rel='noopener noreferrer'>
               <Globe size={24} />
             </Link>
           ) : null}
           {activeItem?.githubLink ? (
-            <Link href={activeItem.githubLink}>
+            <Link href={activeItem.githubLink} target='_blank' rel='noopener noreferrer'>
               <Github size={24} />
             </Link>
           ) : null}
           {activeItem?.videoDemo ? (
-            <Link href={activeItem.videoDemo}>
+            <Link href={activeItem.videoDemo} target='_blank' rel='noopener noreferrer'>
               <YoutubeIcon size={24} />
+            </Link>
+          ) : null}
+          {activeItem?.demoVideo ? (
+            <Link href={activeItem.demoVideo} target='_blank' rel='noopener noreferrer'>
+              <YoutubeIcon size={24} />
+            </Link>
+          ) : null}
+          {activeItem?.deckLink ? (
+            <Link href={activeItem.deckLink} target='_blank' rel='noopener noreferrer'>
+              <FileText size={24} />
+            </Link>
+          ) : null}
+          {activeItem?.xLink ? (
+            <Link href={activeItem.xLink} target='_blank' rel='noopener noreferrer'>
+              <Twitter size={24} />
             </Link>
           ) : null}
         </div>
