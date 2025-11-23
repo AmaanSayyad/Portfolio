@@ -33,6 +33,9 @@ export interface Data {
 			liveLink?: string;
 			githubLink?: string;
 			videoDemo?: string;
+			demoVideo?: string;
+			deckLink?: string;
+			xLink?: string;
 		}[];
 	};
 	resume: {
