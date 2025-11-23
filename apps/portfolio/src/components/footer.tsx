@@ -49,16 +49,16 @@ export const Footer = () => {
           })}
         </div>
 
-        <Button
+      <Button
           className='group flex items-center gap-2 border-white/5 bg-white/[0.03] text-sm uppercase text-white/70 backdrop-blur-sm transition-all duration-300 hover:border-white/15 hover:bg-white/[0.08] hover:text-white'
           variant='outline'
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-        >
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
           <ArrowUp className='h-4 w-4 transition-transform group-hover:-translate-y-1' />
           Top
-        </Button>
+      </Button>
       </div>
     </div>
   );

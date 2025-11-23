@@ -170,7 +170,7 @@ export const Contact = () => {
             className='text-white/70 underline underline-offset-2 hover:text-white transition-colors'
           >
             LinkedIn
-          </Link>
+        </Link>
         </p>
       </motion.div>
     </div>
