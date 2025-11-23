@@ -23,24 +23,12 @@ const links = [
     href: '#experience',
   },
   {
-    label: 'Volunteer',
-    href: '#volunteer',
-  },
-  {
     label: 'Projects',
     href: '#projects',
   },
   {
     label: 'Hackathons',
     href: '#hackathons',
-  },
-  {
-    label: 'Skills',
-    href: '#skills',
-  },
-  {
-    label: 'Articles',
-    href: '#articles',
   },
   {
     label: 'Resume',
@@ -61,7 +49,7 @@ export const NavigationButton = () => {
   const menuVariants: Variants = {
     open: {
       width: screen?.width > 640 ? '320px' : '50dvw',
-      height: screen?.width > 640 ? '500px' : '450px',
+      height: screen?.width > 640 ? '380px' : '340px',
       top: screen?.width > 640 ? '-16px' : '-8px',
       right: screen?.width > 640 ? '-16px' : '-8px',
       transition: { duration: 0.65, type: 'tween', ease: [0.76, 0, 0.24, 1] },
@@ -98,7 +86,7 @@ export const NavigationButton = () => {
     <div className='relative'>
       <motion.div
         animate={isActive ? 'open' : 'closed'}
-        className='absolute h-[40rem] w-full max-w-sm rounded-2xl bg-white'
+        className='absolute h-[28rem] w-full max-w-sm rounded-2xl bg-white'
         initial='closed'
         variants={menuVariants}
       >
