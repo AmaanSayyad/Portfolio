@@ -34,18 +34,18 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 ## 🌟 Projects
 
-| Project | Description | Links |
-|:-------:|:-----------:|:-----:|
-| **🎰 APT-Casino** | Fully on-chain casino for Aptos ecosystem. Backed by Aptos and Movement Labs. Live on 15+ EVM chains, ICP, Solana, StarkNet | [GitHub](https://github.com/AmaanSayyad/APT-Casino-Aptos) \| [Demo](https://apt-casino-aptos.vercel.app) |
-| **🛡️ HyperInsure** | First on-chain insurance protocol protecting users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin | [GitHub](https://github.com/AmaanSayyad/HyperInsure) \| [Twitter](https://x.com/hyperinsure) |
-| **💸 Gemetra** | Global Remittance Infrastructure for VAT Claims & Payroll. Cross-border financial operations with blockchain transparency | [GitHub](https://github.com/amaansayyad/gemetra) \| [Demo](https://gemetra.vercel.app) |
+| Project | Description | GitHub |
+|:-------:|:-----------:|:------:|
+| **🎰 APT-Casino** | Fully on-chain casino for Aptos ecosystem. Backed by Aptos and Movement Labs. Live on 15+ EVM chains, ICP, Solana, StarkNet | [GitHub](https://github.com/AmaanSayyad/APT-Casino-Aptos) |
+| **🛡️ HyperInsure** | First on-chain insurance protocol protecting users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin | [GitHub](https://github.com/AmaanSayyad/HyperInsure) |
+| **💸 Gemetra** | Global Remittance Infrastructure for VAT Claims & Payroll. Cross-border financial operations with blockchain transparency | [GitHub](https://github.com/amaansayyad/gemetra) |
 | **🏀 DunkVerse** | Mobile-first dApp with AI-driven quizzes on NBA TOPSHOTS, NFT-Powered Social Media, and Social Betting. Backed by Mantle | [GitHub](https://github.com/AmaanSayyad/DunkVerse) |
-| **🎮 StarkNet Arcade** | Top-performing gaming dApp in the StarkNet Ecosystem. Innovative on-chain gaming with multiplayer capabilities | [GitHub](https://github.com/AmaanSayyad/Starknet-Arcade) \| [Docs](https://amaans-organization.gitbook.io/starknet-arcade) |
-| **🇮🇳 Bharat DAO** | India's fastest-growing Web3 Developer community. Gateway for 1000+ Blockchains to enter India. 10,000+ developers in 45 days | [GitHub](https://github.com/AmaanSayyad/bharat-dao) \| [Website](https://bharat-dao.vercel.app) |
-| **🤖 HyperFi** | AI x DeFi platform for high-inflation economies. AI-generated educational resources, real-time APY tracking. Built on Aave, Uniswap, Chainlink | [GitHub](https://github.com/AmaanSayyad/HyperFi--) \| [Pitch](https://pitch.com/v/hyperfi-shield--general-pitch--idea-m8mb9h) |
+| **🎮 StarkNet Arcade** | Top-performing gaming dApp in the StarkNet Ecosystem. Innovative on-chain gaming with multiplayer capabilities | [GitHub](https://github.com/AmaanSayyad/Starknet-Arcade) |
+| **🇮🇳 Bharat DAO** | India's fastest-growing Web3 Developer community. Gateway for 1000+ Blockchains to enter India. 10,000+ developers in 45 days | [GitHub](https://github.com/AmaanSayyad/bharat-dao) |
+| **🤖 HyperFi** | AI x DeFi platform for high-inflation economies. AI-generated educational resources, real-time APY tracking. Built on Aave, Uniswap, Chainlink | [GitHub](https://github.com/AmaanSayyad/HyperFi--) |
 | **📝 ContractCraft** | Platform automating workflows and creating smart contracts across EVM, Move, and Polkadot. Drag-and-drop no-code interface with AI-powered agent | [GitHub](https://github.com/icantcodefyi/ethindia2024) |
-| **📚 Mental Wealth Academy** | DAO-governed digital library and marketplace for decentralized knowledge sharing. Built on Polygon with Chainlink, IPFS, cross-chain interoperability | [GitHub](https://github.com/jhinnbay/MentalWealthAcademy) \| [Demo](https://mental-wealth-academy.vercel.app) |
-| **💰 BuildnFund** | Milestone-based equity funding platform for Avalanche ecosystem. Discover and fund innovative projects with community governance | [GitHub](https://github.com/AmaanSayyad/BuildnFund) \| [Demo](https://avalaunch-eight.vercel.app) |
+| **📚 Mental Wealth Academy** | DAO-governed digital library and marketplace for decentralized knowledge sharing. Built on Polygon with Chainlink, IPFS, cross-chain interoperability | [GitHub](https://github.com/jhinnbay/MentalWealthAcademy) |
+| **💰 BuildnFund** | Milestone-based equity funding platform for Avalanche ecosystem. Discover and fund innovative projects with community governance | [GitHub](https://github.com/AmaanSayyad/BuildnFund) |
 | **🎓 NJ-OptiCode** | Platform helping developers upskill in web2 and web3. Features scaffold dapps, interactive courses, real-time collaboration, on-chain IDE. Built on NEAR and Optimism | [GitHub](https://github.com/Near-Journey/Near-Journey-) |
 | **🌍 Feed Our World** | On-demand, on-chain blockchain-based food distribution application. Empowering communities and reducing global food waste. Aligned with UN Sustainable Goals. Backed by CELO | [GitHub](https://github.com/Feed-Our-World-FOW) |
 | **📱 Sui Stream** | First decentralized social media platform on SUI Blockchain. Empowers creators with content ownership, instant monetization, privacy. Features SUI Wallet, zkLogin | [GitHub](https://github.com/AmaanSayyad/SuiStream) |
@@ -59,8 +59,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **40+ wins across 6+ countries** (India, Canada, UAE, Saudi Arabia, Thailand, Singapore)
 
-### Top Wins
-
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
 | **Web3athon 2023** | Celo Track Second Runner-Up | $25,000 💰 |
@@ -72,15 +70,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | **Move it with Aptos 2024** | Aptos Track Winner | $2,000 |
 | **Polygon DevX India 2024** | Best Project Chainlink CCIP | $2,000 |
 
-<details>
-<summary><b>📋 View all 40+ hackathon wins</b></summary>
-
-| Year | Wins | Total Prize |
-|:----:|:----:|:-----------:|
-| 2025 | 6 | $5,050 |
-| 2024 | 15 | $25,000 |
-| 2023 | 12 | $42,100 |
-| 2022 | 3 | $2,050 |
 
 **Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Solana, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, and more.
 
