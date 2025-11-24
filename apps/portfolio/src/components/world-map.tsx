@@ -54,6 +54,12 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
     return groups;
   }, [hackathons]);
 
+  const formatCurrency = (amount: number) => {
+    if (amount >= 1000000) return `$${(amount / 1000000).toFixed(1)}M`;
+    if (amount >= 1000) return `$${(amount / 1000).toFixed(0)}K`;
+    return `$${amount}`;
+  };
+
   // Globe rendering logic
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -114,11 +120,12 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         return true;
       }
       if (geometry.type === 'MultiPolygon') {
-        for (const polygon of geometry.coordinates as number[][][]) {
-          if (pointInPolygon(point, polygon[0]!)) {
+        const multiPolygonCoords = geometry.coordinates as unknown as number[][][][];
+        for (const polygon of multiPolygonCoords) {
+          if (pointInPolygon(point, polygon[0] as number[][])) {
             let inHole = false;
             for (let i = 1; i < polygon.length; i++) {
-              if (pointInPolygon(point, polygon[i]!)) {
+              if (pointInPolygon(point, polygon[i] as number[][])) {
                 inHole = true;
                 break;
               }
@@ -210,8 +217,10 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         if (!latestHackathon) return;
 
         const projected = projection([lng, lat]);
-        if (!projected) return;
+        if (!projected || projected[0] == null || projected[1] == null) return;
 
+        const projX = Number(projected[0]);
+        const projY = Number(projected[1]);
         const count = group.length;
         const totalPrize = group.reduce((sum, h) => {
           const amount = h.amount.replace(/[^0-9]/g, '');
@@ -229,14 +238,14 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           const g = Number.parseInt(hex.substring(2, 4), 16);
           const b = Number.parseInt(hex.substring(4, 6), 16);
           context.beginPath();
-          context.arc(projected[0], projected[1], pinSize + 8, 0, 2 * Math.PI);
+          context.arc(projX, projY, pinSize + 8, 0, 2 * Math.PI);
           context.fillStyle = `rgba(${r}, ${g}, ${b}, 0.3)`;
           context.fill();
         }
 
         // Pulse ring
         context.beginPath();
-        context.arc(projected[0], projected[1], pinSize + 4, 0, 2 * Math.PI);
+        context.arc(projX, projY, pinSize + 4, 0, 2 * Math.PI);
         context.strokeStyle = pinColor;
         context.lineWidth = Number(2 * scaleFactor);
         context.globalAlpha = 0.5;
@@ -245,7 +254,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
         // Main pin
         context.beginPath();
-        context.arc(projected[0], projected[1], pinSize, 0, 2 * Math.PI);
+        context.arc(projX, projY, pinSize, 0, 2 * Math.PI);
         context.fillStyle = pinColor;
         context.fill();
         context.strokeStyle = 'rgba(255, 255, 255, 0.8)';
@@ -258,7 +267,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           context.font = `bold ${Math.min(10 + count, 14) * scaleFactor}px sans-serif`;
           context.textAlign = 'center';
           context.textBaseline = 'middle';
-          context.fillText(count.toString(), projected[0], projected[1]);
+          context.fillText(count.toString(), projX, projY);
         }
       });
     };
@@ -293,7 +302,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
     const rotate = () => {
       if (autoRotate) {
         rotation[0] = (rotation[0] ?? 0) + rotationSpeed;
-        projection.rotate(rotation);
+        projection.rotate(rotation as [number, number, number]);
         render();
       }
     };
@@ -316,7 +325,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         rotation[1] = (startRotation[1] ?? 0) - dy * sensitivity;
         rotation[1] = Math.max(-90, Math.min(90, rotation[1]));
 
-        projection.rotate(rotation);
+        projection.rotate(rotation as [number, number, number]);
         render();
 
         // Check for pin hover
@@ -326,18 +335,21 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
         locationGroups.forEach((group, key) => {
           const [lng, lat] = key.split(',').map(Number);
+          if (lng == null || lat == null) return;
           const projected = projection([lng, lat]);
-        if (projected) {
-          const distance = Math.sqrt(
-            Math.pow(Number(projected[0]) - mouseX, 2) + Math.pow(Number(projected[1]) - mouseY, 2)
-          );
-          if (distance < 20) {
-            setHoveredPin(key);
-            setSelectedLocation({ group, coordinates: [lng, lat] });
-            setTooltipPosition({ x: moveEvent.clientX, y: moveEvent.clientY });
-            foundPin = true;
+          if (projected && projected[0] != null && projected[1] != null) {
+            const projX = Number(projected[0]);
+            const projY = Number(projected[1]);
+            const distance = Math.sqrt(
+              Math.pow(projX - mouseX, 2) + Math.pow(projY - mouseY, 2)
+            );
+            if (distance < 20) {
+              setHoveredPin(key);
+              setSelectedLocation({ group, coordinates: [lng, lat] });
+              setTooltipPosition({ x: moveEvent.clientX, y: moveEvent.clientY });
+              foundPin = true;
+            }
           }
-        }
         });
 
         if (!foundPin) {
@@ -375,10 +387,13 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       let foundPin = false;
       locationGroups.forEach((group, key) => {
         const [lng, lat] = key.split(',').map(Number);
+        if (lng == null || lat == null) return;
         const projected = projection([lng, lat]);
-        if (projected) {
+        if (projected && projected[0] != null && projected[1] != null) {
+          const projX = Number(projected[0]);
+          const projY = Number(projected[1]);
           const distance = Math.sqrt(
-            Math.pow(Number(projected[0]) - mouseX, 2) + Math.pow(Number(projected[1]) - mouseY, 2)
+            Math.pow(projX - mouseX, 2) + Math.pow(projY - mouseY, 2)
           );
           if (distance < 20) {
             setHoveredPin(key);
