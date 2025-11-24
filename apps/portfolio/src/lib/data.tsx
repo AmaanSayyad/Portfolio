@@ -40,7 +40,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "HyperInsure",
 		description:
-			"The first on-chain insurance protocol protecting blockchain users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin security. Backed by Stacks.",
+			"The first on-chain insurance protocol protecting blockchain users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin security. Backed by Stacks Blockchain.",
 		image: "/images/18.png",
 		coverImage: "/images/4-cover.png",
 		backgroundColor: "#D5D5D5",
@@ -67,7 +67,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "DunkVerse",
 		description:
-			"A mobile first dapp which offers AI-driven quizzes on NBA TOPSHOTS, NFT-Powered Social Media, and Social Betting fully on-chain. Backed by Mantle.",
+			"A mobile first dapp which offers AI-driven quizzes on NBA TOPSHOTS, NFT-Powered Social Media, and Social Betting fully on-chain. Backed by Mantle Blockchain.",
 		image: "/images/2.png",
 		coverImage: "/images/2-cover.png",
 		backgroundColor: "#0A0A0F",
@@ -137,6 +137,17 @@ const projects: Data["projects"]["projects"] = [
 		liveLink: "https://mental-wealth-academy.vercel.app/",
 		videoDemo: "https://youtu.be/K0ffP0n55vE?si=QvjUG1hRkv_WUcTz",
 		deckLink: "https://www.figma.com/slides/PQ09QSwPdEePNIhpBGDXtR/Mental-Wealth-Academy?node-id=3-197&t=Ian1ymM3YlJpoyIr-0",
+	},
+	{
+		title: "BuildnFund",
+		description:
+			"Milestone-based equity funding platform for the Avalanche ecosystem. Discover and fund innovative projects through milestone-based equity funding with community governance.",
+		image: "/images/20.png",
+		coverImage: "/images/20-cover.png",
+		backgroundColor: "#0A0A0F",
+		color: "#FFFFFF",
+		githubLink: "https://github.com/AmaanSayyad/BuildnFund",
+		liveLink: "https://avalaunch-eight.vercel.app/",
 	},
 	{
 		title: "NJ-OptiCode",

@@ -105,7 +105,7 @@ const volunteerExperiences = [
     role: 'Developer Advocate',
     period: 'Jan 2023 - Jan 2024',
     location: 'Remote',
-    description: 'Built 10+ subgraphs, Worked closely under Graph DAO supervision, Wrote blogpost, threads, video content for newbies to undertstand graph in regional and local languages.',
+    description: 'Built 10+ subgraphs, worked closely under Graph DAO supervision, wrote blog posts, threads and video content for newbies to understand the graph in regional and local languages.',
     highlight: 'Developer advocacy & protocol growth',
     links: [],
   },
