@@ -29,7 +29,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | 💰 **Grants** | $11,500 + 10,000 MOVE Tokens |
 | ©️ **Copyrights** | 2 registered (Government of India) |
 
-
 ## 🌟 Projects
 
 | Project | Description | GitHub |
@@ -55,7 +54,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 ## 🏆 Hackathon Wins
 
-**40/70 wins across globe
+**40/70 wins across globe**
 
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
