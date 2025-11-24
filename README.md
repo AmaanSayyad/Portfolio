@@ -237,6 +237,75 @@ Connects crypto traders to on-chain investors via Hyperliquid vaults. AI-optimiz
 
 I've won **40 hackathons** out of **70+ participated**, competing in locations worldwide including India, Toronto, Dubai, Riyadh, Thailand, and Southeast Asia. Total prize money won: **$70,000+**
 
+### 📊 Complete Hackathon Wins Table
+
+<details>
+<summary><b>📋 Click to view all 40+ hackathon wins</b></summary>
+
+#### 🎯 2025 Wins
+
+| Hackathon | Prize/Award | Track | Prize Money | Location |
+|-----------|-------------|-------|-------------|----------|
+| ETHGlobal India 2025 | Track Winner | General | $1,500 | 🇮🇳 India |
+| Starknet Hacker House 2025 | Third Runner Up | Starknet | $1,000 | 🇮🇳 India |
+| Stacks Hacker House 2025 | Winner | Stacks | $550 | 🇮🇳 India |
+| Aptos Hackathon 2025 | Third Runner Up | Aptos | $300 | 🇮🇳 India |
+| Mantle APAC Hackathon 2025 | Third Prize | Mantle | $1,500 | 🌏 APAC |
+| Flow Asia Hackathon 2025 | Nominee DemoDay | Flow | $200 | 🌏 Asia |
+
+#### 🎯 2024 Wins
+
+| Hackathon | Prize/Award | Track | Prize Money | Location |
+|-----------|-------------|-------|-------------|----------|
+| ETHGlobal India 2024 | Second Prize Polkadot Track | Polkadot | $500 | 🇮🇳 India |
+| ETHToronto & ETHWomen 2024 | Connect the World with Chainlink | Chainlink | $1,000 | 🇨🇦 Toronto |
+| Dcomm Valhalla Hackathon | Loki Track Winner | Dcomm | $1,000 | 🌐 Online |
+| Decentralized AI Buildathon | Winner | AI | $1,750 | 🌐 Online |
+| Hack AVS-Empower the EigenLayer 2024 | Winner Movement Track | Movement Labs | $1,750 | 🌐 Online |
+| Movement Labs Hackathon 2024 | Second Place Movement Track | Movement Labs | $1,750 | 🌐 Online |
+| ETH SEA | 3rd Prize Manta Track | Manta | $750 | 🇸🇬 Singapore |
+| Edge City Lanna Hackathon 2024 | Runner-Up Flow Track | Flow | $3,000 | 🇹🇭 Thailand |
+| Polygon DevX India Hackathon | Best Project Chainlink CCIP & Services | Polygon | $2,000 | 🇮🇳 India |
+| Avalanche Frontier 2024 | Chainlink CCIP Track Third Place | Avalanche | $1,250 | 🌐 Online |
+| Coinstore UBIT Hackathon 2024 | Second Runner-Up | Coinstore | $3,000 | 🌐 Online |
+| BNB Chain Hackathon 2024 | Sonorus Track Winner | BNB | $500 | 🌐 Online |
+| Move it with Aptos 2024 | Aptos Track Winner | Aptos | $2,000 | 🌐 Online |
+| Telos Mini Hackathon 2024 | Runner-Up | Telos | $200 | 🌐 Online |
+| ETHDubai 2024 | XDC Network Tokenization and NEO Prize | XDC | $2,000 | 🇦🇪 Dubai |
+
+#### 🎯 2023 Wins
+
+| Hackathon | Prize/Award | Track | Prize Money | Location |
+|-----------|-------------|-------|-------------|----------|
+| Chainlink Constellation 2023 | Grand Prize Winner - Steel Perlot | Chainlink | $3,000 | 🌐 Online |
+| ETH Riyadh 2023 | Meta Web3 Builder SocialFi Track Winner | Ethereum | $1,000 | 🇸🇦 Riyadh |
+| FVM Space Wrap Hack 2023 | Livepeer Track Winner | FVM | $2,000 | 🌐 Online |
+| HackX 2023 | Best Project Online Track | General | $50 | 🌐 Online |
+| DAO Global Hackathon 2023 | Lens Track Winner Best Lens Integrations | Lens | $2,000 | 🌐 Online |
+| **Web3athon 2023** | **Celo Track Second Runner-Up** | **Celo** | **$25,000** 💰 | 🌐 Online |
+| Garuda Hacks 3.0 2023 | Runner-Up Polygon Track | Polygon | $300 | 🇮🇳 India |
+| Inco Hack 2023 | 4th Place FHE DApps | Inco | $500 | 🌐 Online |
+| **Flow Hackathon Season 2** | **Runner-Up** | **Flow** | **$6,000** | 🌐 Online |
+| Celo Hackathon of Hope | Top 20 Projects | Celo | $100 | 🌐 Online |
+| Oraichain | AI x DeFi Cook-Off Special Mention | Oraichain | $400 | 🌐 Online |
+| Inco Bounty | Runner-Up | Inco | $250 | 🌐 Online |
+
+#### 🎯 2022 Wins
+
+| Hackathon | Prize/Award | Track | Prize Money | Location |
+|-----------|-------------|-------|-------------|----------|
+| BUIDL for Web3 Hackathon 2022 | Best NFT App Second Runner-up | Polygon | $1,500 | 🇮🇳 India |
+| Amazon Smbhav Hack Season 2 | Special Mention Category Prize Winner | Amazon | $500 | 🇮🇳 India |
+| Tantragyan 2k22 | Second Consolation Prize Winner | General | $50 | 🇮🇳 India |
+
+**📊 Summary:**
+- **Total Wins:** 40
+- **Total Prize Money:** $70,000+
+- **Countries:** India 🇮🇳, Canada 🇨🇦, UAE 🇦🇪, Saudi Arabia 🇸🇦, Thailand 🇹🇭, Singapore 🇸🇬
+- **Ecosystems:** 20+ different blockchain ecosystems
+
+</details>
+
 #### 🥇 Notable Wins (2024-2025)
 
 - 🏆 **ETHGlobal India 2025** - Track Winner ($1,500)
