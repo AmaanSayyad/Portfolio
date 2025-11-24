@@ -38,51 +38,92 @@ const getTrackLogo = (track: string): string | null => {
   return logoMap[track] ?? null;
 };
 
-const hackathons = [
+// Get coordinates based on hackathon name
+const getLocation = (name: string): [number, number] => {
+  const locationMap: Record<string, [number, number]> = {
+    'India': [77.2090, 28.6139], // New Delhi
+    'Toronto': [-79.3832, 43.6532],
+    'Dubai': [55.2708, 25.2048],
+    'Riyadh': [46.6753, 24.7136],
+    'Thailand': [100.5018, 13.7563], // Bangkok (for Edge City Lanna)
+    'Southeast Asia': [103.8198, 1.3521], // Singapore (for ETH SEA)
+    'APAC': [103.8198, 1.3521], // Singapore
+    'Asia': [103.8198, 1.3521], // Singapore
+    'Online': [0, 0], // Center of map for online events
+  };
+
+  const nameLower = name.toLowerCase();
+  if (nameLower.includes('india') || nameLower.includes('indian')) return locationMap['India']!;
+  if (nameLower.includes('toronto')) return locationMap['Toronto']!;
+  if (nameLower.includes('dubai')) return locationMap['Dubai']!;
+  if (nameLower.includes('riyadh')) return locationMap['Riyadh']!;
+  if (nameLower.includes('lanna') || nameLower.includes('thailand')) return locationMap['Thailand']!;
+  if (nameLower.includes('sea') || nameLower.includes('southeast')) return locationMap['Southeast Asia']!;
+  if (nameLower.includes('apac') || nameLower.includes('asia')) return locationMap['APAC']!;
+  if (nameLower.includes('online') || nameLower.includes('remote')) return locationMap['Online']!;
+  
+  // Default to India for most hackathons (seems to be the primary location)
+  return locationMap['India']!;
+};
+
+export interface HackathonData {
+  name: string;
+  prize: string;
+  amount: string;
+  track: string;
+  links: string[];
+  date: Date;
+  coordinates: [number, number];
+}
+
+const hackathons: HackathonData[] = [
   // 2025
-  { name: 'ETHGlobal India 2025', prize: 'Track Winner', amount: '$1,500', track: 'General', links: [], date: new Date('2025-12-01') },
-  { name: 'Starknet Hacker House 2025', prize: 'Third Runner Up', amount: '$1,000', track: 'Starknet', links: [], date: new Date('2025-11-01') },
-  { name: 'Stacks Hacker House 2025', prize: 'Winner', amount: '$550', track: 'Stacks', links: [], date: new Date('2025-10-01') },
-  { name: 'Aptos Hackathon 2025', prize: 'Third Runner Up', amount: '$300', track: 'Aptos', links: [], date: new Date('2025-09-01') },
-  { name: 'Mantle APAC Hackathon 2025', prize: 'Third Prize', amount: '$1,500', track: 'Mantle', links: [], date: new Date('2025-08-01') },
-  { name: 'Flow Asia Hackathon 2025', prize: 'Nominee DemoDay', amount: '$200', track: 'Flow', links: [], date: new Date('2025-07-01') },
+  { name: 'ETHGlobal India 2025', prize: 'Track Winner', amount: '$1,500', track: 'General', links: [], date: new Date('2025-12-01'), coordinates: getLocation('ETHGlobal India 2025') },
+  { name: 'Starknet Hacker House 2025', prize: 'Third Runner Up', amount: '$1,000', track: 'Starknet', links: [], date: new Date('2025-11-01'), coordinates: getLocation('Starknet Hacker House 2025') },
+  { name: 'Stacks Hacker House 2025', prize: 'Winner', amount: '$550', track: 'Stacks', links: [], date: new Date('2025-10-01'), coordinates: getLocation('Stacks Hacker House 2025') },
+  { name: 'Aptos Hackathon 2025', prize: 'Third Runner Up', amount: '$300', track: 'Aptos', links: [], date: new Date('2025-09-01'), coordinates: getLocation('Aptos Hackathon 2025') },
+  { name: 'Mantle APAC Hackathon 2025', prize: 'Third Prize', amount: '$1,500', track: 'Mantle', links: [], date: new Date('2025-08-01'), coordinates: getLocation('Mantle APAC Hackathon 2025') },
+  { name: 'Flow Asia Hackathon 2025', prize: 'Nominee DemoDay', amount: '$200', track: 'Flow', links: [], date: new Date('2025-07-01'), coordinates: getLocation('Flow Asia Hackathon 2025') },
   
   // 2024
-  { name: 'ETHGlobal India 2024', prize: 'Second Prize Polkadot Track', amount: '$500', track: 'Polkadot', links: [], date: new Date('2024-12-01') },
-  { name: 'ETHToronto & ETHWomen 2024', prize: 'Connect the World with Chainlink', amount: '$1,000', track: 'Chainlink', links: [], date: new Date('2024-11-01') },
-  { name: 'Dcomm Valhalla Hackathon', prize: 'Loki Track Winner', amount: '$1,000', track: 'Dcomm', links: [], date: new Date('2024-11-01') },
-  { name: 'Decentralized AI Buildathon', prize: 'Winner', amount: '$1,750', track: 'AI', links: [], date: new Date('2024-10-01') },
-  { name: 'Hack AVS-Empower the EigenLayer Restaking Ecosystem 2024', prize: 'Winner Movement Track', amount: '$1,750', track: 'Movement Labs', links: [], date: new Date('2024-10-01') },
-  { name: 'Movement Labs Hackathon 2024', prize: 'Second Place Movement Track', amount: '$1,750', track: 'Movement Labs', links: [], date: new Date('2024-09-01') },
-  { name: 'ETH SEA', prize: '3rd Prize Manta Track', amount: '$750', track: 'Manta', links: [], date: new Date('2024-09-01') },
-  { name: 'Edge City Lanna Hackathon 2024', prize: 'Runner-Up Flow Track', amount: '$3,000', track: 'Flow', links: [], date: new Date('2024-08-01') },
-  { name: 'Polygon DevX India Hackathon', prize: 'Best Project Chainlink CCIP & Services', amount: '$2,000', track: 'Polygon', links: [], date: new Date('2024-08-01') },
-  { name: 'Avalanche Frontier 2024', prize: 'Chainlink CCIP Track Third Place', amount: '$1,250', track: 'Avalanche', links: [], date: new Date('2024-07-01') },
-  { name: 'Coinstore UBIT Hackathon 2024', prize: 'Second Runner-Up', amount: '$3,000', track: 'Coinstore', links: [], date: new Date('2024-06-01') },
-  { name: 'BNB Chain Hackathon 2024', prize: 'Sonorus Track Winner', amount: '$500', track: 'BNB', links: [], date: new Date('2024-06-01') },
-  { name: 'Move it with Aptos 2024', prize: 'Aptos Track Winner', amount: '$2,000', track: 'Aptos', links: [], date: new Date('2024-05-01') },
-  { name: 'Telos Mini Hackathon 2024', prize: 'Runner-Up', amount: '$200', track: 'Telos', links: [], date: new Date('2024-04-01') },
-  { name: 'ETHDubai 2024', prize: 'XDC Network Tokenization and NEO Prize', amount: '$2,000', track: 'XDC', links: [], date: new Date('2024-03-01') },
+  { name: 'ETHGlobal India 2024', prize: 'Second Prize Polkadot Track', amount: '$500', track: 'Polkadot', links: [], date: new Date('2024-12-01'), coordinates: getLocation('ETHGlobal India 2024') },
+  { name: 'ETHToronto & ETHWomen 2024', prize: 'Connect the World with Chainlink', amount: '$1,000', track: 'Chainlink', links: [], date: new Date('2024-11-01'), coordinates: getLocation('ETHToronto & ETHWomen 2024') },
+  { name: 'Dcomm Valhalla Hackathon', prize: 'Loki Track Winner', amount: '$1,000', track: 'Dcomm', links: [], date: new Date('2024-11-01'), coordinates: getLocation('Dcomm Valhalla Hackathon') },
+  { name: 'Decentralized AI Buildathon', prize: 'Winner', amount: '$1,750', track: 'AI', links: [], date: new Date('2024-10-01'), coordinates: getLocation('Decentralized AI Buildathon') },
+  { name: 'Hack AVS-Empower the EigenLayer Restaking Ecosystem 2024', prize: 'Winner Movement Track', amount: '$1,750', track: 'Movement Labs', links: [], date: new Date('2024-10-01'), coordinates: getLocation('Hack AVS-Empower the EigenLayer Restaking Ecosystem 2024') },
+  { name: 'Movement Labs Hackathon 2024', prize: 'Second Place Movement Track', amount: '$1,750', track: 'Movement Labs', links: [], date: new Date('2024-09-01'), coordinates: getLocation('Movement Labs Hackathon 2024') },
+  { name: 'ETH SEA', prize: '3rd Prize Manta Track', amount: '$750', track: 'Manta', links: [], date: new Date('2024-09-01'), coordinates: getLocation('ETH SEA') },
+  { name: 'Edge City Lanna Hackathon 2024', prize: 'Runner-Up Flow Track', amount: '$3,000', track: 'Flow', links: [], date: new Date('2024-08-01'), coordinates: getLocation('Edge City Lanna Hackathon 2024') },
+  { name: 'Polygon DevX India Hackathon', prize: 'Best Project Chainlink CCIP & Services', amount: '$2,000', track: 'Polygon', links: [], date: new Date('2024-08-01'), coordinates: getLocation('Polygon DevX India Hackathon') },
+  { name: 'Avalanche Frontier 2024', prize: 'Chainlink CCIP Track Third Place', amount: '$1,250', track: 'Avalanche', links: [], date: new Date('2024-07-01'), coordinates: getLocation('Avalanche Frontier 2024') },
+  { name: 'Coinstore UBIT Hackathon 2024', prize: 'Second Runner-Up', amount: '$3,000', track: 'Coinstore', links: [], date: new Date('2024-06-01'), coordinates: getLocation('Coinstore UBIT Hackathon 2024') },
+  { name: 'BNB Chain Hackathon 2024', prize: 'Sonorus Track Winner', amount: '$500', track: 'BNB', links: [], date: new Date('2024-06-01'), coordinates: getLocation('BNB Chain Hackathon 2024') },
+  { name: 'Move it with Aptos 2024', prize: 'Aptos Track Winner', amount: '$2,000', track: 'Aptos', links: [], date: new Date('2024-05-01'), coordinates: getLocation('Move it with Aptos 2024') },
+  { name: 'Telos Mini Hackathon 2024', prize: 'Runner-Up', amount: '$200', track: 'Telos', links: [], date: new Date('2024-04-01'), coordinates: getLocation('Telos Mini Hackathon 2024') },
+  { name: 'ETHDubai 2024', prize: 'XDC Network Tokenization and NEO Prize', amount: '$2,000', track: 'XDC', links: [], date: new Date('2024-03-01'), coordinates: getLocation('ETHDubai 2024') },
   
   // 2023
-  { name: 'Chainlink Constellation 2023', prize: 'Grand Prize Winner - Steel Perlot', amount: '$3,000', track: 'Chainlink', links: [], date: new Date('2023-12-01') },
-  { name: 'ETH Riyadh 2023', prize: 'Meta Web3 Builder SocialFi Track Winner', amount: '$1,000', track: 'Ethereum', links: [], date: new Date('2023-11-01') },
-  { name: 'FVM Space Wrap Hack 2023', prize: 'Livepeer Track Winner', amount: '$2,000', track: 'FVM', links: [], date: new Date('2023-10-01') },
-  { name: 'HackX 2023', prize: 'Best Project Online Track', amount: '$50', track: 'General', links: [], date: new Date('2023-09-01') },
-  { name: 'DAO Global Hackathon 2023', prize: 'Lens Track Winner Best Lens Integrations', amount: '$2,000', track: 'Lens', links: [], date: new Date('2023-08-01') },
-  { name: 'Web3athon 2023', prize: 'Celo Track Second Runner-Up', amount: '$25,000', track: 'Celo', links: [], date: new Date('2023-08-01') },
-  { name: 'Garuda Hacks 3.0 2023', prize: 'Runner-Up Polygon Track', amount: '$300', track: 'Polygon', links: [], date: new Date('2023-07-01') },
-  { name: 'Inco Hack 2023', prize: '4th Place FHE DApps', amount: '$500', track: 'Inco', links: [], date: new Date('2023-07-01') },
-  { name: 'Flow Hackathon Season 2', prize: 'Runner-Up', amount: '$6,000', track: 'Flow', links: [], date: new Date('2023-06-01') },
-  { name: 'Celo Hackathon of Hope', prize: 'Top 20 Projects', amount: '$100', track: 'Celo', links: [], date: new Date('2023-04-01') },
-  { name: 'Oraichain', prize: 'AI x DeFi Cook-Off Special Mention', amount: '$400', track: 'Oraichain', links: [], date: new Date('2023-03-01') },
-  { name: 'Inco Bounty', prize: 'Runner-Up', amount: '$250', track: 'Inco', links: [], date: new Date('2023-02-01') },
+  { name: 'Chainlink Constellation 2023', prize: 'Grand Prize Winner - Steel Perlot', amount: '$3,000', track: 'Chainlink', links: [], date: new Date('2023-12-01'), coordinates: getLocation('Chainlink Constellation 2023') },
+  { name: 'ETH Riyadh 2023', prize: 'Meta Web3 Builder SocialFi Track Winner', amount: '$1,000', track: 'Ethereum', links: [], date: new Date('2023-11-01'), coordinates: getLocation('ETH Riyadh 2023') },
+  { name: 'FVM Space Wrap Hack 2023', prize: 'Livepeer Track Winner', amount: '$2,000', track: 'FVM', links: [], date: new Date('2023-10-01'), coordinates: getLocation('FVM Space Wrap Hack 2023') },
+  { name: 'HackX 2023', prize: 'Best Project Online Track', amount: '$50', track: 'General', links: [], date: new Date('2023-09-01'), coordinates: getLocation('HackX 2023') },
+  { name: 'DAO Global Hackathon 2023', prize: 'Lens Track Winner Best Lens Integrations', amount: '$2,000', track: 'Lens', links: [], date: new Date('2023-08-01'), coordinates: getLocation('DAO Global Hackathon 2023') },
+  { name: 'Web3athon 2023', prize: 'Celo Track Second Runner-Up', amount: '$25,000', track: 'Celo', links: [], date: new Date('2023-08-01'), coordinates: getLocation('Web3athon 2023') },
+  { name: 'Garuda Hacks 3.0 2023', prize: 'Runner-Up Polygon Track', amount: '$300', track: 'Polygon', links: [], date: new Date('2023-07-01'), coordinates: getLocation('Garuda Hacks 3.0 2023') },
+  { name: 'Inco Hack 2023', prize: '4th Place FHE DApps', amount: '$500', track: 'Inco', links: [], date: new Date('2023-07-01'), coordinates: getLocation('Inco Hack 2023') },
+  { name: 'Flow Hackathon Season 2', prize: 'Runner-Up', amount: '$6,000', track: 'Flow', links: [], date: new Date('2023-06-01'), coordinates: getLocation('Flow Hackathon Season 2') },
+  { name: 'Celo Hackathon of Hope', prize: 'Top 20 Projects', amount: '$100', track: 'Celo', links: [], date: new Date('2023-04-01'), coordinates: getLocation('Celo Hackathon of Hope') },
+  { name: 'Oraichain', prize: 'AI x DeFi Cook-Off Special Mention', amount: '$400', track: 'Oraichain', links: [], date: new Date('2023-03-01'), coordinates: getLocation('Oraichain') },
+  { name: 'Inco Bounty', prize: 'Runner-Up', amount: '$250', track: 'Inco', links: [], date: new Date('2023-02-01'), coordinates: getLocation('Inco Bounty') },
   
   // 2022
-  { name: 'BUIDL for Web3 Hackathon 2022', prize: 'Best NFT App Second Runner-up', amount: '$1,500', track: 'Polygon', links: [], date: new Date('2022-12-01') },
-  { name: 'Amazon Smbhav Hack Season 2', prize: 'Special Mention Category Prize Winner', amount: '$500', track: 'Amazon', links: [], date: new Date('2022-05-01') },
-  { name: 'Tantragyan 2k22', prize: 'Second Consolation Prize Winner', amount: '$50', track: 'General', links: [], date: new Date('2022-04-01') },
+  { name: 'BUIDL for Web3 Hackathon 2022', prize: 'Best NFT App Second Runner-up', amount: '$1,500', track: 'Polygon', links: [], date: new Date('2022-12-01'), coordinates: getLocation('BUIDL for Web3 Hackathon 2022') },
+  { name: 'Amazon Smbhav Hack Season 2', prize: 'Special Mention Category Prize Winner', amount: '$500', track: 'Amazon', links: [], date: new Date('2022-05-01'), coordinates: getLocation('Amazon Smbhav Hack Season 2') },
+  { name: 'Tantragyan 2k22', prize: 'Second Consolation Prize Winner', amount: '$50', track: 'General', links: [], date: new Date('2022-04-01'), coordinates: getLocation('Tantragyan 2k22') },
 ].sort((a, b) => b.date.getTime() - a.date.getTime());
+
+// Export hackathons for use in WorldMap component
+export { hackathons };
 
 // Calculate stats
 const calculateStats = () => {

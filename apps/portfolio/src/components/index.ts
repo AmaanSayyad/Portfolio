@@ -22,3 +22,4 @@ export * from './grants';
 export * from './speaking';
 export * from './grants-speaking';
 export * from './scroll-to-top';
+export * from './world-map';

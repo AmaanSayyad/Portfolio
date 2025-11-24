@@ -13,7 +13,9 @@ import {
   ResumeContact,
   ScrollToTop,
   ExperienceSkills,
+  WorldMap,
 } from '~/components';
+import { hackathons } from '~/components/hackathons';
 
 const Home = () => {
   return (
@@ -25,6 +27,7 @@ const Home = () => {
       <ExperienceSkills />
       <Projects />
       <Hackathons />
+      <WorldMap hackathons={hackathons} />
       <GrantsSpeaking />
       <Blogs />
       <ResumeContact />
