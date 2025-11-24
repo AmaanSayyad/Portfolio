@@ -3,6 +3,7 @@
 import React, { useRef, useState, useMemo, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import * as d3 from 'd3';
+import type { FeatureCollection, Feature } from 'geojson';
 import type { HackathonData } from './hackathons';
 
 interface WorldMapProps {
@@ -24,7 +25,6 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [selectedLocation, setSelectedLocation] = useState<{ group: HackathonData[]; coordinates: [number, number] } | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [hoveredPin, setHoveredPin] = useState<string | null>(null);
@@ -36,16 +36,10 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
-  // Filter hackathons by year if selected
-  const filteredHackathons = useMemo(() => {
-    if (!selectedYear) return hackathons;
-    return hackathons.filter(h => h.date.getFullYear() === selectedYear);
-  }, [hackathons, selectedYear]);
-
   // Group hackathons by location
   const locationGroups = useMemo(() => {
     const groups = new Map<string, HackathonData[]>();
-    filteredHackathons.forEach((hackathon) => {
+    hackathons.forEach((hackathon) => {
       const key = `${hackathon.coordinates[0]},${hackathon.coordinates[1]}`;
       if (!groups.has(key)) {
         groups.set(key, []);
@@ -58,26 +52,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       }
     });
     return groups;
-  }, [filteredHackathons]);
-
-  // Calculate statistics
-  const stats = useMemo(() => {
-    const totalPrize = filteredHackathons.reduce((sum, h) => {
-      const amount = h.amount.replace(/[^0-9]/g, '');
-      return sum + (amount ? Number.parseInt(amount, 10) : 0);
-    }, 0);
-    
-    const uniqueLocations = locationGroups.size;
-    const years = [...new Set(filteredHackathons.map(h => h.date.getFullYear()))].sort((a, b) => b - a);
-    
-    return { totalPrize, uniqueLocations, years, total: filteredHackathons.length };
-  }, [filteredHackathons, locationGroups]);
-
-  const formatCurrency = (amount: number) => {
-    if (amount >= 1000000) return `$${(amount / 1000000).toFixed(1)}M`;
-    if (amount >= 1000) return `$${(amount / 1000).toFixed(0)}K`;
-    return `$${amount}`;
-  };
+  }, [hackathons]);
 
   // Globe rendering logic
   useEffect(() => {
@@ -110,7 +85,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
     const path = d3.geoPath().projection(projection).context(context);
 
-    let landFeatures: d3.GeoJSONFeatureCollection | null = null;
+    let landFeatures: FeatureCollection | null = null;
     const rotation = [0, 0];
     let autoRotate = true;
     const rotationSpeed = 0.15;
@@ -128,22 +103,22 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       return inside;
     };
 
-    const pointInFeature = (point: [number, number], feature: d3.GeoJSONFeature): boolean => {
+    const pointInFeature = (point: [number, number], feature: Feature): boolean => {
       const geometry = feature.geometry;
       if (geometry.type === 'Polygon') {
         const coordinates = geometry.coordinates as number[][][];
-        if (!pointInPolygon(point, coordinates[0] as number[][])) return false;
+        if (!pointInPolygon(point, coordinates[0]!)) return false;
         for (let i = 1; i < coordinates.length; i++) {
-          if (pointInPolygon(point, coordinates[i] as number[][])) return false;
+          if (pointInPolygon(point, coordinates[i]!)) return false;
         }
         return true;
       }
       if (geometry.type === 'MultiPolygon') {
         for (const polygon of geometry.coordinates as number[][][]) {
-          if (pointInPolygon(point, polygon[0] as number[][])) {
+          if (pointInPolygon(point, polygon[0]!)) {
             let inHole = false;
             for (let i = 1; i < polygon.length; i++) {
-              if (pointInPolygon(point, polygon[i] as number[][])) {
+              if (pointInPolygon(point, polygon[i]!)) {
                 inHole = true;
                 break;
               }
@@ -155,7 +130,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       return false;
     };
 
-    const generateDotsInPolygon = (feature: d3.ExtendedFeature, dotSpacing = 16) => {
+    const generateDotsInPolygon = (feature: Feature, dotSpacing = 16) => {
       const dots: [number, number][] = [];
       const bounds = d3.geoBounds(feature);
       const [[minLng, minLat], [maxLng, maxLat]] = bounds;
@@ -194,18 +169,18 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         context.beginPath();
         path(graticule());
         context.strokeStyle = 'rgba(255, 255, 255, 0.15)';
-        context.lineWidth = Number(1 * scaleFactor);
+        context.lineWidth = 1 * scaleFactor;
         context.globalAlpha = 0.25;
         context.stroke();
         context.globalAlpha = 1;
 
         // Draw land outlines
         context.beginPath();
-        landFeatures.features.forEach((feature: d3.ExtendedFeature) => {
-          path(feature as d3.GeoPermissibleObjects);
+        landFeatures.features.forEach((feature) => {
+          path(feature);
         });
         context.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-        context.lineWidth = Number(1 * scaleFactor);
+        context.lineWidth = 1 * scaleFactor;
         context.stroke();
 
         // Draw halftone dots
@@ -296,11 +271,11 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         );
         if (!response.ok) throw new Error('Failed to load land data');
 
-        const data = await response.json() as d3.GeoJSONFeatureCollection;
+        const data = await response.json() as FeatureCollection;
         landFeatures = data;
 
         allDots.length = 0;
-        landFeatures.features.forEach((feature: d3.ExtendedFeature) => {
+        landFeatures.features.forEach((feature) => {
           const dots = generateDotsInPolygon(feature, 16);
           dots.forEach((dot) => {
             allDots.push(dot);
@@ -317,7 +292,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
     const rotate = () => {
       if (autoRotate) {
-        rotation[0] = (rotation[0] || 0) + rotationSpeed;
+        rotation[0] = (rotation[0] ?? 0) + rotationSpeed;
         projection.rotate(rotation);
         render();
       }
@@ -337,8 +312,8 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         const dx = moveEvent.clientX - startX;
         const dy = moveEvent.clientY - startY;
 
-        rotation[0] = (startRotation[0] || 0) + dx * sensitivity;
-        rotation[1] = (startRotation[1] || 0) - dy * sensitivity;
+        rotation[0] = (startRotation[0] ?? 0) + dx * sensitivity;
+        rotation[1] = (startRotation[1] ?? 0) - dy * sensitivity;
         rotation[1] = Math.max(-90, Math.min(90, rotation[1]));
 
         projection.rotate(rotation);
@@ -414,7 +389,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         }
       });
 
-      if (!foundPin && !autoRotate) {
+      if (!foundPin) {
         setHoveredPin(null);
         setSelectedLocation(null);
       }
