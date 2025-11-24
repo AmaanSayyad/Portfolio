@@ -47,11 +47,40 @@ export const errorHandler = (error: unknown) => {
   return 'An error occurred';
 };
 
+// Function to detect Japanese characters
+const containsJapanese = (text: string): boolean => {
+  const japaneseRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/;
+  return japaneseRegex.test(text);
+};
+
+// Mapping for custom blog images from public folder
+const customBlogImages: Record<string, string> = {
+  'Exploring the Mina Ecosystem: A Deep Dive into Top 5 and Upcoming zkApps and Grant Program Projects': '/minablog.jpg',
+  'UpLink-AVS: An AVS to determine whether an endpoint is up/down and confirm on-chain.': '/uplink-avs.png',
+  'Unleashing the Power of Decentralization and Blockchain Technology with XPLA': '/xpla.png',
+  'Empowering Change Through Technology: My Journey at the Hackathon of Hope with Celo 🎬': '/hackathon.png',
+};
+
 export interface Post {
   title: string;
   url: string;
   coverImage: { url: string; attribution: string | null };
 }
+
+// Helper function to get image URL for a post
+export const getPostImageUrl = (post: Post): string => {
+  // Check if there's a custom image for this title
+  if (customBlogImages[post.title]) {
+    return customBlogImages[post.title]!;
+  }
+  // Use the cover image from Hashnode if available
+  if (post.coverImage?.url) {
+    return post.coverImage.url;
+  }
+  // Fallback to default image
+  return '/default.png';
+};
+
 
 export const getPosts = async () => {
   try {
@@ -98,7 +127,7 @@ export const getPosts = async () => {
       };
     };
 
-    return posts.data.publication.posts.edges.map(({ node }) => node);
+    return posts.data.publication.posts.edges.map(({ node }) => node).filter((post) => !containsJapanese(post.title));
   } catch (error) {
     console.log({ error });
     return [];

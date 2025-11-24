@@ -22,7 +22,7 @@ const skills = {
     'Avalanche', 'BNB', 'Flow', 'Monad', 'Chainlink', 'Celo', 'Near', 'Oraichain',
     'Stellar', 'Coinbase', 'WorldCoin', 'Scroll', 'Chiliz', 'Nibiru', 'Citrea',
     'Educhain', 'Ripple', 'Manta', 'Optimism', 'The Graph', 'Inco', 'Starknet',
-    'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP',
+    'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP', 'Polkadot', 'SUI',
   ],
 };
 

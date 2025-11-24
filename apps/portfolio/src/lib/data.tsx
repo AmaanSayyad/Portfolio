@@ -26,7 +26,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "APT-Casino",
 		description:
-			"A fully on-chain casino for the Aptos eco. Providing safe, secure, 100% transparent fully on-chain gambling experience. Backed by Aptos and Movement Labs. Live on 15 EVM chains, ICP, Solana, StarkNet, and more.",
+			"A fully on-chain casino for the Aptos eco. Providing safe, secure, 100% transparent gambling experience. Backed by Aptos and Movement Labs. Live on 15 EVM chains, ICP, Solana, StarkNet, and more.",
 		image: "/images/1.png",
 		coverImage: "/images/8-cover.png",
 		backgroundColor: "#0A0A0F",
@@ -35,12 +35,13 @@ const projects: Data["projects"]["projects"] = [
 		liveLink: "https://apt-casino-aptos.vercel.app",
 		videoDemo: "https://drive.google.com/file/d/1beTlzaBgtimko4dtfiJGuszLQXySfQC_/view?usp=sharing",
 		deckLink: "https://www.figma.com/design/Xa3hqlCp7LRvxIl94KM1Ia/Casino?node-id=0-1&p=f&t=AsI3JvarNKyQps74-0",
+		litepaperLink: "https://docs.google.com/document/d/1yn4I_o_U_DiNIRn-qfzelF-dKzcPVSnMORCMsfcwXxQ/edit?usp=sharing",
 	},
 	{
 		title: "HyperInsure",
 		description:
-			"The first on-chain insurance protocol protecting blockchain users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin security. Winner of Stacks Hacker House 2025.",
-		image: "/images/4.png",
+			"The first on-chain insurance protocol protecting blockchain users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin security. Backed by Stacks.",
+		image: "/images/18.png",
 		coverImage: "/images/4-cover.png",
 		backgroundColor: "#D5D5D5",
 		color: "#2A2A2A",
@@ -55,8 +56,8 @@ const projects: Data["projects"]["projects"] = [
 			"Global Remittance Infrastructure for VAT Claims & Payroll. A comprehensive solution for cross-border financial operations with blockchain transparency and security.",
 		image: "/images/4.png",
 		coverImage: "/images/17-cover.png",
-		backgroundColor: "#2D1B3D",
-		color: "#FFFFFF",
+		backgroundColor: "#ECDCE9",
+		color: "#321D44",
 		githubLink: "https://github.com/amaansayyad/gemetra",
 		liveLink: "https://gemetra.vercel.app/",
 		videoDemo: "https://drive.google.com/file/d/1p-Y-yVMDD6q8XKXJ8m3Sw0Gmakgmno4m/view?usp=sharing",
@@ -66,7 +67,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "DunkVerse",
 		description:
-			"Won 10 Hackathons ($15,000 total). Top-performing dapp with 2,100+ Likes on HackQuest. A revolutionary Web3 gaming platform combining DeFi, AI, and GameFi for safe, transparent gaming experiences.",
+			"A mobile first dapp which offers AI-driven quizzes on NBA TOPSHOTS, NFT-Powered Social Media, and Social Betting fully on-chain. Backed by Mantle.",
 		image: "/images/2.png",
 		coverImage: "/images/2-cover.png",
 		backgroundColor: "#0A0A0F",
@@ -79,7 +80,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "StarkNet Arcade",
 		description:
-			"Top-performing gaming dapp in the StarkNet Ecosystem. Arcadino brings innovative on-chain gaming experiences with cutting-edge blockchain technology.",
+			"Top-performing gaming dapp in the StarkNet Ecosystem. Starknet Arcade (Arcadino) brings innovative on-chain gaming experiences with multiplayer capabilities.",
 		image: "/images/5.png",
 		coverImage: "/images/5-cover.png",
 		backgroundColor: "#F5EFDF",
@@ -104,7 +105,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "HyperFi",
 		description:
-			"AI x DeFi platform empowering individuals in high-inflation economies. Features AI-generated educational resources, real-time APY tracking, and secure investment options. Built on Aave, Uniswap, and Chainlink to help users protect wealth and earn returns.",
+			"AI x DeFi platform empowering individuals in high-inflation economies. Features AI-generated educational resources, real-time APY tracking, aggregator of APYs and secure investment options. Built on Aave, Uniswap, and Chainlink to help users protect wealth and earn returns.",
 		image: "/images/13.png",
 		coverImage: "/images/13-cover.png",
 		backgroundColor: "#C0C0C0",
@@ -116,7 +117,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "ContractCraft",
 		description:
-			"Platform automating workflows and creating smart contracts across EVM, Move, and Polkadot. Features drag-and-drop no-code interface, AI-powered agent for writing and auditing contracts, and automated deployment to multiple networks. Integrated with Walrus Protocol.",
+			"A platform automating workflows and creating smart contracts across EVM, Move, and Polkadot. Features drag-and-drop no-code interface, AI-powered agent for writing and auditing contracts, and automated deployment to multiple networks. Integrated with Walrus Protocol.",
 		image: "/images/10.png",
 		coverImage: "/images/10-cover.png",
 		githubLink: "https://github.com/icantcodefyi/ethindia2024",
@@ -127,38 +128,54 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "Mental Wealth Academy",
 		description:
-			"A DAO-governed digital library and marketplace for decentralized knowledge sharing. Built on Polygon with Chainlink services, IPFS storage, and cross-chain interoperability. Community-driven platform designed to onboard mass adoption through accessible educational resources.",
+			"A DAO-governed digital library and marketplace for decentralized knowledge sharing. Built on Polygon with Chainlink services, IPFS storage, and cross-chain interoperability. Community-driven designed to onboard mass adoption through accessible educational resources.",
 		image: "/images/9.png",
 		coverImage: "/images/9-cover.png",
 		backgroundColor: "#1A1B3A",
 		color: "#FFFFFF",
-		githubLink: "https://github.com/AmaanSayyad/MWA",
-		liveLink: "https://www.figma.com/design/BxCGhlZEHDALoa1mvvnLGX/Academy-Design-System?node-id=4859-8963&t=vHauNnmEy37G5ElG-1",
-		videoDemo: "https://youtu.be/EoDpm71V-Ig",
+		githubLink: "https://github.com/jhinnbay/MentalWealthAcademy",
+		liveLink: "https://mental-wealth-academy.vercel.app/",
+		videoDemo: "https://youtu.be/K0ffP0n55vE?si=QvjUG1hRkv_WUcTz",
+		deckLink: "https://www.figma.com/slides/PQ09QSwPdEePNIhpBGDXtR/Mental-Wealth-Academy?node-id=3-197&t=Ian1ymM3YlJpoyIr-0",
 	},
 	{
-		title: "OptiCode",
+		title: "NJ-OptiCode",
 		description:
 			"Platform helping developers upskill in web2 and web3. Features scaffold dapps, interactive courses, real-time collaboration, on-chain IDE, and token rewards. Built on NEAR and Optimism to enable seamless development and collaboration.",
 		image: "/images/3.png",
 		coverImage: "/images/3-cover.png",
-		backgroundColor: "#33437F",
-		color: "#D2DCF2",
-		githubLink: "https://github.com/AmaanSayyad/NJ",
+		backgroundColor: "#C0C0C0",
+		color: "#000000",
+		githubLink: "https://github.com/Near-Journey/Near-Journey-",
 		videoDemo: "https://youtu.be/CKoBZtgR3hw",
+		deckLink: "https://pitch.com/v/opticode-s2ctha",
 	},
 	{
 		title: "Feed Our World",
 		description:
-			"Empowering communities and reducing global food waste through an on-demand, on-chain blockchain-based food distribution application. Won $25,000 from CELO Ecosystem. Aligned with UN Sustainable Goals.",
+			"Empowering communities and reducing global food waste through an on-demand, on-chain blockchain-based food distribution application. Aligned with UN Sustainable Goals. Backed by CELO.",
 		image: "/images/7.png",
 		coverImage: "/images/12-cover.png",
 		backgroundColor: "#DBE6E2",
 		color: "#05A8A9",
 		githubLink: "https://github.com/Feed-Our-World-FOW",
 		videoDemo: "https://youtu.be/UFW3-oJZxoY?si=C5e534Gf5tJTjjSk",
+		demoVideo: "https://www.loom.com/share/3ee9075493554d54a6d6f50931679f40",
 		deckLink: "https://docs.google.com/presentation/d/18bskDEFWCRM6Je4hks6qJPpva4b78w_4/edit?usp=sharing&ouid=107127521196855578697&rtpof=true&sd=true",
 		liveLink: "https://www.figma.com/design/Iq80Lzd4wi9LjQUbHACl2w/App?node-id=1118-1891&p=f&t=2I3E23VDuetlzaCH-0",
+	},
+	{
+		title: "Sui Stream",
+		description:
+			"The first decentralized social media platform on the SUI Blockchain. Empowers creators with content ownership, instant monetization, and privacy. Features SUI Wallet integration, zkLogin and token donations.",
+		image: "/images/19.png",
+		coverImage: "/images/19-cover.png",
+		backgroundColor: "#0A0A0F",
+		color: "#FFFFFF",
+		githubLink: "https://github.com/AmaanSayyad/SuiStream",
+		videoDemo: "https://www.loom.com/share/070ca40eec614341b2793edd2822a0a5?sid=2d0a6f8c-038c-462d-8dc2-9c6467bab7eb",
+		demoVideo: "https://www.loom.com/share/f6c77a0ec4a84b53a2a351425da690bb?sid=61e25b4f-5523-427e-9c86-ca0128576cea",
+		deckLink: "https://www.canva.com/design/DAFx2UKxWYg/IExQCl6lG1NdDztWH8JT6Q/edit?utm_content=DAFx2UKxWYg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
 	},
 	{
 		title: "FI-Protocol",
@@ -168,19 +185,21 @@ const projects: Data["projects"]["projects"] = [
 		coverImage: "/images/15-cover.png",
 		backgroundColor: "#DFE9F3",
 		color: "#1C2134",
-		githubLink: "https://github.com/AmaanSayyad/FI.protocol",
+		githubLink: "https://github.com/AmaanSayyad/Feedback-Incentivised",
 		videoDemo: "https://youtu.be/TEj-yEGSE0Y",
+		deckLink: "https://pitch.com/v/feedback-incentivized-fi-protocol-xicqzf",
 	},
 	{
 		title: "MultiAgent Army",
 		description:
-			"Top-performing dapp in the ICP Ecosystem. A revolutionary multi-agent system leveraging Internet Computer Protocol for decentralized AI applications.",
+			"A replica of $VIRTUAL protocol to revolutionize the multi-agent launchpad Agent Commerce Protocol for ICP blockchain and decentralize AI agents.",
 		image: "/images/6.png",
 		coverImage: "/images/6-cover.png",
 		backgroundColor: "#0A0A0F",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/AmaanSayyad/MultiAgent-Army",
 		videoDemo: "https://youtu.be/qBid3G7o3jk",
+		deckLink: "https://pitch.com/v/multiagent-army-mqdbu5",
 	},
 	{
 		title: "Reels-Fi",
@@ -191,6 +210,7 @@ const projects: Data["projects"]["projects"] = [
 		backgroundColor: "#454545",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/snehaa-eth/Reels-Fi",
+		deckLink: "https://www.canva.com/design/DAGOhihJymg/6WQTjRInawRp9pq12ApEZQ/view?utm_content=DAGOhihJymg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h461ac42279",
 	},
 	{
 		title: "AssetNest",
@@ -233,8 +253,8 @@ export const data: Data = {
 	articles: {
 		title: "Articles",
 		description:
-			"I have been writing articles for a while now on various web3 protocols and even project builds. These articles are a mix of tutorials, guides, and project breakdowns. I hope you find them helpful.",
-		hashnodeHostname: "blog.envoy1084.xyz",
+			"While I've shifted my focus to building systems and creating, here's a curated collection of my previous work, deep dives into Web3 protocols, comprehensive tutorials, and detailed project breakdowns that shaped my journey. Each piece represents a moment of learning, exploration, and contribution to the ecosystem.",
+		hashnodeHostname: "nosanablog.hashnode.dev",
 	},
 	projects: {
 		title: "Projects",

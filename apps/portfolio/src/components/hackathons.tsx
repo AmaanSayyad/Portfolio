@@ -32,6 +32,7 @@ const getTrackLogo = (track: string): string | null => {
     'Telos': '/telos.png',
     'Lens': '/lens.svg',
     'Amazon': '/aws.png',
+    'AI': '/aspecta.png',
   };
   
   return logoMap[track] ?? null;
@@ -229,7 +230,7 @@ export const Hackathons = () => {
           {hackathons.map((hackathon, index) => {
               const uniqueKey = `${hackathon.name}-${String(hackathon.track)}`;
               const delay = index * 0.03;
-              const trackLogo = getTrackLogo(hackathon.track);
+              const trackLogo = hackathon.name.includes('ETHGlobal') ? '/ethglobal.png' : getTrackLogo(hackathon.track);
               const prizeAmount = hackathon.amount ? Number.parseInt(hackathon.amount.replace(/[^0-9]/g, ''), 10) : 0;
               const isHighPrize = prizeAmount >= 5000;
               

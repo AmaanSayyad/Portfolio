@@ -35,6 +35,7 @@ export interface Data {
 			videoDemo?: string;
 			demoVideo?: string;
 			deckLink?: string;
+			litepaperLink?: string;
 			xLink?: string;
 		}[];
 	};
