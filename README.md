@@ -57,7 +57,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 ## 🏆 Hackathon Wins
 
-**40 wins across globe
+**40 wins across 6+ countries** (India, Canada, UAE, Saudi Arabia, Thailand, Singapore)
 
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
