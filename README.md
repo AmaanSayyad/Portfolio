@@ -61,41 +61,41 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
-| **Web3athon 2023** | **Celo Track Second Runner-Up** | **$25,000** 💰 |
-| **Flow Hackathon Season 2** | **Runner-Up** | **$6,000** |
-| Edge City Lanna Hackathon 2024 | Runner-Up Flow Track | $3,000 |
-| Chainlink Constellation 2023 | Grand Prize Winner - Steel Perlot | $3,000 |
-| Coinstore UBIT Hackathon 2024 | Second Runner-Up | $3,000 |
-| ETHDubai 2024 | XDC Network Tokenization and NEO Prize | $2,000 |
-| Move it with Aptos 2024 | Aptos Track Winner | $2,000 |
-| Polygon DevX India Hackathon | Best Project Chainlink CCIP & Services | $2,000 |
-| FVM Space Wrap Hack 2023 | Livepeer Track Winner | $2,000 |
-| DAO Global Hackathon 2023 | Lens Track Winner Best Lens Integrations | $2,000 |
 | ETHGlobal India 2025 | Track Winner | $1,500 |
+| Starknet Hacker House 2025 | Third Runner Up | $1,000 |
+| Stacks Hacker House 2025 | Winner | $550 |
+| Aptos Hackathon 2025 | Third Runner Up | $300 |
 | Mantle APAC Hackathon 2025 | Third Prize | $1,500 |
-| BUIDL for Web3 Hackathon 2022 | Best NFT App Second Runner-up | $1,500 |
+| Flow Asia Hackathon 2025 | Nominee DemoDay | $200 |
+| ETHGlobal India 2024 | Second Prize Polkadot Track | $500 |
+| ETHToronto & ETHWomen 2024 | Connect the World with Chainlink | $1,000 |
+| Dcomm Valhalla Hackathon | Loki Track Winner | $1,000 |
 | Decentralized AI Buildathon | Winner | $1,750 |
 | Hack AVS-Empower the EigenLayer 2024 | Winner Movement Track | $1,750 |
 | Movement Labs Hackathon 2024 | Second Place Movement Track | $1,750 |
-| Avalanche Frontier 2024 | Chainlink CCIP Track Third Place | $1,250 |
-| ETHToronto & ETHWomen 2024 | Connect the World with Chainlink | $1,000 |
-| Dcomm Valhalla Hackathon | Loki Track Winner | $1,000 |
-| Starknet Hacker House 2025 | Third Runner Up | $1,000 |
-| ETH Riyadh 2023 | Meta Web3 Builder SocialFi Track Winner | $1,000 |
-| ETHGlobal India 2024 | Second Prize Polkadot Track | $500 |
-| BNB Chain Hackathon 2024 | Sonorus Track Winner | $500 |
-| Amazon Smbhav Hack Season 2 | Special Mention Category Prize Winner | $500 |
-| Inco Hack 2023 | 4th Place FHE DApps | $500 |
-| Stacks Hacker House 2025 | Winner | $550 |
 | ETH SEA | 3rd Prize Manta Track | $750 |
-| Oraichain | AI x DeFi Cook-Off Special Mention | $400 |
-| Aptos Hackathon 2025 | Third Runner Up | $300 |
-| Garuda Hacks 3.0 2023 | Runner-Up Polygon Track | $300 |
-| Inco Bounty | Runner-Up | $250 |
+| Edge City Lanna Hackathon 2024 | Runner-Up Flow Track | $3,000 |
+| Polygon DevX India Hackathon | Best Project Chainlink CCIP & Services | $2,000 |
+| Avalanche Frontier 2024 | Chainlink CCIP Track Third Place | $1,250 |
+| Coinstore UBIT Hackathon 2024 | Second Runner-Up | $3,000 |
+| BNB Chain Hackathon 2024 | Sonorus Track Winner | $500 |
+| Move it with Aptos 2024 | Aptos Track Winner | $2,000 |
 | Telos Mini Hackathon 2024 | Runner-Up | $200 |
-| Flow Asia Hackathon 2025 | Nominee DemoDay | $200 |
-| Celo Hackathon of Hope | Top 20 Projects | $100 |
+| ETHDubai 2024 | XDC Network Tokenization and NEO Prize | $2,000 |
+| Chainlink Constellation 2023 | Grand Prize Winner - Steel Perlot | $3,000 |
+| ETH Riyadh 2023 | Meta Web3 Builder SocialFi Track Winner | $1,000 |
+| FVM Space Wrap Hack 2023 | Livepeer Track Winner | $2,000 |
 | HackX 2023 | Best Project Online Track | $50 |
+| DAO Global Hackathon 2023 | Lens Track Winner Best Lens Integrations | $2,000 |
+| **Web3athon 2023** | **Celo Track Second Runner-Up** | **$25,000** 💰 |
+| Garuda Hacks 3.0 2023 | Runner-Up Polygon Track | $300 |
+| Inco Hack 2023 | 4th Place FHE DApps | $500 |
+| **Flow Hackathon Season 2** | **Runner-Up** | **$6,000** |
+| Celo Hackathon of Hope | Top 20 Projects | $100 |
+| Oraichain | AI x DeFi Cook-Off Special Mention | $400 |
+| Inco Bounty | Runner-Up | $250 |
+| BUIDL for Web3 Hackathon 2022 | Best NFT App Second Runner-up | $1,500 |
+| Amazon Smbhav Hack Season 2 | Special Mention Category Prize Winner | $500 |
 | Tantragyan 2k22 | Second Consolation Prize Winner | $50 |
 
 **Total: 40 wins | $70,000+ prize money**
