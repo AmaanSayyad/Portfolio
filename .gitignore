@@ -1,2 +1,7 @@
 node_modules
-apps/portfolio/.turbo/turbo-dev.log
+
+# Turborepo
+.turbo/
+**/.turbo/
+*.turbo.log
+**/*.turbo.log
