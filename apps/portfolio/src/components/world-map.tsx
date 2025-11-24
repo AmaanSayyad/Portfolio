@@ -347,7 +347,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           const lat = coords[1];
           if (lng === undefined || lat === undefined) return;
           const projected = projection([lng, lat]);
-          if (projected && projected[0] !== undefined && projected[1] !== undefined) {
+          if (projected) {
             const projX = Number(projected[0]);
             const projY = Number(projected[1]);
             const distance = Math.sqrt(
@@ -401,7 +401,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         const lat = coords[1];
         if (lng === undefined || lat === undefined) return;
         const projected = projection([lng, lat]);
-        if (projected && projected[0] !== undefined && projected[1] !== undefined) {
+        if (projected) {
           const projX = Number(projected[0]);
           const projY = Number(projected[1]);
           const distance = Math.sqrt(
