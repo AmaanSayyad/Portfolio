@@ -57,7 +57,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 ## 🏆 Hackathon Wins
 
-**40 wins across 6+ countries** (India, Canada, UAE, Saudi Arabia, Thailand, Singapore)
+**40/70 wins across globe
 
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
@@ -87,10 +87,10 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | FVM Space Wrap Hack 2023 | Livepeer Track Winner | $2,000 |
 | HackX 2023 | Best Project Online Track | $50 |
 | DAO Global Hackathon 2023 | Lens Track Winner Best Lens Integrations | $2,000 |
-| **Web3athon 2023** | **Celo Track Second Runner-Up** | **$25,000** 💰 |
+| Web3athon 2023 | Celo Track Second Runner-Up | $25,000 |
 | Garuda Hacks 3.0 2023 | Runner-Up Polygon Track | $300 |
 | Inco Hack 2023 | 4th Place FHE DApps | $500 |
-| **Flow Hackathon Season 2** | **Runner-Up** | **$6,000** |
+| Flow Hackathon Season 2 | Runner-Up | $6,000 |
 | Celo Hackathon of Hope | Top 20 Projects | $100 |
 | Oraichain | AI x DeFi Cook-Off Special Mention | $400 |
 | Inco Bounty | Runner-Up | $250 |
@@ -100,7 +100,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **Total: 40 wins | $70,000+ prize money**
 
-**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Solana, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, and more.
+**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos, AI, General, Amazon
 
 
 ## 🤝 Let's Connect!
