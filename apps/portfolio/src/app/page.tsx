@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
   AboutAchievements,
-  ActivityFeed,
   Blogs,
   City,
   Footer,
@@ -29,7 +28,6 @@ const Home = () => {
       <Projects />
       <Hackathons />
       <WorldMap hackathons={hackathons} />
-      <ActivityFeed />
       <GrantsSpeaking />
       <Blogs />
       <ResumeContact />
