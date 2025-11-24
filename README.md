@@ -9,15 +9,11 @@
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/amaanbiz)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amaansayyad2001@gmail.com)
 
-*📍 Based in India | 🌍 Building the Future of Web3*
-
 </div>
-
 
 ## 🎯 About Me
 
-I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who builds decentralized applications, wins hackathons, and grows Web3 communities. I love open source, exploring new protocols, and connecting with developers worldwide.
-
+I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who builds web3 applications, wins hackathons, grows web3 communities, launch tokens, build systems, explore protocols, go to IRL events, create eductaional contents and mentor aspring devs.
 
 ## 📊 Key Achievements
 
@@ -26,7 +22,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | 🏆 **Hackathons** | 40+ wins out of 70+ participated |
 | 🚀 **Projects** | 25+ Web3 projects across 30+ ecosystems |
 | 💰 **Prize Money** | $70,000+ won |
-| 💼 **Companies** | 8 Web3 companies (DevRel/Ambassador) |
+| 💼 **Ex-Companies** | 8 Web3 companies|
 | 🏗️ **Startups** | 2 co-founded (Solar.AI, Assigne) |
 | 👥 **Community** | 10,000+ developers in Bharat DAO |
 | 📚 **Research** | 2 papers (IEEE & Springer) |
@@ -100,14 +96,14 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **Total: 40 wins | $70,000+ prize money**
 
-**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos, AI, General, Amazon
+**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos and more.
 
 
 ## 🤝 Let's Connect!
 
-I love connecting with developers worldwide! If you want to collaborate, discuss ideas, or chat about Web3, feel free to reach out.
+I love connecting with people who talk business and like to make money! If you want to hire, collaborate, discuss ideas, or chat about Web3, feel free to reach out.
 
-**💡 Pro Tip:** Don't just say "hi" - tell me about yourself and what you're working on! 😊
+**Pro Tip:** Don't just say "hi" - tell me about yourself, why we connected and how can i help you make 100x!
 
 <div align="center">
 
@@ -122,7 +118,7 @@ I love connecting with developers worldwide! If you want to collaborate, discuss
 
 <div align="center">
 
-### ⚡ "Building the Future of Web3, One Block at a Time" ⚡
+### ⚡ "I build systems that make money" ⚡
 
 **Thanks for visiting!** 👋
 
