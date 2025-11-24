@@ -70,11 +70,12 @@ export interface Post {
 // Helper function to get image URL for a post
 export const getPostImageUrl = (post: Post): string => {
   // Check if there's a custom image for this title
-  if (customBlogImages[post.title]) {
-    return customBlogImages[post.title]!;
+  const customImage = customBlogImages[post.title];
+  if (customImage) {
+    return customImage;
   }
   // Use the cover image from Hashnode if available
-  if (post.coverImage?.url) {
+  if (post.coverImage && post.coverImage.url) {
     return post.coverImage.url;
   }
   // Fallback to default image

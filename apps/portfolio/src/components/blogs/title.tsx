@@ -31,7 +31,7 @@ export const BlogTitle = ({ scrollProgress }: BlogTitleProps) => {
       >
         {/* Large decorative quote */}
         <div className='absolute -left-4 -top-2 hidden text-6xl font-serif text-white/5 sm:block lg:-left-8 lg:-top-4 lg:text-9xl'>
-          "
+          &ldquo;
         </div>
 
         <div className='relative space-y-5'>
@@ -42,7 +42,7 @@ export const BlogTitle = ({ scrollProgress }: BlogTitleProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            While I've shifted my focus to{' '}
+            While I&apos;ve shifted my focus to{' '}
             <span className='relative inline-block font-semibold text-white'>
               building systems
               <motion.span
@@ -52,7 +52,7 @@ export const BlogTitle = ({ scrollProgress }: BlogTitleProps) => {
                 transition={{ duration: 0.6, delay: 1 }}
               />
             </span>{' '}
-            and creating, here's a curated collection of my previous writing.
+            and creating, here&apos;s a curated collection of my previous writing.
           </motion.p>
 
           {/* Feature cards in grid */}
