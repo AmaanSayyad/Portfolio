@@ -73,8 +73,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Solana, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, and more.
 
-</details>
-
 
 ## 🤝 Let's Connect!
 
