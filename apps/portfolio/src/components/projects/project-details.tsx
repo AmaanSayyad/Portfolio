@@ -10,7 +10,7 @@ import { cn } from '~/lib/utils';
 
 import { type Variants, cubicBezier, motion } from 'framer-motion';
 
-import { FileText, Github, Globe, Twitter, YoutubeIcon } from 'lucide-react';
+import { BookOpen, FileText, Github, Globe, Twitter, YoutubeIcon } from 'lucide-react';
 
 const easeSine = cubicBezier(0.12, 0, 0.39, 0);
 
@@ -197,6 +197,11 @@ export const ProjectDetails = () => {
           {activeItem?.deckLink ? (
             <Link href={activeItem.deckLink} target='_blank' rel='noopener noreferrer'>
               <FileText size={24} />
+            </Link>
+          ) : null}
+          {activeItem?.litepaperLink ? (
+            <Link href={activeItem.litepaperLink} target='_blank' rel='noopener noreferrer'>
+              <BookOpen size={24} />
             </Link>
           ) : null}
           {activeItem?.xLink ? (
