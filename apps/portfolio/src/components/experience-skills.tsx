@@ -69,7 +69,7 @@ const experiences: Experience[] = [
     role: 'Co-Founder & CEO',
     period: 'Jun 2025 - Aug 2025',
     location: 'Remote',
-    description: "Built Indias fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+    description: "Built Indias' fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
     highlight: '10,000+ developers in 45 days',
     links: [
       { label: 'X', url: 'https://x.com/bharat_dao_' },

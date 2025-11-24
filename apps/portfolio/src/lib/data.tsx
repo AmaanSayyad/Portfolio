@@ -93,7 +93,7 @@ const projects: Data["projects"]["projects"] = [
 	{
 		title: "Bharat DAO",
 		description:
-			"Indias fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
+			"Indias' fastest-growing Web3 Developer community. Gateway for 1000+ Global Blockchains & Protocols to enter and scale in India. Grew from ZERO to 10,000+ developers in 45 days with 100% weekly growth rate.",
 		image: "/images/8.png",
 		coverImage: "/images/11-cover.png",
 		backgroundColor: "#DFE9F3",

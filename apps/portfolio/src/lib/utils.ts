@@ -64,7 +64,7 @@ const customBlogImages: Record<string, string> = {
 export interface Post {
   title: string;
   url: string;
-  coverImage: { url: string; attribution: string | null };
+  coverImage: { url: string; attribution: string | null } | null;
 }
 
 // Helper function to get image URL for a post
@@ -75,8 +75,9 @@ export const getPostImageUrl = (post: Post): string => {
     return customImage;
   }
   // Use the cover image from Hashnode if available
-  if (post.coverImage && post.coverImage.url) {
-    return post.coverImage.url;
+  const coverImageUrl = post.coverImage?.url;
+  if (coverImageUrl) {
+    return coverImageUrl;
   }
   // Fallback to default image
   return '/default.png';
@@ -120,7 +121,7 @@ export const getPosts = async () => {
               node: {
                 title: string;
                 url: string;
-                coverImage: { url: string; attribution: string | null };
+                coverImage: { url: string; attribution: string | null } | null;
               };
             }[];
           };
