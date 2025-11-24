@@ -339,13 +339,12 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         // Check for pin hover during drag
         const mouseX = moveEvent.clientX - rect.left;
         const mouseY = moveEvent.clientY - rect.top;
-        let foundPin = false;
 
-        locationGroups.forEach((group, key) => {
+        const hoveredKey = Array.from(locationGroups.entries()).find(([key]) => {
           const coords = key.split(',').map(Number);
           const lng = coords[0];
           const lat = coords[1];
-          if (lng === undefined || lat === undefined) return;
+          if (lng === undefined || lat === undefined) return false;
           const projected = projection([lng, lat]);
           if (projected) {
             const projX = Number(projected[0]);
@@ -353,16 +352,20 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
             const distance = Math.sqrt(
               Math.pow(projX - mouseX, 2) + Math.pow(projY - mouseY, 2)
             );
-            if (distance < 20) {
-              setHoveredPin(key);
-              setSelectedLocation({ group, coordinates: [lng, lat] });
-              setTooltipPosition({ x: moveEvent.clientX, y: moveEvent.clientY });
-              foundPin = true;
-            }
+            return distance < 20;
           }
+          return false;
         });
 
-        if (!foundPin) {
+        if (hoveredKey) {
+          const [key, group] = hoveredKey;
+          const coords = key.split(',').map(Number);
+          const lng = coords[0] ?? 0;
+          const lat = coords[1] ?? 0;
+          setHoveredPin(key);
+          setSelectedLocation({ group, coordinates: [lng, lat] });
+          setTooltipPosition({ x: moveEvent.clientX, y: moveEvent.clientY });
+        } else {
           setHoveredPin(null);
           setSelectedLocation(null);
         }
@@ -394,12 +397,11 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       const mouseX = event.clientX - rect.left;
       const mouseY = event.clientY - rect.top;
 
-      let pinFound = false;
-      locationGroups.forEach((group, key) => {
+      const hoveredKey = Array.from(locationGroups.entries()).find(([key]) => {
         const coords = key.split(',').map(Number);
         const lng = coords[0];
         const lat = coords[1];
-        if (lng === undefined || lat === undefined) return;
+        if (lng === undefined || lat === undefined) return false;
         const projected = projection([lng, lat]);
         if (projected) {
           const projX = Number(projected[0]);
@@ -407,16 +409,20 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           const distance = Math.sqrt(
             Math.pow(projX - mouseX, 2) + Math.pow(projY - mouseY, 2)
           );
-          if (distance < 20) {
-            setHoveredPin(key);
-            setSelectedLocation({ group, coordinates: [lng, lat] });
-            setTooltipPosition({ x: event.clientX, y: event.clientY });
-            pinFound = true;
-          }
+          return distance < 20;
         }
+        return false;
       });
 
-      if (!pinFound) {
+      if (hoveredKey) {
+        const [key, group] = hoveredKey;
+        const coords = key.split(',').map(Number);
+        const lng = coords[0] ?? 0;
+        const lat = coords[1] ?? 0;
+        setHoveredPin(key);
+        setSelectedLocation({ group, coordinates: [lng, lat] });
+        setTooltipPosition({ x: event.clientX, y: event.clientY });
+      } else {
         setHoveredPin(null);
         setSelectedLocation(null);
       }
