@@ -13,13 +13,11 @@
 
 </div>
 
----
 
 ## 🎯 About Me
 
 I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who builds decentralized applications, wins hackathons, and grows Web3 communities. I love open source, exploring new protocols, and connecting with developers worldwide.
 
----
 
 ## 📊 Key Achievements
 
@@ -33,20 +31,29 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | 👥 **Community** | 10,000+ developers in Bharat DAO |
 | 📚 **Research** | 2 papers (IEEE & Springer) |
 
----
 
-## 🌟 Featured Projects
+## 🌟 Projects
 
 | Project | Description | Links |
 |:-------:|:-----------:|:-----:|
-| **🎰 APT-Casino** | Fully on-chain casino for Aptos ecosystem | [GitHub](https://github.com/AmaanSayyad/APT-Casino-Aptos) \| [Demo](https://apt-casino-aptos.vercel.app) |
-| **🛡️ HyperInsure** | First on-chain insurance protocol (Stacks + Bitcoin) | [GitHub](https://github.com/AmaanSayyad/HyperInsure) \| [Twitter](https://x.com/hyperinsure) |
-| **🇮🇳 Bharat DAO** | India's fastest-growing Web3 community (10K+ devs) | [GitHub](https://github.com/AmaanSayyad/bharat-dao) \| [Website](https://bharat-dao.vercel.app) |
-| **💸 Gemetra** | Global remittance infrastructure for VAT claims | [GitHub](https://github.com/amaansayyad/gemetra) \| [Demo](https://gemetra.vercel.app) |
-| **🎮 StarkNet Arcade** | Top gaming dApp in StarkNet ecosystem | [GitHub](https://github.com/AmaanSayyad/Starknet-Arcade) \| [Docs](https://amaans-organization.gitbook.io/starknet-arcade) |
-| **🏀 DunkVerse** | AI-driven NBA TOPSHOTS platform (Mantle) | [GitHub](https://github.com/AmaanSayyad/DunkVerse) |
+| **🎰 APT-Casino** | Fully on-chain casino for Aptos ecosystem. Backed by Aptos and Movement Labs. Live on 15+ EVM chains, ICP, Solana, StarkNet | [GitHub](https://github.com/AmaanSayyad/APT-Casino-Aptos) \| [Demo](https://apt-casino-aptos.vercel.app) |
+| **🛡️ HyperInsure** | First on-chain insurance protocol protecting users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin | [GitHub](https://github.com/AmaanSayyad/HyperInsure) \| [Twitter](https://x.com/hyperinsure) |
+| **💸 Gemetra** | Global Remittance Infrastructure for VAT Claims & Payroll. Cross-border financial operations with blockchain transparency | [GitHub](https://github.com/amaansayyad/gemetra) \| [Demo](https://gemetra.vercel.app) |
+| **🏀 DunkVerse** | Mobile-first dApp with AI-driven quizzes on NBA TOPSHOTS, NFT-Powered Social Media, and Social Betting. Backed by Mantle | [GitHub](https://github.com/AmaanSayyad/DunkVerse) |
+| **🎮 StarkNet Arcade** | Top-performing gaming dApp in the StarkNet Ecosystem. Innovative on-chain gaming with multiplayer capabilities | [GitHub](https://github.com/AmaanSayyad/Starknet-Arcade) \| [Docs](https://amaans-organization.gitbook.io/starknet-arcade) |
+| **🇮🇳 Bharat DAO** | India's fastest-growing Web3 Developer community. Gateway for 1000+ Blockchains to enter India. 10,000+ developers in 45 days | [GitHub](https://github.com/AmaanSayyad/bharat-dao) \| [Website](https://bharat-dao.vercel.app) |
+| **🤖 HyperFi** | AI x DeFi platform for high-inflation economies. AI-generated educational resources, real-time APY tracking. Built on Aave, Uniswap, Chainlink | [GitHub](https://github.com/AmaanSayyad/HyperFi--) \| [Pitch](https://pitch.com/v/hyperfi-shield--general-pitch--idea-m8mb9h) |
+| **📝 ContractCraft** | Platform automating workflows and creating smart contracts across EVM, Move, and Polkadot. Drag-and-drop no-code interface with AI-powered agent | [GitHub](https://github.com/icantcodefyi/ethindia2024) |
+| **📚 Mental Wealth Academy** | DAO-governed digital library and marketplace for decentralized knowledge sharing. Built on Polygon with Chainlink, IPFS, cross-chain interoperability | [GitHub](https://github.com/jhinnbay/MentalWealthAcademy) \| [Demo](https://mental-wealth-academy.vercel.app) |
+| **💰 BuildnFund** | Milestone-based equity funding platform for Avalanche ecosystem. Discover and fund innovative projects with community governance | [GitHub](https://github.com/AmaanSayyad/BuildnFund) \| [Demo](https://avalaunch-eight.vercel.app) |
+| **🎓 NJ-OptiCode** | Platform helping developers upskill in web2 and web3. Features scaffold dapps, interactive courses, real-time collaboration, on-chain IDE. Built on NEAR and Optimism | [GitHub](https://github.com/Near-Journey/Near-Journey-) |
+| **🌍 Feed Our World** | On-demand, on-chain blockchain-based food distribution application. Empowering communities and reducing global food waste. Aligned with UN Sustainable Goals. Backed by CELO | [GitHub](https://github.com/Feed-Our-World-FOW) |
+| **📱 Sui Stream** | First decentralized social media platform on SUI Blockchain. Empowers creators with content ownership, instant monetization, privacy. Features SUI Wallet, zkLogin | [GitHub](https://github.com/AmaanSayyad/SuiStream) |
+| **🐛 FI-Protocol** | Bug reporting platform using Chainlink CCIP and FHE from Inco Network. Users earn tokens for reporting bugs while maintaining confidentiality. Deployed on Polygon, Scroll, Metis, Optimism | [GitHub](https://github.com/AmaanSayyad/Feedback-Incentivised) |
+| **🤖 MultiAgent Army** | Multi-agent launchpad Agent Commerce Protocol for ICP blockchain. Revolutionizing and decentralizing AI agents | [GitHub](https://github.com/AmaanSayyad/MultiAgent-Army) |
+| **🎬 Reels-Fi** | Platform enabling users to earn money by watching and trading on content engagement. Monetize reels, invest in creators' content. Built on Polygon, Aptos with Move and Solidity | [GitHub](https://github.com/snehaa-eth/Reels-Fi) |
+| **📊 AssetNest** | Soroban-powered platform connecting crypto traders to on-chain investors via Hyperliquid vaults. AI-optimized smart contracts with transparent fee structures | [GitHub](https://github.com/AmaanSayyad/AssetNest) |
 
----
 
 ## 🏆 Hackathon Wins
 
@@ -79,72 +86,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 </details>
 
----
-
-## 💼 Experience
-
-### Developer Advocate & Ambassador
-
-- 🔷 **The Graph** - Developer Advocate (2023-2024)
-- 🚀 **Supra** - Devrel Spartan (2025)
-- 🤖 **Oraichain Labs** - Developer Advocate (2024-2025)
-- 🌐 **Avalanche** - Ambassador (2024-2025)
-- 🔗 **Router Protocol** - Ambassador (2024)
-- ☁️ **Spheron Network** - Ambassador (2025)
-
-### Education & Community
-
-- 🎓 **Google** - GoogleCloudReady Facilitator (Mentored 4000+ students)
-- ☁️ **AWS** - AWS Educate Student Ambassador (4+ years)
-- 📮 **Postman** - Student Expert (4+ years)
-- 📚 **Coursera** - Beta Tester (4+ years)
-
-### Startups
-
-- ☀️ **Solar.AI** - Co-Founder & CTO (2022)
-- 💼 **Assigne** - Co-Founder (2021-2022)
-
----
-
-## 💰 Grants & Awards
-
-- 💰 **$5,000 Grant** from **Aptos** for APT-Casino
-- 🪙 **10,000 MOVE Tokens** from **Movement Labs** for APT-Casino
-- 🏆 **$6,500 Award** - Top Blockchain Startup for APT-Casino
-
----
-
-## 📚 Research & Publications
-
-- 📄 **AI and Computer Vision Based Face Mask Recognition & Detection System** - [IEEE](https://ieeexplore.ieee.org/document/9478175)
-- 📄 **AI and Computer Vision Based EyeWriter** - [Springer](https://link.springer.com/chapter/10.1007/978-981-19-6068-0_43)
-- ©️ **2 Copyrights** registered with Government of India
-
----
-
-## 🛠️ Tech Stack
-
-**Blockchain:** Solidity, Move, Rust, TypeScript, JavaScript  
-**Frameworks:** React, Next.js, Hardhat, Foundry, Anchor  
-**Protocols:** IPFS, The Graph, Chainlink, CCIP, FHE, zkProofs  
-**Cloud:** AWS, Docker, Kubernetes  
-**AI/ML:** Python, TensorFlow, OpenCV
-
----
-
-## 📈 GitHub Statistics
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AmaanSayyad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AmaanSayyad&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=58A6FF)
-
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=AmaanSayyad&theme=radical&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF)
-
-</div>
-
----
 
 ## 🤝 Let's Connect!
 
@@ -162,7 +103,6 @@ I love connecting with developers worldwide! If you want to collaborate, discuss
 
 </div>
 
----
 
 <div align="center">
 
