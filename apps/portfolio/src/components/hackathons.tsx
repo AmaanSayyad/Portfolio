@@ -40,30 +40,30 @@ const getTrackLogo = (track: string): string | null => {
 
 // Get coordinates based on hackathon name
 const getLocation = (name: string): [number, number] => {
-  const locationMap: Record<string, [number, number]> = {
-    'India': [77.2090, 28.6139], // New Delhi
-    'Toronto': [-79.3832, 43.6532],
-    'Dubai': [55.2708, 25.2048],
-    'Riyadh': [46.6753, 24.7136],
-    'Thailand': [100.5018, 13.7563], // Bangkok (for Edge City Lanna)
+  const locationMap: Record<string, [number, number] | undefined> = {
+    India: [77.2090, 28.6139], // New Delhi
+    Toronto: [-79.3832, 43.6532],
+    Dubai: [55.2708, 25.2048],
+    Riyadh: [46.6753, 24.7136],
+    Thailand: [100.5018, 13.7563], // Bangkok (for Edge City Lanna)
     'Southeast Asia': [103.8198, 1.3521], // Singapore (for ETH SEA)
-    'APAC': [103.8198, 1.3521], // Singapore
-    'Asia': [103.8198, 1.3521], // Singapore
-    'Online': [0, 0], // Center of map for online events
+    APAC: [103.8198, 1.3521], // Singapore
+    Asia: [103.8198, 1.3521], // Singapore
+    Online: [0, 0], // Center of map for online events
   };
 
   const nameLower = name.toLowerCase();
-  if (nameLower.includes('india') || nameLower.includes('indian')) return locationMap['India']!;
-  if (nameLower.includes('toronto')) return locationMap['Toronto']!;
-  if (nameLower.includes('dubai')) return locationMap['Dubai']!;
-  if (nameLower.includes('riyadh')) return locationMap['Riyadh']!;
-  if (nameLower.includes('lanna') || nameLower.includes('thailand')) return locationMap['Thailand']!;
-  if (nameLower.includes('sea') || nameLower.includes('southeast')) return locationMap['Southeast Asia']!;
-  if (nameLower.includes('apac') || nameLower.includes('asia')) return locationMap['APAC']!;
-  if (nameLower.includes('online') || nameLower.includes('remote')) return locationMap['Online']!;
+  if (nameLower.includes('india') || nameLower.includes('indian')) return locationMap.India ?? [0, 0];
+  if (nameLower.includes('toronto')) return locationMap.Toronto ?? [0, 0];
+  if (nameLower.includes('dubai')) return locationMap.Dubai ?? [0, 0];
+  if (nameLower.includes('riyadh')) return locationMap.Riyadh ?? [0, 0];
+  if (nameLower.includes('lanna') || nameLower.includes('thailand')) return locationMap.Thailand ?? [0, 0];
+  if (nameLower.includes('sea') || nameLower.includes('southeast')) return locationMap['Southeast Asia'] ?? [0, 0];
+  if (nameLower.includes('apac') || nameLower.includes('asia')) return locationMap.APAC ?? [0, 0];
+  if (nameLower.includes('online') || nameLower.includes('remote')) return locationMap.Online ?? [0, 0];
   
   // Default to India for most hackathons (seems to be the primary location)
-  return locationMap['India']!;
+  return locationMap.India ?? [0, 0];
 };
 
 export interface HackathonData {

@@ -113,19 +113,23 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       const geometry = feature.geometry;
       if (geometry.type === 'Polygon') {
         const coordinates = geometry.coordinates as number[][][];
-        if (!pointInPolygon(point, coordinates[0]!)) return false;
+        const outerRing = coordinates[0];
+        if (!outerRing || !pointInPolygon(point, outerRing)) return false;
         for (let i = 1; i < coordinates.length; i++) {
-          if (pointInPolygon(point, coordinates[i]!)) return false;
+          const hole = coordinates[i];
+          if (hole && pointInPolygon(point, hole)) return false;
         }
         return true;
       }
       if (geometry.type === 'MultiPolygon') {
         const multiPolygonCoords = geometry.coordinates as unknown as number[][][][];
         for (const polygon of multiPolygonCoords) {
-          if (pointInPolygon(point, polygon[0] as number[][])) {
+          const outerPolygon = polygon[0];
+          if (outerPolygon && pointInPolygon(point, outerPolygon)) {
             let inHole = false;
             for (let i = 1; i < polygon.length; i++) {
-              if (pointInPolygon(point, polygon[i] as number[][])) {
+              const hole = polygon[i];
+              if (hole && pointInPolygon(point, hole)) {
                 inHole = true;
                 break;
               }
@@ -176,7 +180,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         context.beginPath();
         path(graticule());
         context.strokeStyle = 'rgba(255, 255, 255, 0.15)';
-        context.lineWidth = 1 * scaleFactor;
+        context.lineWidth = Number(scaleFactor);
         context.globalAlpha = 0.25;
         context.stroke();
         context.globalAlpha = 1;
@@ -187,7 +191,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           path(feature);
         });
         context.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-        context.lineWidth = 1 * scaleFactor;
+        context.lineWidth = Number(scaleFactor);
         context.stroke();
 
         // Draw halftone dots
@@ -210,14 +214,18 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
       // Draw hackathon pins
       locationGroups.forEach((group, key) => {
-        const [lng, lat] = key.split(',').map(Number);
+        const coords = key.split(',').map(Number);
+        const lng = coords[0];
+        const lat = coords[1];
+        if (lng === undefined || lat === undefined) return;
+        
         const sortedGroup = group.sort((a, b) => b.date.getTime() - a.date.getTime());
         const latestHackathon = sortedGroup[0];
         
         if (!latestHackathon) return;
 
         const projected = projection([lng, lat]);
-        if (!projected || projected[0] == null || projected[1] == null) return;
+        if (!projected?.[0] || !projected[1]) return;
 
         const projX = Number(projected[0]);
         const projY = Number(projected[1]);
@@ -239,7 +247,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
           const b = Number.parseInt(hex.substring(4, 6), 16);
           context.beginPath();
           context.arc(projX, projY, pinSize + 8, 0, 2 * Math.PI);
-          context.fillStyle = `rgba(${r}, ${g}, ${b}, 0.3)`;
+          context.fillStyle = `rgba(${String(r)}, ${String(g)}, ${String(b)}, 0.3)`;
           context.fill();
         }
 
@@ -264,7 +272,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         // Count badge
         if (count > 1) {
           context.fillStyle = 'white';
-          context.font = `bold ${Math.min(10 + count, 14) * scaleFactor}px sans-serif`;
+          context.font = `bold ${String(Math.min(10 + count, 14) * scaleFactor)}px sans-serif`;
           context.textAlign = 'center';
           context.textBaseline = 'middle';
           context.fillText(count.toString(), projX, projY);
@@ -328,16 +336,18 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
         projection.rotate(rotation as [number, number, number]);
         render();
 
-        // Check for pin hover
+        // Check for pin hover during drag
         const mouseX = moveEvent.clientX - rect.left;
         const mouseY = moveEvent.clientY - rect.top;
         let foundPin = false;
 
         locationGroups.forEach((group, key) => {
-          const [lng, lat] = key.split(',').map(Number);
-          if (lng == null || lat == null) return;
+          const coords = key.split(',').map(Number);
+          const lng = coords[0];
+          const lat = coords[1];
+          if (lng === undefined || lat === undefined) return;
           const projected = projection([lng, lat]);
-          if (projected && projected[0] != null && projected[1] != null) {
+          if (projected && projected[0] !== undefined && projected[1] !== undefined) {
             const projX = Number(projected[0]);
             const projY = Number(projected[1]);
             const distance = Math.sqrt(
@@ -374,7 +384,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       event.preventDefault();
       const scaleFactor = event.deltaY > 0 ? 0.9 : 1.1;
       const currentScale = projection.scale() || radius;
-      const newRadius = Math.max(radius * 0.5, Math.min(radius * 3, Number(currentScale) * scaleFactor));
+      const newRadius = Math.max(radius * 0.5, Math.min(radius * 3, currentScale * scaleFactor));
       projection.scale(newRadius);
       render();
     };
@@ -384,12 +394,14 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       const mouseX = event.clientX - rect.left;
       const mouseY = event.clientY - rect.top;
 
-      let foundPin = false;
+      let pinFound = false;
       locationGroups.forEach((group, key) => {
-        const [lng, lat] = key.split(',').map(Number);
-        if (lng == null || lat == null) return;
+        const coords = key.split(',').map(Number);
+        const lng = coords[0];
+        const lat = coords[1];
+        if (lng === undefined || lat === undefined) return;
         const projected = projection([lng, lat]);
-        if (projected && projected[0] != null && projected[1] != null) {
+        if (projected && projected[0] !== undefined && projected[1] !== undefined) {
           const projX = Number(projected[0]);
           const projY = Number(projected[1]);
           const distance = Math.sqrt(
@@ -399,12 +411,12 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
             setHoveredPin(key);
             setSelectedLocation({ group, coordinates: [lng, lat] });
             setTooltipPosition({ x: event.clientX, y: event.clientY });
-            foundPin = true;
+            pinFound = true;
           }
         }
       });
 
-      if (!foundPin) {
+      if (!pinFound) {
         setHoveredPin(null);
         setSelectedLocation(null);
       }
@@ -414,7 +426,9 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
     canvas.addEventListener('wheel', handleWheel);
     canvas.addEventListener('mousemove', handleMouseMove);
 
-    void loadWorldData();
+    loadWorldData().catch((err: unknown) => {
+      console.error('Failed to load world data:', err);
+    });
 
     return () => {
       rotationTimer.stop();
@@ -434,22 +448,22 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
         {Array.from({ length: 30 }).map((_, i) => (
           <motion.div
-            key={i}
-            className='absolute rounded-full bg-white/5'
-            style={{
-              width: Math.random() * 4 + 2,
-              height: Math.random() * 4 + 2,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
+            key={`particle-${i}`}
             animate={{
               y: [0, -30, 0],
               opacity: [0.2, 0.5, 0.2],
               scale: [1, 1.5, 1],
             }}
+            className='absolute rounded-full bg-white/5'
+            style={{
+              width: Math.random() * 4 + 2,
+              height: Math.random() * 4 + 2,
+              left: `${String(Math.random() * 100)}%`,
+              top: `${String(Math.random() * 100)}%`,
+            }}
             transition={{
               duration: Math.random() * 3 + 2,
-              repeat: Infinity,
+              repeat: Number.POSITIVE_INFINITY,
               delay: Math.random() * 2,
             }}
           />
@@ -511,7 +525,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
 
           {/* Enhanced Tooltip */}
           <AnimatePresence>
-            {selectedLocation && (
+            {selectedLocation ? (
               <motion.div
                 className='fixed z-50 pointer-events-none'
                 style={{
@@ -530,15 +544,15 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
                         ? `${String(selectedLocation.group.length)} Hackathons` 
                         : selectedLocation.group[0]?.name ?? 'Unknown'}
                     </h3>
-                    {selectedLocation.group.length === 1 && selectedLocation.group[0] && (
+                    {selectedLocation.group.length === 1 && selectedLocation.group[0] ? (
                       <p className='text-xs text-white/60'>{selectedLocation.group[0].prize}</p>
-                    )}
+                    ) : null}
                   </div>
-                  
+
                   {selectedLocation.group.length > 1 ? (
                     <div className='space-y-2 max-h-64 overflow-y-auto pr-2'>
                       {selectedLocation.group.map((hackathon, idx) => (
-                        <div key={`${hackathon.name}-${idx}`} className='flex items-start justify-between gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors'>
+                        <div key={`${hackathon.name}-${String(idx)}`} className='flex items-start justify-between gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors'>
                           <div className='flex-1 min-w-0'>
                             <p className='text-xs font-semibold text-white truncate'>{hackathon.name}</p>
                             <p className='text-xs text-white/60'>{hackathon.prize}</p>
@@ -550,16 +564,16 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
                         </div>
                       ))}
                     </div>
-                  ) : (
-                    selectedLocation.group[0] && (
-                      <div className='flex items-center justify-between'>
-                        <span className='text-xs text-white/50'>{selectedLocation.group[0].track}</span>
-                        <span className='text-xs font-semibold text-blue-400'>
-                          {selectedLocation.group[0].amount}
-                        </span>
-                      </div>
-                    )
-                  )}
+                  ) : null}
+                  
+                  {selectedLocation.group.length === 1 && selectedLocation.group[0] ? (
+                    <div className='flex items-center justify-between'>
+                      <span className='text-xs text-white/50'>{selectedLocation.group[0].track}</span>
+                      <span className='text-xs font-semibold text-blue-400'>
+                        {selectedLocation.group[0].amount}
+                      </span>
+                    </div>
+                  ) : null}
                   
                   {selectedLocation.group.length > 1 && (
                     <div className='mt-3 pt-3 border-t border-white/10'>
@@ -578,7 +592,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ hackathons }) => {
                   )}
                 </div>
               </motion.div>
-            )}
+            ) : null}
           </AnimatePresence>
 
           {/* Legend */}
