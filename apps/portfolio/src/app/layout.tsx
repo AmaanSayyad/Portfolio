@@ -2,6 +2,7 @@ import localFont from 'next/font/local';
 
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Navbar } from '~/components';
 import { QueryProvider, SmoothScroll } from '~/providers';
 import '~/styles/globals.css';
@@ -115,6 +116,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <Toaster />
         </QueryProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
