@@ -222,6 +222,14 @@ const getEcosystemLogo = (ecosystem: string): string | null => {
     'ICP': '/icp.jpeg',
     'Polkadot': '/polkadot.png',
     'SUI': '/sui.png',
+    'Solana': '/solana_logo.png',
+    'Arcium': '/arcium.png',
+    'Aztec': '/aztec.png',
+    'Mina': '/mina_logo.png',
+    'Axelar': '/axelar.png',
+    'Zcash': '/zcash_logo.png',
+    'Osmosis': '/osmosis-logo.png',
+    'Fhenix': '/fhenix_logo.jpeg',
   };
   
   return logoMap[ecosystem] ?? null;
@@ -246,6 +254,7 @@ const skills = {
     'Stellar', 'Coinbase', 'WorldCoin', 'Scroll', 'Chiliz', 'Nibiru', 'Citrea',
     'Educhain', 'Ripple', 'Manta', 'Optimism', 'The Graph', 'Inco', 'Starknet',
     'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP', 'Polkadot', 'SUI',
+    'Solana', 'Arcium', 'Aztec', 'Mina', 'Axelar', 'Zcash', 'Osmosis', 'Fhenix',
   ],
 };
 

@@ -23,6 +23,7 @@ const skills = {
     'Stellar', 'Coinbase', 'WorldCoin', 'Scroll', 'Chiliz', 'Nibiru', 'Citrea',
     'Educhain', 'Ripple', 'Manta', 'Optimism', 'The Graph', 'Inco', 'Starknet',
     'Pyth', 'Stacks', '0g', 'Push', 'Algorand', 'ICP', 'Polkadot', 'SUI',
+    'Solana', 'Arcium', 'Aztec', 'Mina', 'Axelar', 'Zcash', 'Osmosis', 'Fhenix',
   ],
 };
 
