@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const stats = [
   { label: 'Years in Web3', value: '4+', emoji: '🚀' },
   { label: 'Web3 Projects', value: '25+', emoji: '💻' },
-  { label: 'Hackathons Won', value: '40+', emoji: '🏆' },
+  { label: 'Hackathons Won', value: '42+', emoji: '🏆' },
   { label: 'Ecosystems', value: '30+', emoji: '🌐' },
   { label: 'Startups', value: '2', emoji: '🚀' },
   { label: 'Communities', value: '4', emoji: '👥' },
