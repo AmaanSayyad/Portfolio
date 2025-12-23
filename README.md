@@ -103,7 +103,7 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **Total: 42 wins | $76,000+ prize money**
 
-**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos and more.
+**Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos, Solana, Osmosis, Mina, Axelar, Zcash, Arcium, Aztec, Fhenix and more.
 
 ## 🌐 Ecosystems Worked With / Built On (30+)
 
