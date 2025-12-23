@@ -14,7 +14,7 @@ const aboutSentence4: AboutSentence = [
 ];
 
 const aboutSentence5: AboutSentence = [
-	{ type: "text", content: " Won 40 hackathons out of 70+ participated" , className: "font-semibold text-white/70"},
+	{ type: "text", content: " Won 42 hackathons out of 70+ participated" , className: "font-semibold text-white/70"},
 	{ type: "emoji", content: "🏆", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
 ];
 

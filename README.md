@@ -19,9 +19,9 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 | Metric | Achievement |
 |:------:|:-----------|
-| 🏆 **Hackathons** | 40+ wins out of 70+ participated |
+| 🏆 **Hackathons** | 42+ wins out of 70+ participated |
 | 🚀 **Projects** | 25+ Web3 projects across 30+ ecosystems |
-| 💰 **Prize Money** | $70,000+ won |
+| 💰 **Prize Money** | $76,000+ won |
 | 💼 **Ex-Companies** | 8 Web3 companies|
 | 🏗️ **Startups** | 2 co-founded (Solar.AI, Assigne) |
 | 👥 **Community** | 10,000+ developers in Bharat DAO |
@@ -50,14 +50,20 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | **🤖 MultiAgent Army** | Multi-agent launchpad Agent Commerce Protocol for ICP blockchain. Revolutionizing and decentralizing AI agents | [GitHub](https://github.com/AmaanSayyad/MultiAgent-Army) |
 | **🎬 Reels-Fi** | Platform enabling users to earn money by watching and trading on content engagement. Monetize reels, invest in creators' content. Built on Polygon, Aptos with Move and Solidity | [GitHub](https://github.com/snehaa-eth/Reels-Fi) |
 | **📊 AssetNest** | Soroban-powered platform connecting crypto traders to on-chain investors via Hyperliquid vaults. AI-optimized smart contracts with transparent fee structures | [GitHub](https://github.com/AmaanSayyad/AssetNest) |
+| **🕵️ Private-Pay** | First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges | [GitHub](https://github.com/AmaanSayyad/Private-Pay) |
+| **⛽ GasProvider** | Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers| [GitHub](https://github.com/AmaanSayyad/GasProvider-Monad) |
 
 
 ## 🏆 Hackathon Wins
 
-**40/70 wins across globe**
+**42/70 wins across globe**
 
 | Hackathon | Prize | Amount |
 |:---------:|:-----:|:------:|
+| Monad Blitz Pune 2025 | Second Runner Up | $500 |
+| OneHack 2025 | Second Runner Up | $2,000 |
+| Build on Aptos Hackathon 2025 | Payments Track Winner | $3,000 |
+| Project G.U.D 2025 | Community Track Winner | $500 |
 | ETHGlobal India 2025 | Track Winner | $1,500 |
 | Starknet Hacker House 2025 | Third Runner Up | $1,000 |
 | Stacks Hacker House 2025 | Winner | $550 |
@@ -95,9 +101,24 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | Amazon Smbhav Hack Season 2 | Special Mention Category Prize Winner | $500 |
 | Tantragyan 2k22 | Second Consolation Prize Winner | $50 |
 
-**Total: 40 wins | $70,000+ prize money**
+**Total: 42 wins | $76,000+ prize money**
 
 **Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos and more.
+
+## 🌐 Ecosystems Worked With / Built On (30+)
+
+<p align="center">
+  <img src="apps/portfolio/public/solana_logo.png" alt="Solana" height="40" />
+  <img src="apps/portfolio/public/starknet-logo.png" alt="Starknet" height="40" />
+  <img src="apps/portfolio/public/osmosis-logo.png" alt="Osmosis" height="40" />
+  <img src="apps/portfolio/public/mina_logo.png" alt="Mina" height="40" />
+  <img src="apps/portfolio/public/axelar.png" alt="Axelar" height="40" />
+  <img src="apps/portfolio/public/zcash_logo.png" alt="Zcash" height="40" />
+  <img src="apps/portfolio/public/arcium.png" alt="Arcium" height="40" />
+  <img src="apps/portfolio/public/aztec.png" alt="Aztec" height="40" />
+  <img src="apps/portfolio/public/fhenix_logo.jpeg" alt="Fhenix" height="40" />
+  <img src="apps/portfolio/public/qie%20logo.webp" alt="QIE" height="40" />
+</p>
 
 
 ## 🤝 Let's Connect!

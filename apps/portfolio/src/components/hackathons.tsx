@@ -84,6 +84,10 @@ const hackathons: HackathonData[] = [
   { name: 'Aptos Hackathon 2025', prize: 'Third Runner Up', amount: '$300', track: 'Aptos', links: [], date: new Date('2025-09-01'), coordinates: getLocation('Aptos Hackathon 2025') },
   { name: 'Mantle APAC Hackathon 2025', prize: 'Third Prize', amount: '$1,500', track: 'Mantle', links: [], date: new Date('2025-08-01'), coordinates: getLocation('Mantle APAC Hackathon 2025') },
   { name: 'Flow Asia Hackathon 2025', prize: 'Nominee DemoDay', amount: '$200', track: 'Flow', links: [], date: new Date('2025-07-01'), coordinates: getLocation('Flow Asia Hackathon 2025') },
+  { name: 'Monad Blitz Pune 2025', prize: 'Second Runner Up', amount: '$500', track: 'General', links: [], date: new Date('2025-06-01'), coordinates: getLocation('Monad Blitz Pune 2025') },
+  { name: 'OneHack 2025', prize: 'Second Runner Up', amount: '$2,000', track: 'General', links: [], date: new Date('2025-05-01'), coordinates: getLocation('OneHack 2025') },
+  { name: 'Build on Aptos Hackathon 2025', prize: 'Payments Track Winner', amount: '$3,000', track: 'Aptos', links: [], date: new Date('2025-04-01'), coordinates: getLocation('Build on Aptos Hackathon 2025') },
+  { name: 'Project G.U.D 2025', prize: 'Community Track Winner', amount: '$500', track: 'General', links: [], date: new Date('2025-03-01'), coordinates: getLocation('Project G.U.D 2025') },
   
   // 2024
   { name: 'ETHGlobal India 2024', prize: 'Second Prize Polkadot Track', amount: '$500', track: 'Polkadot', links: [], date: new Date('2024-12-01'), coordinates: getLocation('ETHGlobal India 2024') },
@@ -219,7 +223,7 @@ export const Hackathons = () => {
             Hackathons
           </h2>
           <p className='font-beatriceMedium text-lg text-white/60'>
-            40+ Wins out of 70+ Participated
+            42+ Wins out of 70+ Participated
           </p>
         </motion.div>
 
