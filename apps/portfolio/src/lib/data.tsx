@@ -9,7 +9,7 @@ const aboutSentence3: AboutSentence = [
 ];
 
 const aboutSentence4: AboutSentence = [
-	{ type: "text", content: " Built 25+ Web3 projects across 30+ ecosystems", className: "font-semibold text-white/70" },
+	{ type: "text", content: " Built 27+ Web3 projects across 30+ ecosystems", className: "font-semibold text-white/70" },
 	{ type: "emoji", content: "🚀", className: "text-4xl sm:text-5xl md:text-6xl inline-block" },
 ];
 
@@ -23,6 +23,26 @@ const aboutSentence6: AboutSentence = [
 ];
 
 const projects: Data["projects"]["projects"] = [
+	{
+		title: "Private-Pay",
+		description:
+			"First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges.",
+		image: "/images/21.png",
+		coverImage: "/images/20-cover.png",
+		backgroundColor: "#0A0A0F",
+		color: "#FFFFFF",
+		githubLink: "https://github.com/AmaanSayyad/Private-Pay",
+	},
+	{
+		title: "GasProvider",
+		description:
+			"Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers.",
+		image: "/images/22.png",
+		coverImage: "/images/11-cover.png",
+		backgroundColor: "#1C2134",
+		color: "#FFFFFF",
+		githubLink: "https://github.com/AmaanSayyad/GasProvider-Monad",
+	},
 	{
 		title: "APT-Casino",
 		description:
