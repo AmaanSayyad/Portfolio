@@ -105,55 +105,80 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 **Ecosystems:** Aptos, Ethereum, Polygon, Starknet, Avalanche, Chainlink, Polkadot, Flow, Celo, Stacks, Mantle, Movement Labs, Inco, FVM, Lens, Manta, XDC, BNB, Oraichain, Dcomm, Telos, Solana, Osmosis, Mina, Axelar, Zcash, Arcium, Aztec, Fhenix and more.
 
-## 🌐 Ecosystems Worked With / Built On (30+)
+## 🌐 Ecosystems Worked With / Built On (47+)
 
-<p align="center">
-  <img src="apps/portfolio/public/aptos.png" alt="Aptos" height="40" />
-  <img src="apps/portfolio/public/movement_labs.jpeg" alt="Movement Labs" height="40" />
-  <img src="apps/portfolio/public/mantle.png" alt="Mantle" height="40" />
-  <img src="apps/portfolio/public/polygon.jpg" alt="Polygon" height="40" />
-  <img src="apps/portfolio/public/eigenlayer.png" alt="EigenLayer" height="40" />
-  <img src="apps/portfolio/public/xenea.avif" alt="Xenea" height="40" />
-  <img src="apps/portfolio/public/xion.png" alt="Xion" height="40" />
-  <img src="apps/portfolio/public/avalanche.jpg" alt="Avalanche" height="40" />
-  <img src="apps/portfolio/public/bnbchain.png" alt="BNB" height="40" />
-  <img src="apps/portfolio/public/flow.png" alt="Flow" height="40" />
-  <img src="apps/portfolio/public/monad.png" alt="Monad" height="40" />
-  <img src="apps/portfolio/public/chainlink.png" alt="Chainlink" height="40" />
-  <img src="apps/portfolio/public/celo.png" alt="Celo" height="40" />
-  <img src="apps/portfolio/public/near.png" alt="Near" height="40" />
-  <img src="apps/portfolio/public/oraichain.png" alt="Oraichain" height="40" />
-  <img src="apps/portfolio/public/stellar.png" alt="Stellar" height="40" />
-  <img src="apps/portfolio/public/coinbase.png" alt="Coinbase" height="40" />
-  <img src="apps/portfolio/public/worldcoin.png" alt="WorldCoin" height="40" />
-  <img src="apps/portfolio/public/scroll.png" alt="Scroll" height="40" />
-  <img src="apps/portfolio/public/chiliz.png" alt="Chiliz" height="40" />
-  <img src="apps/portfolio/public/nibiru.jpeg" alt="Nibiru" height="40" />
-  <img src="apps/portfolio/public/citrea.png" alt="Citrea" height="40" />
-  <img src="apps/portfolio/public/educhain.png" alt="Educhain" height="40" />
-  <img src="apps/portfolio/public/ripple.png" alt="Ripple" height="40" />
-  <img src="apps/portfolio/public/manta.png" alt="Manta" height="40" />
-  <img src="apps/portfolio/public/optimism.png" alt="Optimism" height="40" />
-  <img src="apps/portfolio/public/the_graph.jpeg" alt="The Graph" height="40" />
-  <img src="apps/portfolio/public/inco.png" alt="Inco" height="40" />
-  <img src="apps/portfolio/public/starknet.png" alt="Starknet" height="40" />
-  <img src="apps/portfolio/public/pyth.png" alt="Pyth" height="40" />
-  <img src="apps/portfolio/public/stacks.png" alt="Stacks" height="40" />
-  <img src="apps/portfolio/public/0g.png" alt="0g" height="40" />
-  <img src="apps/portfolio/public/push.png" alt="Push" height="40" />
-  <img src="apps/portfolio/public/algorand.png" alt="Algorand" height="40" />
-  <img src="apps/portfolio/public/icp.jpeg" alt="ICP" height="40" />
-  <img src="apps/portfolio/public/polkadot.png" alt="Polkadot" height="40" />
-  <img src="apps/portfolio/public/sui.png" alt="SUI" height="40" />
-  <img src="apps/portfolio/public/solana_logo.png" alt="Solana" height="40" />
-  <img src="apps/portfolio/public/arcium.png" alt="Arcium" height="40" />
-  <img src="apps/portfolio/public/aztec.png" alt="Aztec" height="40" />
-  <img src="apps/portfolio/public/mina_logo.png" alt="Mina" height="40" />
-  <img src="apps/portfolio/public/axelar.png" alt="Axelar" height="40" />
-  <img src="apps/portfolio/public/zcash_logo.png" alt="Zcash" height="40" />
-  <img src="apps/portfolio/public/osmosis-logo.png" alt="Osmosis" height="40" />
-  <img src="apps/portfolio/public/fhenix_logo.jpeg" alt="Fhenix" height="40" />
+<div align="center">
+
+### 🏗️ Layer 1 & Layer 2
+<p>
+  <img src="apps/portfolio/public/aptos.png" alt="Aptos" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/solana_logo.png" alt="Solana" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/starknet.png" alt="Starknet" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/polygon.jpg" alt="Polygon" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/avalanche.jpg" alt="Avalanche" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/bnbchain.png" alt="BNB Chain" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/near.png" alt="Near" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/polkadot.png" alt="Polkadot" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/sui.png" alt="SUI" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/icp.jpeg" alt="ICP" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/flow.png" alt="Flow" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/monad.png" alt="Monad" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/algorand.png" alt="Algorand" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/stellar.png" alt="Stellar" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/stacks.png" alt="Stacks" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/celo.png" alt="Celo" height="45" style="margin: 8px;" />
 </p>
+
+### ⚡ Scaling & Infrastructure  
+<p>
+  <img src="apps/portfolio/public/movement_labs.jpeg" alt="Movement Labs" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/mantle.png" alt="Mantle" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/eigenlayer.png" alt="EigenLayer" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/optimism.png" alt="Optimism" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/scroll.png" alt="Scroll" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/manta.png" alt="Manta" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/citrea.png" alt="Citrea" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/educhain.png" alt="Educhain" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/0g.png" alt="0g" height="45" style="margin: 8px;" />
+</p>
+
+### 🔗 Interoperability & Oracles
+<p>
+  <img src="apps/portfolio/public/chainlink.png" alt="Chainlink" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/axelar.png" alt="Axelar" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/the_graph.jpeg" alt="The Graph" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/pyth.png" alt="Pyth" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/oraichain.png" alt="Oraichain" height="45" style="margin: 8px;" />
+</p>
+
+### 🔐 Privacy & Security
+<p>
+  <img src="apps/portfolio/public/arcium.png" alt="Arcium" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/aztec.png" alt="Aztec" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/zcash_logo.png" alt="Zcash" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/mina_logo.png" alt="Mina" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/fhenix_logo.jpeg" alt="Fhenix" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/inco.png" alt="Inco" height="45" style="margin: 8px;" />
+</p>
+
+### 🎮 Gaming & Consumer Apps
+<p>
+  <img src="apps/portfolio/public/chiliz.png" alt="Chiliz" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/xion.png" alt="Xion" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/xenea.avif" alt="Xenea" height="45" style="margin: 8px;" />
+</p>
+
+### 💼 Enterprise & DeFi
+<p>
+  <img src="apps/portfolio/public/ripple.png" alt="Ripple" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/coinbase.png" alt="Coinbase" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/worldcoin.png" alt="WorldCoin" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/osmosis-logo.png" alt="Osmosis" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/nibiru.jpeg" alt="Nibiru" height="45" style="margin: 8px;" />
+  <img src="apps/portfolio/public/push.png" alt="Push Protocol" height="45" style="margin: 8px;" />
+</p>
+
+</div>
 
 
 ## 🤝 Let's Connect!
