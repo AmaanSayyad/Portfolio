@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import { Globe, Twitter, MessageCircle, FileText, Video, Presentation } from 'lucide-react';
+import { Globe, Twitter, MessageCircle, FileText, Video, Presentation, Linkedin } from 'lucide-react';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -12,6 +12,9 @@ const getLinkIcon = (label: string) => {
   const lowerLabel = label.toLowerCase();
   if (lowerLabel.includes('x') || lowerLabel.includes('twitter')) {
     return Twitter;
+  }
+  if (lowerLabel.includes('linkedin')) {
+    return Linkedin;
   }
   if (lowerLabel.includes('discord')) {
     return MessageCircle;
@@ -74,6 +77,7 @@ const experiences: Experience[] = [
     highlight: 'Full-time startup',
     links: [
       { label: 'X', url: 'https://x.com/nQ_Swap' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/company/nebulaqpprotocol/' },
       { label: 'Website', url: 'https://www.nq-swap.xyz/' },
     ],
   },
