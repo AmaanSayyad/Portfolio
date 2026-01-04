@@ -33,6 +33,8 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 
 | Project | Description | GitHub |
 |:-------:|:-----------:|:------:|
+| **🕵️ Private-Pay** | First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges | [GitHub](https://github.com/AmaanSayyad/Private-Pay) |
+| **⛽ GasProvider** | Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers| [GitHub](https://github.com/AmaanSayyad/GasProvider-Monad) |
 | **🎰 APT-Casino** | Fully on-chain casino for Aptos ecosystem. Backed by Aptos and Movement Labs. Live on 15+ EVM chains, ICP, Solana, StarkNet | [GitHub](https://github.com/AmaanSayyad/APT-Casino-Aptos) |
 | **🛡️ HyperInsure** | First on-chain insurance protocol protecting users from transaction latency, mempool congestion and finality delays. Powered by Stacks + Bitcoin | [GitHub](https://github.com/AmaanSayyad/HyperInsure) |
 | **💸 Gemetra** | Global Remittance Infrastructure for VAT Claims & Payroll. Cross-border financial operations with blockchain transparency | [GitHub](https://github.com/amaansayyad/gemetra) |
@@ -50,8 +52,6 @@ I'm a **Blockchain Developer**, **Developer Advocate**, and **Entrepreneur** who
 | **🤖 MultiAgent Army** | Multi-agent launchpad Agent Commerce Protocol for ICP blockchain. Revolutionizing and decentralizing AI agents | [GitHub](https://github.com/AmaanSayyad/MultiAgent-Army) |
 | **🎬 Reels-Fi** | Platform enabling users to earn money by watching and trading on content engagement. Monetize reels, invest in creators' content. Built on Polygon, Aptos with Move and Solidity | [GitHub](https://github.com/snehaa-eth/Reels-Fi) |
 | **📊 AssetNest** | Soroban-powered platform connecting crypto traders to on-chain investors via Hyperliquid vaults. AI-optimized smart contracts with transparent fee structures | [GitHub](https://github.com/AmaanSayyad/AssetNest) |
-| **🕵️ Private-Pay** | First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges | [GitHub](https://github.com/AmaanSayyad/Private-Pay) |
-| **⛽ GasProvider** | Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers| [GitHub](https://github.com/AmaanSayyad/GasProvider-Monad) |
 
 
 ## 🏆 Hackathon Wins
