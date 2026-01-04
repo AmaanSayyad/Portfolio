@@ -34,6 +34,7 @@ const getLinkIcon = (label: string) => {
 // Map company names to their logo file paths for work experience
 const getExperienceLogo = (company: string): string | null => {
   const logoMap: Record<string, string> = {
+    'nQ-Swap': '/nq-swap.jpg',
     'Bharat DAO': '/bharat_dao.jpg',
     'APT-Casino': '/APT-Casino.png',
     'Convex Foundation': '/convex.png',
@@ -64,6 +65,17 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
+  {
+    company: 'nQ-Swap',
+    role: 'Co-Founder',
+    period: 'Jan 2026 - Present',
+    location: 'British Virgin Islands (Remote)',
+    description: 'Building the next-generation decentralized exchange with advanced liquidity solutions and cross-chain capabilities.',
+    highlight: 'Full-time startup',
+    links: [
+      { label: 'Website', url: 'https://www.nq-swap.xyz/' },
+    ],
+  },
   {
     company: 'Bharat DAO',
     role: 'Co-Founder & CEO',
