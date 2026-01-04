@@ -73,6 +73,7 @@ const experiences: Experience[] = [
     description: 'Building the next-generation decentralized exchange with advanced liquidity solutions and cross-chain capabilities.',
     highlight: 'Full-time startup',
     links: [
+      { label: 'X', url: 'https://x.com/nQ_Swap' },
       { label: 'Website', url: 'https://www.nq-swap.xyz/' },
     ],
   },
