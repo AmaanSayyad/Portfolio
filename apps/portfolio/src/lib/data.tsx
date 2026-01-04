@@ -28,20 +28,26 @@ const projects: Data["projects"]["projects"] = [
 		description:
 			"First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges.",
 		image: "/images/21.png",
-		coverImage: "/images/20-cover.png",
+		coverImage: "/images/21-cover.png",
 		backgroundColor: "#0A0A0F",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/AmaanSayyad/Private-Pay",
+		liveLink: "https://privatepay-psi.vercel.app/",
+		deckLink: "https://docs.google.com/presentation/d/10jRokH3BV1Z93VXEmaBT4pEFkxFyVgnCORqq7PFMqsc/edit?usp=sharing",
+		videoDemo: "https://drive.google.com/file/d/1soD4LZRQNV9WbXkIF6pjeuARrB4h02jl/view?usp=sharing",
 	},
 	{
 		title: "GasProvider",
 		description:
 			"Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers.",
 		image: "/images/22.png",
-		coverImage: "/images/11-cover.png",
+		coverImage: "/images/22-cover.png",
 		backgroundColor: "#1C2134",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/AmaanSayyad/GasProvider-Monad",
+		liveLink: "https://gas-provider.vercel.app/",
+		deckLink: "https://docs.google.com/presentation/d/1oej3ukKHaKRzM1V9sj6Nl97vgmmPTr5Kj0WVzod8DnM/edit?usp=sharing",
+		videoDemo: "https://drive.google.com/file/d/1ysR1alZ418DzUM7PM9SSMkiwXTO0UyIM/view?usp=sharing",
 	},
 	{
 		title: "APT-Casino",
