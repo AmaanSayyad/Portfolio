@@ -28,7 +28,7 @@ const projects: Data["projects"]["projects"] = [
 		description:
 			"First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges.",
 		image: "/images/21.png",
-		coverImage: "/images/21-cover.png",
+		coverImage: "/images/21-cover.jpg",
 		backgroundColor: "#0A0A0F",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/AmaanSayyad/Private-Pay",
@@ -41,7 +41,7 @@ const projects: Data["projects"]["projects"] = [
 		description:
 			"Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers.",
 		image: "/images/22.png",
-		coverImage: "/images/22-cover.png",
+		coverImage: "/images/22-cover.jpg",
 		backgroundColor: "#1C2134",
 		color: "#FFFFFF",
 		githubLink: "https://github.com/AmaanSayyad/GasProvider-Monad",

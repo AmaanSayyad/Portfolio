@@ -76,8 +76,8 @@ const experiences: Experience[] = [
     role: 'Co-Founder',
     period: 'Jan 2026 - Present',
     location: 'British Virgin Islands (Remote)',
-    description: 'Building the next-generation decentralized exchange with advanced liquidity solutions and cross-chain capabilities.',
-    highlight: 'Wall Streets DEX 🏛️, 13.3% APY + $100M tpX Rewards. Building a profitable alternative to Uniswap.',
+    description: 'Building the private, anonymous decentralized exchange with advanced liquidity solutions and cross-chain capabilities.',
+    highlight: 'Wall Streets DEX 🏛️, 13.3% APY + $100M tpX Rewards.',
     links: [
       { label: 'X', url: 'https://x.com/nQ_Swap' },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/company/nebulaqpprotocol/' },
