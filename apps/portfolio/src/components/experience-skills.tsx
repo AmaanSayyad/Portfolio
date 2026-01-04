@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import { Globe, Twitter, MessageCircle, FileText, Video, Presentation, Linkedin } from 'lucide-react';
+import { Globe, Twitter, MessageCircle, FileText, Video, Presentation, Linkedin, BookOpen } from 'lucide-react';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -21,6 +21,9 @@ const getLinkIcon = (label: string) => {
   }
   if (lowerLabel.includes('website')) {
     return Globe;
+  }
+  if (lowerLabel.includes('gitbook') || lowerLabel.includes('docs') || lowerLabel.includes('documentation')) {
+    return BookOpen;
   }
   if (lowerLabel.includes('litepaper') || lowerLabel.includes('paper')) {
     return FileText;
@@ -78,6 +81,7 @@ const experiences: Experience[] = [
     links: [
       { label: 'X', url: 'https://x.com/nQ_Swap' },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/company/nebulaqpprotocol/' },
+      { label: 'GitBook', url: 'https://nebulaqprotocol.gitbook.io/nq-swap/' },
       { label: 'Website', url: 'https://www.nq-swap.xyz/' },
     ],
   },
