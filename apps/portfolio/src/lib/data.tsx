@@ -73,6 +73,7 @@ const projects: Data["projects"]["projects"] = [
 		color: "#2A2A2A",
 		githubLink: "https://github.com/AmaanSayyad/HyperInsure",
 		liveLink: "https://hyperinsure-stx-testnet.vercel.app/",
+		xLink: "https://x.com/hyperinsure",
 		videoDemo: "https://drive.google.com/file/d/1P2-0HaChur8M_P64jvhWWCHBIWN2RndT/view?usp=sharing",
 		deckLink: "https://docs.google.com/presentation/d/1EkrUS-6aj6qx1YxMwxP_RauebVnhXj5RC8IYZp5XFBw/edit?usp=sharing",
 	},
