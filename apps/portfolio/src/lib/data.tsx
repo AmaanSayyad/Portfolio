@@ -93,7 +93,7 @@ const projects: Data["projects"]["projects"] = [
 	},
 	{
 		title: "StarkNet Arcade",
-		description:œ
+		description:
 			"Top-performing gaming dapp in the StarkNet Ecosystem. Starknet Arcade (Arcadino) brings innovative on-chain gaming experiences with multiplayer capabilities.",
 		image: "/images/5.png",
 		coverImage: "/images/5-cover.png",
