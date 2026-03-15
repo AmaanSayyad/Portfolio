@@ -24,19 +24,6 @@ const aboutSentence6: AboutSentence = [
 
 const projects: Data["projects"]["projects"] = [
 	{
-		title: "Private-Pay",
-		description:
-			"First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges.",
-		image: "/images/21.png",
-		coverImage: "/images/21-cover.png",
-		backgroundColor: "#0A0A0F",
-		color: "#FFFFFF",
-		githubLink: "https://github.com/AmaanSayyad/Private-Pay",
-		liveLink: "https://privatepay-psi.vercel.app/",
-		deckLink: "https://docs.google.com/presentation/d/10jRokH3BV1Z93VXEmaBT4pEFkxFyVgnCORqq7PFMqsc/edit?usp=sharing",
-		videoDemo: "https://drive.google.com/file/d/1soD4LZRQNV9WbXkIF6pjeuARrB4h02jl/view?usp=sharing",
-	},
-	{
 		title: "GasProvider",
 		description:
 			"Universal cross-chain gas distribution platform. User comes with any token on any chain and receives native gas across 300+ chains in 3 seconds powered by mechanisms, fallback treasuries, oracles and event indexers.",
@@ -106,7 +93,7 @@ const projects: Data["projects"]["projects"] = [
 	},
 	{
 		title: "StarkNet Arcade",
-		description:
+		description:œ
 			"Top-performing gaming dapp in the StarkNet Ecosystem. Starknet Arcade (Arcadino) brings innovative on-chain gaming experiences with multiplayer capabilities.",
 		image: "/images/5.png",
 		coverImage: "/images/5-cover.png",
