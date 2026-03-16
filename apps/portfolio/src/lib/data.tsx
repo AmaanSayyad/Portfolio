@@ -24,19 +24,6 @@ const aboutSentence6: AboutSentence = [
 
 const projects: Data["projects"]["projects"] = [
 	{
-		title: "Bynomo",
-		description:
-			"Web3-native binary options trading where every millisecond is tracked by Pyth oracles. Trade over 300+ crypto, 100+ stocks, metals, forex, commodities and more on real-time 5s–1m charts, with unlimited bets, lightning-fast execution and a single shared treasury.",
-		image: "/BYNOMO.png",
-		coverImage: "/BYNOMO.png",
-		backgroundColor: "#0A0A0F",
-		color: "#FFFFFF",
-		liveLink: "https://bynomo.fun/",
-		deckLink: "https://docs.google.com/presentation/d/1kDVnUCeJ-LZ3dfpo_YsSqen6qSzlgzHFWFk79Eodj9A/edit?usp=sharing",
-		videoDemo: "https://youtu.be/pjFNfzP9laA",
-		xLink: "https://x.com/bynomofun",
-	},
-	{
 		title: "Private-Pay",
 		description:
 			"First on-chain untraceable, unidentifiable private payments dApp. Multi-chain privacy across Aptos, Solana, Starknet, Osmosis, Mina, Axelar, Zcash, Arcium, Miden, Near, Helius & Fhenix with stealth addresses, darkpools, and privacy-preserving bridges.",
