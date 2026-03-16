@@ -72,9 +72,26 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    company: 'Bynomo',
+    role: 'CEO',
+    period: 'Mar 2026 - Present',
+    location: 'Dubai',
+    description:
+      'Building the first Web3-native binary options trading platform with real-time price feeds via Pyth oracles, enabling lightning-fast trading across 300+ crypto, 100+ stocks, metals, forex, and more on 5s–1m timeframes.',
+    highlight: 'Bynomo – Binary options for Web3, powered by Pyth.',
+    links: [
+      { label: 'Website', url: 'https://bynomo.fun/' },
+      { label: 'X', url: 'https://x.com/bynomofun' },
+      { label: 'Telegram', url: 'https://t.me/bynomo' },
+      { label: 'Discord', url: 'https://discord.gg/5MAHQpWZ7b' },
+      { label: 'Pitch Deck', url: 'https://docs.google.com/presentation/d/1kDVnUCeJ-LZ3dfpo_YsSqen6qSzlgzHFWFk79Eodj9A/edit?usp=sharing' },
+      { label: 'Video', url: 'https://youtu.be/pjFNfzP9laA' },
+    ],
+  },
+  {
     company: 'nQ-Swap',
     role: 'Co-Founder',
-    period: 'Jan 2026 - Present',
+    period: 'Jan 2026 - Mar 2026',
     location: 'British Virgin Islands (Remote)',
     description: 'Building the private, anonymous decentralized exchange with advanced liquidity solutions and cross-chain capabilities.',
     highlight: 'Wall Streets DEX 🏛️, 13.3% APY + $100M tpX Rewards.',
