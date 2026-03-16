@@ -617,26 +617,14 @@ export const ExperienceSkills = () => {
               </h3>
               <div className='flex flex-wrap gap-2'>
                 {skills.ecosystems.map((ecosystem, index) => {
-                  const delay = index * 0.01;
                   const logoPath = getEcosystemLogo(ecosystem);
                   
                   return (
-                    <motion.span
+                    <span
                       key={ecosystem}
-                      className='group relative flex items-center gap-1.5 overflow-hidden rounded-md border border-white/5 bg-white/[0.03] px-2.5 py-1 text-xs font-medium text-white/60 backdrop-blur-md transition-all duration-300 hover:border-white/15 hover:bg-white/[0.12] hover:text-white/80 hover:shadow-[0_2px_8px_rgba(0,0,0,0.2)]'
-                      initial={{ opacity: 0, scale: 0.8, y: 10 }}
-                      transition={{ delay, duration: 0.4, stiffness: 150, type: 'spring' }}
-                      viewport={{ margin: '-20px', once: true }}
-                      whileHover={{ 
-                        scale: 1.08,
-                        transition: { duration: 0.2, stiffness: 400, type: 'spring' },
-                        y: -2,
-                      }}
-                      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                      className='group relative flex items-center gap-1.5 overflow-hidden rounded-md border border-white/5 bg-white/[0.03] px-2.5 py-1 text-xs font-medium text-white/60 backdrop-blur-md transition-colors duration-200 hover:border-white/15 hover:bg-white/[0.12] hover:text-white/80'
                     >
-                      <motion.div
-                        className='absolute inset-0 bg-gradient-to-r from-white/[0.06] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-                      />
+                      <span className='absolute inset-0 bg-gradient-to-r from-white/[0.06] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
                       {logoPath && (
                         <div className='relative z-10 h-4 w-4 shrink-0 overflow-hidden rounded-sm'>
                           <Image
@@ -649,7 +637,7 @@ export const ExperienceSkills = () => {
                         </div>
                       )}
                       <span className='relative z-10'>{ecosystem}</span>
-                    </motion.span>
+                    </span>
                   );
                 })}
               </div>
