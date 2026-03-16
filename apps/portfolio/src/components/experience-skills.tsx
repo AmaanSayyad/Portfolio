@@ -40,16 +40,17 @@ const getLinkIcon = (label: string) => {
 // Map company names to their logo file paths for work experience
 const getExperienceLogo = (company: string): string | null => {
   const logoMap: Record<string, string> = {
+    Bynomo: '/BYNOMO.png',
     'nQ-Swap': '/nq-swap.jpg',
     'Bharat DAO': '/bharat_dao.jpg',
     'APT-Casino': '/APT-Casino.png',
     'Convex Foundation': '/convex.png',
-    'Polygon': '/polygon.jpg',
-    'buildspace': '/buildspace.jpg',
-    'Phyllo': '/phyllo.png',
+    Polygon: '/polygon.jpg',
+    buildspace: '/buildspace.jpg',
+    Phyllo: '/phyllo.png',
     '5ireChain': '/5irechain.jpg',
     'Affine Group': '/affine_group.jpeg',
-    'SoCool': '/socool.jpeg',
+    SoCool: '/socool.jpeg',
   };
   
   return logoMap[company] ?? null;
@@ -77,8 +78,8 @@ const experiences: Experience[] = [
     period: 'Mar 2026 - Present',
     location: 'Dubai',
     description:
-      'Building the first Web3-native binary options trading platform with real-time price feeds via Pyth oracles, enabling lightning-fast trading across 300+ crypto, 100+ stocks, metals, forex, and more on 5s–1m timeframes.',
-    highlight: 'Bynomo – Binary options for Web3, powered by Pyth.',
+      'Building the first binary options trading platform where users can trade over 300+ crypto, 100+ stocks, 5+ metals, 10+ forex and commodities in 5s–1m timeframes.',
+    highlight: 'Will we be backed by @bnbchain & @yzilabs',
     links: [
       { label: 'Website', url: 'https://bynomo.fun/' },
       { label: 'X', url: 'https://x.com/bynomofun' },

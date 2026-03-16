@@ -27,8 +27,8 @@ const projects: Data["projects"]["projects"] = [
 		title: "Bynomo",
 		description:
 			"Web3-native binary options trading where every millisecond is tracked by Pyth oracles. Trade over 300+ crypto, 100+ stocks, metals, forex, commodities and more on real-time 5s–1m charts, with unlimited bets, lightning-fast execution and a single shared treasury.",
-		image: "/images/23.png",
-		coverImage: "/images/23-cover.png",
+		image: "/BYNOMO.png",
+		coverImage: "/BYNOMO.png",
 		backgroundColor: "#0A0A0F",
 		color: "#FFFFFF",
 		liveLink: "https://bynomo.fun/",
