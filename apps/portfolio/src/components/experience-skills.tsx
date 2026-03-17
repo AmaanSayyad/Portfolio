@@ -616,7 +616,7 @@ export const ExperienceSkills = () => {
                 Ecosystems Worked with/ Built on (30+)
               </h3>
               <div className='flex flex-wrap gap-2'>
-                {skills.ecosystems.map((ecosystem, index) => {
+              {skills.ecosystems.map((ecosystem) => {
                   const logoPath = getEcosystemLogo(ecosystem);
                   
                   return (
